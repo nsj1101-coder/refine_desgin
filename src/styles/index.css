@@ -1,0 +1,8 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+
+/* 전역: 영문 대문자(uppercase) → Title Case로 변경 (첫 글자만 대문자) */
+.uppercase {
+  text-transform: none !important;
+}

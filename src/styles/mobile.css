@@ -1,0 +1,110 @@
+@media (max-width: 768px) {
+  /* ==============================================================
+     1. GLOBAL & RESET
+     ============================================================== */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100vw !important;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #faf6f1 !important;
+  }
+
+  .mobile-container {
+    width: 100vw !important;
+    height: auto !important;
+    overflow-x: hidden !important;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #faf6f1;
+  }
+
+  /* 모바일 넘침 방지 - absolute 자식들 제외 */
+  [data-name="main01"] > * {
+    max-width: 100vw !important;
+    box-sizing: border-box !important;
+  }
+
+  /* ==============================================================
+     2. FIXED WIDTHS OVERFLOW PREVENTION
+     ============================================================== */
+  /* min-w-full on mobile should respect viewport */
+  [data-name="main01"] .min-w-full {
+    min-width: 100% !important;
+  }
+
+  /* w-[min-content] can cause overflow */
+  [data-name="main01"] .w-\[min-content\] {
+    width: auto !important;
+  }
+
+  /* ==============================================================
+     3. TYPOGRAPHY SMOOTHING
+     ============================================================== */
+  [data-name="main01"] {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* ==============================================================
+     4. IMAGE OVERFLOW PREVENTION
+     ============================================================== */
+  /* Non-absolute images: prevent horizontal overflow */
+  [data-name="main01"] img:not(.absolute) {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Hero & absolute images: preserve object-cover fill */
+  [data-name="Image (Hero Background)"] img,
+  [data-name="main01"] img.absolute,
+  [data-name="main01"] .absolute img {
+    max-width: none !important;
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+  }
+
+  /* ==============================================================
+     5. TOUCH TARGETS
+     ============================================================== */
+  [data-name="main01"] button,
+  [data-name="main01"] [role="button"] {
+    min-height: 40px;
+    min-width: 40px;
+  }
+
+  /* small inline badges excluded */
+  [data-name="main01"] .rounded-\[4px\] {
+    min-height: unset;
+    min-width: unset;
+  }
+
+  /* ==============================================================
+     6. LONG WORD / OVERFLOW SAFEGUARD
+     ============================================================== */
+  [data-name="main01"] p,
+  [data-name="main01"] span,
+  [data-name="main01"] div {
+    word-break: keep-all;
+    overflow-wrap: break-word;
+  }
+
+  /* ==============================================================
+     7. SMOOTH SCROLLING
+     ============================================================== */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Scrollbar hide utility */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
