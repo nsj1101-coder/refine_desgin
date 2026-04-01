@@ -24,10 +24,15 @@ export interface TreatmentInfo {
   id: string;
   num: string;
   title: string;
+  titleEn: string;
   subtitle: string;
   img: string;
+  headline: string;
   desc: string;
   points: string[];
+  headline2: string;
+  details: string[];
+  tags: string[];
   duration: string;
   anesthesia: string;
   recovery: string;
@@ -150,230 +155,112 @@ export default function TreatmentTemplate({
           </motion.div>
         </section>
 
-        {/* ===== Editorial Core Principle ===== */}
-        <section className="w-full bg-white">
-          <div className="w-full max-w-[1920px] mx-auto px-6 md:px-[140px] py-[100px] md:py-[140px]">
-            <div className="grid grid-cols-1 md:grid-cols-12 gap-[60px] items-start">
-              <div className="md:col-span-5 flex flex-col gap-[60px] overflow-hidden">
-                <div>
-                  <FadeIn>
-                    <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] md:text-[16px] tracking-[0px] uppercase mb-4">
-                      Core Principle
-                    </p>
-                    <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold mb-6 leading-[1.3]">
-                      {coreTitle}
-                    </h2>
-                    <div className="w-[40px] h-[1px] bg-[#1c1614] mb-8" />
-                  </FadeIn>
-                  <FadeIn delay={0.1}>
-                    <div className="text-[#4a3f3a] text-[16px] md:text-[17px] leading-[1.9] space-y-4">
-                      {coreDesc.map((desc, idx) => (
-                        <p key={idx}>{desc}</p>
-                      ))}
-                    </div>
-                  </FadeIn>
-                </div>
-                <FadeIn delay={0.2}>
-                  <div className="bg-[#faf6f1] p-6 md:p-8 border-l border-[#1c1614]">
-                    <p className="text-[#1c1614] text-[16px] md:text-[18px] font-['Pretendard',sans-serif] font-medium leading-[1.8] whitespace-pre-line break-keep">
-                      {coreHighlight}
-                    </p>
-                  </div>
-                </FadeIn>
-              </div>
-              <div className="md:col-span-7 overflow-hidden">
-                <FadeIn delay={0.3} className="w-full">
-                  <div className="w-full aspect-[7/4] overflow-hidden">
-                    <ImageWithFallback src={coreImg} alt={coreTitle} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000 ease-out" />
-                  </div>
-                </FadeIn>
-              </div>
-            </div>
+        {/* ===== Core Principle (Figma) ===== */}
+        <section className="w-full bg-[#201814] relative flex flex-col md:flex-row justify-between overflow-hidden" style={{minHeight:358}}>
+          {/* Left: Title */}
+          <div className="flex flex-col gap-0 pt-10 pl-[50px] max-md:px-6 max-md:pt-8 shrink-0">
+            <FadeIn>
+              <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-medium leading-[1.5]">Core Principle</span>
+              <h2 className="text-[#FBF6F1] text-[32px] md:text-[44px] font-bold leading-[1.3] tracking-[-1px] mt-[6px] font-['Pretendard',sans-serif]">
+                {coreTitle}
+              </h2>
+              <div className="w-[46px] h-px bg-[#FBF6F1] opacity-50 mt-[14px]" />
+            </FadeIn>
+          </div>
+
+          {/* Vertical Divider (desktop only) */}
+          <div className="hidden md:block absolute w-px h-[46px] bg-[#FBF6F1] opacity-50" style={{left:774,top:95}} />
+
+          {/* Right: Description */}
+          <div className="flex flex-col gap-5 pt-[40px] md:pt-[86px] pr-[50px] max-md:px-6 max-md:pb-10" style={{maxWidth:740}}>
+            <FadeIn delay={0.1}>
+              {coreDesc.map((desc, idx) => (
+                <p key={idx} className="text-white text-[17px] font-light leading-[1.6]">{desc}</p>
+              ))}
+            </FadeIn>
+            <FadeIn delay={0.2}>
+              <p className="text-[#FBF6F1] text-lg font-medium leading-[1.6]" style={{maxWidth:517}}>
+                {coreHighlight}
+              </p>
+            </FadeIn>
           </div>
         </section>
 
-        {/* ===== Sticky Treatment Types ===== */}
-        <section className="w-full bg-[#fcfbf9]">
-          <div className="w-full max-w-[1920px] mx-auto px-6 md:px-[140px] py-[100px] md:py-[140px]">
-            <FadeIn>
-              <div className="mb-[60px] md:mb-[80px]">
-                <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
-                  Treatment Types
-                </p>
-                <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold">
-                  {treatmentTitle}
-                </h2>
-              </div>
-            </FadeIn>
-
-            {/* Mobile Horizontal Scroll Tabs */}
-            <div className="md:hidden flex overflow-x-auto scrollbar-hide border-b border-[#e8e5e0] mb-[60px]">
-              {treatments.map((t, idx) => (
-                <button
-                  key={t.id}
-                  onClick={() => setActiveTreatment(idx)}
-                  className={`shrink-0 px-6 py-4 text-[16px] font-medium transition-colors whitespace-nowrap ${
-                    activeTreatment === idx ? 'border-b-[2px] border-[#1c1614] text-[#1c1614]' : 'text-[#b8a99a]'
-                  }`}
-                >
-                  {t.title}
+        {/* ===== Treatment Types (Figma) ===== */}
+        <section className="w-full bg-[#FCFBF9]">
+          {/* Sticky Tab Bar */}
+          <div className="w-full bg-[#FCFBF9] sticky top-0 z-10 flex">
+            {treatments.map((t, idx) => (
+              <button
+                key={t.id}
+                onClick={() => {
+                  setActiveTreatment(idx);
+                  document.getElementById(`sec-${t.id}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+                }}
+                className={`flex-1 h-[100px] flex items-center justify-center text-xl transition-all duration-300 cursor-pointer ${
+                  activeTreatment === idx
+                    ? "border-b-4 border-[#1C1614] text-[#1C1614] font-bold"
+                    : "border-b border-[rgba(28,22,20,0.2)] text-[#B8A99A] font-medium"
+                }`}
+              >
+                {t.title}
                 </button>
               ))}
             </div>
+          {/* Treatment Sections */}
+          {treatments.map((t, idx) => {
+            const isImageLeft = idx % 2 === 0;
+            const imageBlock = (
+              <div className="w-full md:w-[500px] h-[500px] md:h-[896px] shrink-0 overflow-hidden">
+                <ImageWithFallback src={t.img} alt={t.title} className="w-full h-full object-cover" />
+              </div>
+            );
+            const contentBlock = (
+              <div className="flex-1 relative px-6 md:px-0" style={{minHeight: 661}}>
+                <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-light leading-[1.5]">{t.subtitle}</span>
+                <h3 className="font-['Montserrat',sans-serif] text-[#504945] text-[40px] md:text-[64px] font-bold tracking-[-1px] mt-[10px]" style={{lineHeight:"0.84"}}>{t.titleEn}</h3>
+                <span className="block text-[#B5B0AC] text-[24px] md:text-[32px] font-medium tracking-[-1px] mt-[16px]" style={{lineHeight:"1.69"}}>{t.title}</span>
 
-            <div className="flex flex-col md:flex-row gap-[60px] md:gap-[120px] items-start relative">
-              {/* Desktop Sticky Sidebar */}
-              <div className="hidden md:block w-[320px] shrink-0 sticky top-[160px]">
-                <div className="border-t-[2px] border-[#1c1614] flex flex-col">
-                  {treatments.map((t, idx) => (
-                    <button
-                      key={t.id}
-                      onClick={() => setActiveTreatment(idx)}
-                      className={`flex items-center justify-between py-6 border-b border-[#e8e5e0] text-left transition-all duration-300 group ${
-                        activeTreatment === idx ? 'text-[#1c1614]' : 'text-[#b8a99a] hover:text-[#1c1614]'
-                      }`}
-                    >
-                      <span className="font-['Montserrat',sans-serif] text-[14px] tracking-[2px] w-[40px] opacity-60 group-hover:opacity-100 transition-opacity">
-                        {t.num}
-                      </span>
-                      <span className={`flex-1 text-[20px] ${activeTreatment === idx ? 'font-bold' : 'font-medium'}`}>
-                        {t.title}
-                      </span>
-                      <div className={`w-[24px] h-[1px] bg-current transition-all duration-300 ${activeTreatment === idx ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0'}`} />
-                    </button>
+                <p className="text-[#4A3F3A] text-lg md:text-xl leading-[1.3] mt-[30px]">{t.headline}</p>
+                <p className="text-[#6E6560] text-lg font-light leading-[1.6] max-w-[667px] mt-[8px]">{t.desc}</p>
+
+                <div className="flex flex-wrap gap-5 mt-[28px]">
+                  {[
+                    { label: "시술시간", value: t.duration },
+                    { label: "마취 여부", value: t.anesthesia },
+                    { label: "회복 기간", value: t.recovery },
+                    { label: "추천/유지", value: t.maintenance },
+                  ].map((info) => (
+                    <div key={info.label} className="flex flex-col gap-3 bg-[#FBF6F1] p-2.5">
+                      <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-xs font-medium tracking-[2px] leading-[1.5]">{info.label}</span>
+                      <span className="text-[#504945] text-base font-medium leading-[1.5]">{info.value}</span>
+                    </div>
+                  ))}
+                </div>
+
+                <p className="text-[#4A3F3A] text-lg md:text-xl leading-[1.3] mt-[32px]">{t.headline2}</p>
+                <div className="flex flex-col gap-5 max-w-[689px] mt-[10px]">
+                  {t.details.map((d, i) => (
+                    <p key={i} className="text-[#6E6560] text-lg font-light leading-[1.6]">{d}</p>
+                  ))}
+                </div>
+
+                <div className="flex flex-wrap gap-3 mt-[32px]">
+                  {t.tags.map((tag) => (
+                    <span key={tag} className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-medium border border-[#B8A99A] rounded px-3.5 py-2">{tag}</span>
                   ))}
                 </div>
               </div>
+            );
 
-              {/* Treatment Content Area */}
-              <div className="flex-1 w-full min-w-0">
-                <AnimatePresence mode="wait">
-                  <motion.div
-                    key={activeT.id}
-                    initial={{ opacity: 0, x: 20 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -20 }}
-                    transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-                  >
-                    {/* Desktop: 2-column layout (image left + text right) */}
-                    <div className="hidden md:grid md:grid-cols-2 gap-[60px] items-start">
-                      {/* Left: Image */}
-                      <div className="aspect-[7/8] w-full overflow-hidden bg-[#e8e5e0]">
-                        <ImageWithFallback
-                          src={activeT.img}
-                          alt={activeT.title}
-                          className="w-full h-full object-cover mix-blend-multiply opacity-90"
-                        />
-                      </div>
-
-                      {/* Right: Text content — height matches image */}
-                      <div className="flex flex-col overflow-hidden">
-                        <div>
-                          <div className="mb-5">
-                            <p className="font-['Montserrat',sans-serif] text-[16px] text-[#b8a99a] tracking-[0px] uppercase mb-2">
-                              {activeT.subtitle}
-                            </p>
-                            <h3 className="text-[32px] md:text-[36px] text-[#1c1614] font-['Pretendard',sans-serif] font-bold tracking-[-1px]">
-                              {activeT.title}
-                            </h3>
-                          </div>
-
-                          <p className="text-[16px] md:text-[18px] text-[#4a3f3a] leading-[1.9] mb-6 break-keep">
-                            {activeT.desc}
-                          </p>
-
-                          <div className="space-y-2 mb-6">
-                            {activeT.points.map((point, i) => (
-                              <div key={i} className="flex items-start gap-3">
-                                <div className="w-[4px] h-[4px] bg-[#b8a99a] shrink-0 mt-[10px]" />
-                                <p className="text-[16px] text-[#1c1614] font-medium leading-[1.6]">
-                                  {point}
-                                </p>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-
-                        {/* Compact Info Grid — pushed to bottom */}
-                        <div className="grid grid-cols-2 border-t border-[#1c1614] mt-[60px]">
-                          {[
-                            { icon: Clock, label: "시술시간", value: activeT.duration },
-                            { icon: Shield, label: "마취 여부", value: activeT.anesthesia },
-                            { icon: Activity, label: "회복 기간", value: activeT.recovery },
-                            { icon: CalendarDays, label: "추천/유지", value: activeT.maintenance },
-                          ].map((info, i) => (
-                            <div key={i} className={`flex flex-col gap-2 py-[20px] px-[16px] border-b border-[#e8e5e0] ${i % 2 === 0 ? 'border-r border-r-[#e8e5e0]' : ''}`}>
-                              <div className="font-['Montserrat',sans-serif] text-[#b8a99a] text-[12px] tracking-[2px] flex items-center gap-2 uppercase">
-                                {info.icon && <info.icon className="w-[14px] h-[14px] stroke-[1.5]" />}
-                                {info.label}
-                              </div>
-                              <div className="text-[16px] text-[#1c1614] font-medium break-keep">
-                                {info.value}
-                              </div>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Mobile: stacked layout */}
-                    <div className="md:hidden">
-                      <div className="aspect-[16/9] w-full mb-[32px] overflow-hidden bg-[#e8e5e0]">
-                        <ImageWithFallback
-                          src={activeT.img}
-                          alt={activeT.title}
-                          className="w-full h-full object-cover mix-blend-multiply opacity-90"
-                        />
-                      </div>
-
-                      <div className="mb-6">
-                        <p className="font-['Montserrat',sans-serif] text-[16px] text-[#b8a99a] tracking-[0px] uppercase mb-2">
-                          {activeT.subtitle}
-                        </p>
-                        <h3 className="text-[28px] text-[#1c1614] font-['Pretendard',sans-serif] font-bold tracking-[-1px]">
-                          {activeT.title}
-                        </h3>
-                      </div>
-
-                      <p className="text-[16px] text-[#4a3f3a] leading-[1.9] mb-8 break-keep">
-                        {activeT.desc}
-                      </p>
-
-                      <div className="space-y-3 mb-8">
-                        {activeT.points.map((point, i) => (
-                          <div key={i} className="flex items-start gap-3">
-                            <div className="w-[4px] h-[4px] bg-[#b8a99a] shrink-0 mt-[10px]" />
-                            <p className="text-[16px] text-[#1c1614] font-medium leading-[1.6]">
-                              {point}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-
-                      <div className="grid grid-cols-2 border-t border-[#1c1614]">
-                        {[
-                          { icon: Clock, label: "시술시간", value: activeT.duration },
-                          { icon: Shield, label: "마취 여부", value: activeT.anesthesia },
-                          { icon: Activity, label: "회복 기간", value: activeT.recovery },
-                          { icon: CalendarDays, label: "추천/유지", value: activeT.maintenance },
-                        ].map((info, i) => (
-                          <div key={i} className={`flex flex-col gap-2 py-[16px] pr-[12px] border-b border-[#e8e5e0] ${i % 2 === 0 ? 'border-r border-r-[#e8e5e0]' : 'pl-[12px]'}`}>
-                            <div className="font-['Montserrat',sans-serif] text-[#b8a99a] text-[12px] tracking-[2px] flex items-center gap-2 uppercase">
-                              {info.icon && <info.icon className="w-[14px] h-[14px] stroke-[1.5]" />}
-                              {info.label}
-                            </div>
-                            <div className="text-[15px] text-[#1c1614] font-medium break-keep">
-                              {info.value}
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  </motion.div>
-                </AnimatePresence>
-              </div>
-            </div>
-          </div>
+            return (
+              <FadeIn key={t.id}>
+                <div id={`sec-${t.id}`} className="flex flex-col md:flex-row items-center gap-[40px] md:gap-[80px] px-6 md:px-[326px] py-[60px] md:py-[100px]">
+                  {isImageLeft ? <>{imageBlock}{contentBlock}</> : <>{contentBlock}{imageBlock}</>}
+                </div>
+              </FadeIn>
+            );
+          })}
         </section>
 
         {/* ===== Minimalist Process Section ===== */}

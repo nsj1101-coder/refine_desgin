@@ -1,6 +1,10 @@
 import TreatmentTemplate from "../components/TreatmentTemplate";
 import { MessageCircle, ScanLine, Sparkles, HeartPulse } from "lucide-react";
 import subHeroImg from "figma:asset/1abc62602d7139f0f3c40ce65b44e34743d1ec1f.png";
+import liftingImg1 from "../../assets/lifting1.png";
+import liftingImg2 from "../../assets/lifting2.png";
+import liftingImg3 from "../../assets/lifting3.png";
+import liftingImg4 from "../../assets/lifting4.png";
 
 export default function LiftingPage() {
   const treatments = [
@@ -8,10 +12,18 @@ export default function LiftingPage() {
       id: "density",
       num: "01",
       title: "덴서티",
+      titleEn: "DENSITY",
       subtitle: "High-Intensity Focused Ultrasound",
-      img: "https://images.unsplash.com/photo-1663229049147-30f47be043ea?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      desc: "피부에 촘촘한 볼륨을 채워주어 탄력을 높여주는 시술이에요. 고주파(RF) 에너지를 이용하여 진피층의 콜라겐 생성을 유도하고, 무너진 페이스 라인을 매끄럽게 정리해 드립니다.",
-      points: ["진피층 콜라겐 생성 촉진", "무너진 페이스 라인 복원", "비침습적 시술로 부담 없이"],
+      img: liftingImg1,
+      headline: "\"피부 속 빈틈을 콜라겐으로 채워 완성하는 촘촘한 탄력, 덴서티(DENSITY) 리프팅\"",
+      desc: "단순히 겉피부만 당기는 것이 아닙니다. 6.78MHz의 강력한 고주파(RF) 에너지를 이용해 노화로 인해 얇아진 진피층에 새로운 콜라겐 생성을 유도하고, 무너진 페이스 라인을 매끄럽고 단단하게 재건하는 프리미엄 탄력 리프팅입니다.",
+      points: [],
+      headline2: "\"피부 속을 고주파 열로 채워 콜라겐 밀도 증가\"",
+      details: [
+        "강력한 고주파 에너지를 진피층 깊숙이 전달합니다.",
+        "열 자극을 통해 느슨해진 콜라겐을 수축시키고, 새로운 콜라겐 생성을 유도해 피부 속을 촘촘하게 채웁니다.",
+      ],
+      tags: ["Skin Tightening", "Contouring", "Texture Improvement"],
       duration: "30분 ~ 40분",
       anesthesia: "크림 마취",
       recovery: "즉시 일상생활 가능",
@@ -21,10 +33,18 @@ export default function LiftingPage() {
       id: "onda",
       num: "02",
       title: "온다",
+      titleEn: "ONDA",
       subtitle: "Microwave RF Technology",
-      img: "https://images.unsplash.com/photo-1631596577204-53ad0d6e6978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      desc: "특수 극초음파(Microwave)를 이용해 피부 진피층부터 피하지방층까지 에너지를 전달해요. 불필요한 지방은 줄이고, 콜라겐 생성을 강력하게 촉진하는 혁신적인 시술입니다.",
-      points: ["이중턱·심부볼 집중 케어", "극초음파로 지방세포 감소", "통증이 거의 없는 편안한 시술"],
+      img: liftingImg2,
+      headline: "\"통증은 줄이고, 탄력과 윤곽은 동시에 잡는 극초음파, 온다(ONDA) 리프팅\"",
+      desc: "불필요한 볼륨은 줄이고 피부의 밀도는 높입니다. 특허받은 마이크로웨이브(극초음파) 에너지를 이용하여 표피의 손상과 통증을 최소화하면서, 지방층을 감소시키고 진피층의 콜라겐을 리모델링하는 프리미엄 윤곽 타이트닝 시술입니다.",
+      points: [],
+      headline2: "\"표면 손상 없이 지방층과 진피층만 정밀 타겟팅\"",
+      details: [
+        "특허받은 극초음파 에너지가 피부 겉은 안전하게 통과하고 속(지방층, 진피층)에만 열을 전달합니다.",
+        "불필요한 지방 세포는 분해하고 콜라겐 섬유는 강하게 수축시켜, 통증 없이 윤곽을 매끄럽게 다듬습니다.",
+      ],
+      tags: ["Slimming", "Contouring", "Immediate Tightening"],
       duration: "20분 ~ 30분",
       anesthesia: "불필요 (통증 거의 없음)",
       recovery: "즉시 일상생활 가능",
@@ -34,10 +54,18 @@ export default function LiftingPage() {
       id: "shurink",
       num: "03",
       title: "슈링크",
+      titleEn: "SHURINK",
       subtitle: "Focused Ultrasound",
-      img: "https://images.unsplash.com/photo-1547626279-671ad06bbb45?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      desc: "고강도 집속 초음파(HIFU) 에너지를 비침습적으로 근막(SMAS)에 전달하여, 늘어진 피부를 속부터 당겨 올려주는 강력한 초음파 리프팅 시술이에요.",
-      points: ["SMAS 근막층까지 깊은 리프팅", "턱선·눈가 탄력 개선", "짧은 시술 시간, 빠른 일상 복귀"],
+      img: liftingImg3,
+      headline: "\"피부 깊은 곳부터 끌어올려 완성하는 입체적인 V라인, 슈링크(SHURINK) 리프팅\"",
+      desc: "늘어지고 처진 얼굴선의 근본적인 원인을 해결합니다. 고강도 집속 초음파(HIFU) 에너지를 피부 속 가장 깊은 근막층(SMAS)까지 전달하여, 수술 없이도 피부 조직을 탄탄하게 수축시키고 중력을 거스르는 강력한 리프팅 효과를 선사합니다.",
+      points: [],
+      headline2: "\"돋보기 원리로 초음파를 모아 가장 깊은 곳부터 리프팅\"",
+      details: [
+        "돋보기로 빛을 모으듯, 강력한 초음파 에너지를 피부 가장 깊은 근막층(SMAS)에 집중시킵니다.",
+        "타겟팅된 부위에 미세한 열응고점을 만들어, 늘어진 피부 조직을 즉각적으로 수축시키고 위로 당겨 올립니다.",
+      ],
+      tags: ["V-Line Lifting", "Core Firming", "Customized Tightening"],
       duration: "15분 ~ 20분",
       anesthesia: "크림 마취",
       recovery: "즉시 일상생활 가능",
@@ -47,10 +75,18 @@ export default function LiftingPage() {
       id: "potenza",
       num: "04",
       title: "포텐자",
+      titleEn: "POTENZA",
       subtitle: "Microneedling RF",
-      img: "https://images.unsplash.com/photo-1588776814546-daab30f310ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      desc: "미세 바늘(마이크로 니들)을 통해 고주파 에너지를 진피층에 직접 전달해요. 콜라겐 생성을 유도하고 피부결, 모공, 잔주름을 복합적으로 개선하는 시술입니다.",
-      points: ["모공·흉터 동시 개선", "피부결과 톤 개선 효과", "복합적 피부 고민 한 번에 해결"],
+      img: liftingImg4,
+      headline: "\"피부 겉과 속을 동시에 재생하는 촘촘한 맞춤형 코어 부스터, 포텐자(POTENZA)\"",
+      desc: "개개인의 피부 고민에 맞춘 정교한 솔루션입니다. 마이크로 니들(미세침)을 통해 진피층에 고주파(RF) 에너지를 직접 전달하여, 넓어진 모공과 흉터를 개선하고 콜라겐 생성을 유도해 피부 근본의 건강함과 탄력을 되찾아 줍니다.",
+      points: [],
+      headline2: "\"미세침과 고주파 열에너지의 듀얼 재생 시스템\"",
+      details: [
+        "머리카락보다 얇은 미세침이 피부에 침투해 물리적인 재생 반응을 유도합니다.",
+        "동시에 침투된 바늘 끝에서 고주파 에너지를 방출하여, 넓어진 모공을 조이고 전반적인 피부 결을 개선합니다.",
+      ],
+      tags: ["Pore & Scar Refining", "Tone & Texture Improvement", "Booster Synergy"],
       duration: "30분 ~ 40분",
       anesthesia: "크림 마취",
       recovery: "1~2일",
