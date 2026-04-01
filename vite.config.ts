@@ -3,6 +3,18 @@ import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 
+function figmaAssetPlugin() {
+  return {
+    name: 'figma-asset-plugin',
+    enforce: 'pre' as const,
+    resolveId(source: string) {
+      if (source.startsWith('figma:asset/')) {
+        return path.resolve(__dirname, 'src/assets', source.replace('figma:asset/', ''))
+      }
+    },
+  }
+}
+
 function fixTextPlugin() {
   return {
     name: 'fix-text-plugin',
@@ -19,6 +31,7 @@ function fixTextPlugin() {
 
 export default defineConfig({
   plugins: [
+    figmaAssetPlugin(),
     react(),
     tailwindcss(),
     fixTextPlugin(),

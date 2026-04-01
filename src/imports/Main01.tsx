@@ -18,6 +18,12 @@ import promoImage from "figma:asset/f07f2b3a3574a95089d05cecb129630dabfa8daa.png
 import eqJeisys from "figma:asset/8b6eabe5666d5fc5ddb4d0cb01d900f2468e8860.png";
 import eqClarity from "figma:asset/6b968a4d1a864e3b1cccf348c4676f2196ab7ee3.png";
 import eqOnda from "figma:asset/59854c8bbd918270a595c3d38bb9a90878a44d4b.png";
+import imgDoctor from "../assets/img01.png";
+import imgLifting1 from "../assets/img02.png";
+import imgLifting2 from "../assets/img03.png";
+import imgLifting3 from "../assets/img04.png";
+import imgLifting4 from "../assets/img05.png";
+import imgRefineLogo from "../assets/refine_logo.png";
 import eqHollywood from "figma:asset/de1782d0fafd7b5fac075eb4dee129fcbbe9b4ad.png";
 import { imgGroup } from "./svg-k5xuk";
 import imgHeroModel from "figma:asset/0a9e7116625cbca8e49f45810f894aeb8e59ca41.png";
@@ -1273,18 +1279,56 @@ function Group14() {
 
 function Frame43() {
   const isMobile = useIsMobile();
+  const liftingCards = [
+    { img: imgLifting1, title: "Epidermis\n& Dermis", subtitle: "피부결과 탄력 개선", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["겉으로 보이는 잔주름을 매끄럽게 정돈합니다.", "피부 속 콜라겐 생성을 유도하여 얇아진 피부 본연의 힘과 윤기를 되찾아줍니다."] },
+    { img: imgLifting2, title: "Fat", subtitle: "얼굴의 무게감을 덜어내고 라인을 탄탄하게", desc: "지방을 비워내, 슬림하고 매끄러운 윤곽선", bullets: ["탄력을 저하시키는 불필요하고 무거운 처진 지방을 정돈합니다.", "둔탁해진 턱선과 심부볼의 부피를 줄여 슬림하고 매끄러운 윤곽 라인을 만듭니다."] },
+    { img: imgLifting3, title: "Fascia", subtitle: "피부의 탄력을 끌어올리는", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["피부를 지지하는 뼈대 역할을 하는 근막층을 강력하게 타겟팅합니다.", "피부 깊은 곳에서부터 처진 조직을 단단하게 위로 견인하여 근본적인 리프팅을 실현합니다."] },
+    { img: imgLifting4, title: "Muscle", subtitle: "자연스러운 리프팅 효과가 지속되도록", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["개개인의 표정 근육 움직임과 방향까지 고려하여 디자인합니다.", "시술 후에도 표정이 어색하지 않으며, 끌어올린 탄력이 더 오랜 기간 단단하게 유지되도록 고정력을 강화합니다."] },
+  ];
   if (isMobile) {
     return (
-      <div className="relative flex flex-col gap-[20px] items-center w-full px-5 py-8 bg-[#faf6f1]">
-        <Frame12 />
-        <Group14 />
+      <div className="relative w-full bg-[#FBF6F1] flex flex-col items-center gap-6 px-5 py-10">
+        <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-semibold tracking-[3px] text-center">[ ALL-DEPTH LIFTING ]</span>
+        <h2 className="font-['Pretendard'] text-[#222] text-[24px] font-bold text-center">올 뎁스 리프팅</h2>
+        <p className="font-['Pretendard'] text-[#666] text-sm text-center">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
+        <div className="flex flex-col gap-8 w-full">
+          {liftingCards.map((c) => (
+            <div key={c.title} className="flex flex-col gap-3">
+              <div className="w-full h-[240px] rounded-lg overflow-hidden"><img src={c.img} alt={c.title} className="w-full h-full object-cover" /></div>
+              <h3 className="font-['Montserrat'] text-black text-[28px] font-medium leading-[1.25] whitespace-pre-line">{c.title}</h3>
+              <span className="font-['Pretendard'] text-[#b8a99a] text-base font-medium">{c.subtitle}</span>
+              <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm leading-[1.7]">{c.desc}</p>
+            </div>
+          ))}
+        </div>
       </div>
     );
   }
   return (
-    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute content-stretch flex flex-col gap-[80px] items-center left-1/2 -translate-x-1/2 top-[2327px] w-[1640px] max-w-[90vw]">
-      <Frame12 />
-      <Group14 />
+    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[2660px]">
+      <div className="w-full bg-[#FBF6F1] flex flex-col items-center gap-12 px-[50px] pt-[100px] pb-[80px]">
+        <div className="flex flex-col items-center gap-[30px]">
+          <span className="font-['Montserrat'] text-[#b8a99a] text-base font-semibold tracking-[4px] text-center">[ ALL-DEPTH LIFTING ]</span>
+          <h2 className="font-['Pretendard'] text-[#222] text-[46px] font-bold leading-[1] text-center">올 뎁스 리프팅</h2>
+          <p className="font-['Pretendard'] text-[#666] text-base leading-[1] text-center">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
+        </div>
+        <div className="flex gap-5 w-full max-w-[1820px]">
+          {liftingCards.map((c) => (
+            <div key={c.title} className="flex-1 flex flex-col gap-5">
+              <div className="w-full h-[460px] rounded-lg overflow-hidden"><img src={c.img} alt={c.title} className="w-full h-full object-cover" /></div>
+              <div className="flex items-center justify-center w-[145px] h-[39px] rounded bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)]">
+                <span className="font-['Pretendard'] text-white text-base font-medium">프리미엄 리프팅</span>
+              </div>
+              <h3 className="font-['Montserrat'] text-black text-[52px] font-medium leading-[1.25] whitespace-pre-line">{c.title}</h3>
+              <span className="font-['Pretendard'] text-[#b8a99a] text-[22px] font-medium leading-[1.5]">{c.subtitle}</span>
+              <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-lg leading-[1.8]">{c.desc}</p>
+              <div className="flex flex-col font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-lg font-light leading-[1.67]">
+                {c.bullets.map((b, i) => (<div key={i} className="flex gap-2.5"><span className="w-[30px] shrink-0 text-center">•</span><span>{b}</span></div>))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </motion.div>
   );
 }
@@ -1344,7 +1388,7 @@ function Frame16() {
     );
   }
   return (
-    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute content-stretch flex items-center left-0 top-[4336px]">
+    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute content-stretch flex items-center left-0 top-[4950px]">
       <Image />
       <Info />
     </motion.div>
@@ -1673,7 +1717,7 @@ export function Frame3() {
     );
   }
   return (
-    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="absolute bg-[#201814] top-[6276px] content-stretch flex flex-col items-start px-[140px] xl:px-[200px] py-[100px] w-[1920px]" data-name="Frame3">
+    <motion.div initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ duration: 0.5 }} className="absolute bg-[#201814] top-[6990px] content-stretch flex flex-col items-start px-[140px] xl:px-[200px] py-[100px] w-[1920px]" data-name="Frame3">
       <FooterTop />
       <FooterBottom />
     </motion.div>
@@ -1793,7 +1837,7 @@ export function DirectionsSection() {
     );
   }
   return (
-    <div className="absolute content-stretch flex items-center left-0 top-[5306px] w-[1920px] h-[970px]">
+    <div className="absolute content-stretch flex items-center left-0 top-[5970px] w-[1920px] h-[970px]">
       <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="w-[960px] h-full flex flex-col justify-center pl-[140px] relative shrink-0">
         <Frame30 />
       </motion.div>
@@ -2440,7 +2484,7 @@ function Frame39() {
     );
   }
   return (
-    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute content-stretch flex flex-col gap-[80px] items-center left-1/2 -translate-x-1/2 top-[3337px] w-[1640px] max-w-[90vw]">
+    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute content-stretch flex flex-col gap-[80px] items-center left-1/2 -translate-x-1/2 top-[3970px] w-[1640px] max-w-[90vw]">
       <Frame15 />
       <EquipmentCarousel />
     </motion.div>
@@ -2466,18 +2510,30 @@ function Frame40() {
   const isMobile = useIsMobile();
   if (isMobile) {
     return (
-      <div className="relative flex flex-col gap-[14px] items-center w-full px-5 py-8 bg-[#faf6f1]">
-        <p className="font-['Montserrat'] font-semibold leading-none relative shrink-0 text-[#b8a99a] text-[16px] text-center tracking-[3px] whitespace-nowrap uppercase">[ REFINE PHILOSOPHY ]</p>
-        <Text5 />
-        <App />
+      <div className="relative w-full flex flex-col items-center justify-center px-5 py-10" style={{background:"rgba(32,24,20,0.78)"}}>
+        <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-semibold tracking-[4px] text-center mb-4">[ REFINE PHILOSOPHY ]</span>
+        <h2 className="text-white text-[24px] font-bold leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
+        <div className="flex items-center justify-center flex-wrap">
+          <span className="text-white text-[24px] font-bold leading-[1.5] font-['Pretendard']">본연의 아름다움을 </span>
+          <span className="text-[#F2E7DA] text-[24px] font-bold leading-[1.5] font-['Montserrat']">Refine</span>
+          <span className="text-white text-[24px] font-bold leading-[1.5] font-['Pretendard']"> 하다.</span>
+        </div>
       </div>
     );
   }
   return (
-    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute content-stretch flex flex-col gap-[40px] items-center w-full left-1/2 -translate-x-1/2 top-[1211px]">
-      <p className="font-['Montserrat'] font-semibold leading-none relative shrink-0 text-[#b8a99a] text-[16px] text-center tracking-[4px] whitespace-nowrap uppercase">[ REFINE PHILOSOPHY ]</p>
-      <Text5 />
-      <App />
+    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[1211px]">
+      <div className="w-full flex flex-col items-center justify-center px-[120px] py-[80px]" style={{minHeight:490,background:"rgba(32,24,20,0.78)"}}>
+        <span className="font-['Montserrat'] text-[#b8a99a] text-base font-semibold tracking-[4px] text-center mb-[30px]">[ REFINE PHILOSOPHY ]</span>
+        <div className="flex flex-col items-center w-full max-w-[864px]">
+          <h2 className="text-white text-[60px] font-bold leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
+          <div className="flex items-center justify-center w-full flex-wrap">
+            <span className="text-white text-[60px] font-bold leading-[1.5] font-['Pretendard']">본연의 아름다움을 </span>
+            <span className="text-[#F2E7DA] text-[60px] font-bold leading-[1.5] font-['Montserrat']">Refine</span>
+            <span className="text-white text-[60px] font-bold leading-[1.5] font-['Pretendard']"> 하다.</span>
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 }
@@ -2639,16 +2695,58 @@ function Frame44() {
   const isMobile = useIsMobile();
   if (isMobile) {
     return (
-      <div className="relative flex flex-col gap-[24px] items-center w-full px-5 py-8 bg-[#faf6f1]">
-        <Group13 />
-        <Frame42 />
+      <div className="relative w-full bg-[#FBF6F1] flex flex-col gap-6 px-5 py-8">
+        <div className="w-full h-[400px] rounded overflow-hidden bg-[#E8E4DE]">
+          <img src={imgDoctor} alt="박상선 원장" className="w-full h-full object-cover" />
+        </div>
+        <div className="flex flex-col gap-2">
+          <span className="font-['Montserrat'] text-[#666] text-sm">Chief Director</span>
+          <span className="font-['Pretendard'] text-[#1C1D1C] text-[36px] font-semibold">박상선</span>
+          <p className="text-[#555] text-sm leading-[1.6] opacity-50 font-['Pretendard']">개인의 피부가 가진 본래의 구조와 결을 깊이 이해하고, 이를 온전히 보존하면서 최적의 아름다움을 이끌어내는 것을 가장 중요한 목표로 삼습니다.</p>
+        </div>
       </div>
     );
   }
   return (
-    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute content-stretch flex gap-[80px] items-center left-1/2 -translate-x-1/2 top-[1566px]">
-      <Group13 />
-      <Frame42 />
+    <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[1710px] overflow-visible">
+      <div className="w-full bg-[#FBF6F1] flex gap-[50px] px-[120px] py-[60px] overflow-visible" style={{minHeight:1000}}>
+        <div className="relative w-[774px] shrink-0 overflow-visible">
+          <img src={imgDoctor} alt="박상선 원장" className="w-full h-auto object-cover rounded relative" style={{top:"-120px", zIndex:10}} />
+        </div>
+        <div className="flex flex-col w-[543px]">
+          <div className="flex items-start justify-between w-full">
+            <div className="flex flex-col gap-2 w-[223px]">
+              <span className="font-['Montserrat'] text-[#666] text-base tracking-[0.4px] leading-[0.94]">Chief Director</span>
+              <span className="font-['Pretendard'] text-[#1C1D1C] text-[56px] font-semibold leading-[0.86] tracking-[-0.85px]">박상선</span>
+            </div>
+            <div className="w-[106px] h-[108px] opacity-50 overflow-hidden">
+              <img src={imgRefineLogo} alt="Refine Logo" className="w-full h-full object-contain" />
+            </div>
+          </div>
+          <div className="mt-3 py-4 border-b border-[#1C1D1C1A]">
+            <p className="text-[#555] text-sm leading-[1.6] tracking-[0.32px] opacity-50 font-['Pretendard']">개인의 피부가 가진 본래의 구조와 결을 깊이 이해하고,<br/>이를 온전히 보존하면서 최적의 아름다움을 이끌어내는 것을<br/>가장 중요한 목표로 삼습니다.</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p className="font-semibold">(현) Refine 원장</p>
+            <p>(전) 올림피움채움의원 강남점 원장</p><p>(전) 다시봄날의원 성신여대점 원장</p><p>(전) 밴스의원 대전둔산점 원장</p><p>(전) 톡스앤필 광주점 원장</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>연세대학교</p><p>충남의학전문대학원</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>국제미용항노화학회 학술이사</p><p>미용성형레이저학회 학술이사</p><p>쁘띠성형에스테틱포럼 부회장</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>비만연구의사회 정회원</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>대한비만미용학회 정회원</p><p>대한미용성형레이저 정회원</p><p>대한필러학회 정회원</p>
+          </div>
+          <div className="py-3 text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>로얄필러 자문의</p><p>매직실 자문의</p><p>울트라브이실 자문의</p>
+          </div>
+        </div>
+      </div>
     </motion.div>
   );
 }

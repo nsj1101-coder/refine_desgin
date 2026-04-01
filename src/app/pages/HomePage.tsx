@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 
 export default function HomePage() {
   const [scale, setScale] = useState(() => typeof window !== 'undefined' ? window.innerWidth / 1920 : 1);
-  const [docHeight, setDocHeight] = useState(6690);
+  const [docHeight, setDocHeight] = useState(7510);
   const isMobile = useIsMobile();
 
   useEffect(() => {
@@ -21,10 +21,13 @@ export default function HomePage() {
       if (window.innerWidth <= 768) return;
       const footer = document.querySelector('[data-name="Frame3"]') as HTMLElement;
       if (footer) {
-        const top = 6276;
-        const height = footer.offsetHeight;
-        if (height > 0) {
-          setDocHeight(top + height);
+        const s = window.innerWidth / 1920;
+        // footer의 visual bottom을 scale 역산해서 원본 높이로 변환
+        const rect = footer.getBoundingClientRect();
+        const visualBottom = rect.bottom + window.scrollY;
+        const unscaledHeight = Math.ceil(visualBottom / s);
+        if (unscaledHeight > 0) {
+          setDocHeight(unscaledHeight);
         }
       }
     };
