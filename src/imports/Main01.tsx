@@ -2534,7 +2534,7 @@ function Frame40() {
   }
   return (
     <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[1211px]">
-      <div className="w-full flex flex-col items-center justify-center px-[120px] py-[80px]" style={{minHeight:490,background:"rgba(32,24,20,0.78)"}}>
+      <div className="w-full flex flex-col items-center justify-center px-[120px] pt-[40px] pb-[80px]" style={{minHeight:490,background:"rgba(32,24,20,0.78)"}}>
         <span className="font-['Montserrat'] text-[#b8a99a] text-base font-semibold tracking-[4px] text-center mb-[16px]">[ REFINE PHILOSOPHY ]</span>
         <div className="flex flex-col items-center w-full max-w-[864px]">
           <h2 className="text-white text-[60px] font-bold leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
@@ -2749,8 +2749,10 @@ function Frame44() {
   return (
     <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[1710px] overflow-visible">
       <div className="w-full bg-[#FBF6F1] flex gap-[50px] px-[120px] py-[60px] overflow-visible" style={{minHeight:1000}}>
-        <div className="relative w-[774px] shrink-0 overflow-hidden group">
-          <img src={imgDoctor} alt="박상선 원장" className="w-full h-auto object-cover relative transition-transform duration-1000 ease-out group-hover:scale-105" style={{top:"-120px", zIndex:10}} />
+        <div className="relative w-[774px] shrink-0 overflow-visible">
+          <div className="overflow-hidden group" style={{position:"relative", top:"-120px", zIndex:10}}>
+            <img src={imgDoctor} alt="박상선 원장" className="w-full h-auto object-cover transition-transform duration-1000 ease-out group-hover:scale-105" />
+          </div>
         </div>
         <div className="flex flex-col w-[543px]">
           <div className="flex items-center justify-between w-full">
