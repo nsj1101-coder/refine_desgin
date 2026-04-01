@@ -1029,7 +1029,7 @@ function Map() {
 
 function Frame4() {
   return (
-    <div className="content-stretch flex flex-col gap-[26px] max-md:gap-[12px] items-center justify-center relative shrink-0 whitespace-nowrap">
+    <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap">
       <p className="font-['Montserrat',sans-serif] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase">[ ALL-DEPTH LIFTING ]</p>
       <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#222] text-[46px] max-md:text-[24px]">올 뎁스 리프팅</p>
     </div>
@@ -1397,7 +1397,7 @@ function Frame16() {
 
 function Frame18() {
   return (
-    <div className="content-stretch flex flex-col gap-[26px] max-md:gap-[10px] items-start justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
+    <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-start justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
       <p className="font-['Montserrat',sans-serif] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[2px] max-md:tracking-[1.5px] uppercase">{`[ DIRECTIONS & A MEDICAL GUIDE ]`}</p>
       <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#222] text-[40px] max-md:text-[22px]">{`오시는 길 & 진료안내`}</p>
     </div>
@@ -2084,7 +2084,7 @@ export function QuickReservation() {
 function Frame15() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[12px] items-center leading-none relative shrink-0">
-      <div className="content-stretch flex flex-col gap-[26px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
+      <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
         <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase">[ EQUIPMENT ]</p>
         <p className="font-['Pretendard'] font-bold not-italic relative shrink-0 text-[#222] text-[46px] max-md:text-[24px]">장비소개</p>
       </div>
@@ -2511,7 +2511,7 @@ function Frame40() {
   if (isMobile) {
     return (
       <div className="relative w-full flex flex-col items-center justify-center px-5 py-10" style={{background:"rgba(32,24,20,0.78)"}}>
-        <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-semibold tracking-[4px] text-center mb-4">[ REFINE PHILOSOPHY ]</span>
+        <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-semibold tracking-[4px] text-center mb-[10px]">[ REFINE PHILOSOPHY ]</span>
         <h2 className="text-white text-[24px] font-bold leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
         <div className="flex items-center justify-center flex-wrap">
           <span className="text-white text-[24px] font-bold leading-[1.5] font-['Pretendard']">본연의 아름다움을 </span>
@@ -2524,7 +2524,7 @@ function Frame40() {
   return (
     <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[1211px]">
       <div className="w-full flex flex-col items-center justify-center px-[120px] py-[80px]" style={{minHeight:490,background:"rgba(32,24,20,0.78)"}}>
-        <span className="font-['Montserrat'] text-[#b8a99a] text-base font-semibold tracking-[4px] text-center mb-[30px]">[ REFINE PHILOSOPHY ]</span>
+        <span className="font-['Montserrat'] text-[#b8a99a] text-base font-semibold tracking-[4px] text-center mb-[16px]">[ REFINE PHILOSOPHY ]</span>
         <div className="flex flex-col items-center w-full max-w-[864px]">
           <h2 className="text-white text-[60px] font-bold leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
           <div className="flex items-center justify-center w-full flex-wrap">
