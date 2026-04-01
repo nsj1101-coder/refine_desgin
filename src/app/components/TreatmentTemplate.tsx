@@ -24,15 +24,15 @@ export interface TreatmentInfo {
   id: string;
   num: string;
   title: string;
-  titleEn: string;
+  titleEn?: string;
   subtitle: string;
   img: string;
-  headline: string;
+  headline?: string;
   desc: string;
   points: string[];
-  headline2: string;
-  details: string[];
-  tags: string[];
+  headline2?: string;
+  details?: string[];
+  tags?: string[];
   duration: string;
   anesthesia: string;
   recovery: string;
@@ -238,18 +238,22 @@ export default function TreatmentTemplate({
                   ))}
                 </div>
 
-                <p className="text-[#4A3F3A] text-lg md:text-xl leading-[1.3] mt-[32px]">{t.headline2}</p>
+                {t.headline2 && <p className="text-[#4A3F3A] text-lg md:text-xl leading-[1.3] mt-[32px]">{t.headline2}</p>}
+                {t.details && t.details.length > 0 && (
                 <div className="flex flex-col gap-5 max-w-[689px] mt-[10px]">
-                  {t.details.map((d, i) => (
+                  {t.details.map((d: string, i: number) => (
                     <p key={i} className="text-[#6E6560] text-lg font-light leading-[1.6]">{d}</p>
                   ))}
                 </div>
+                )}
 
+                {t.tags && t.tags.length > 0 && (
                 <div className="flex flex-wrap gap-3 mt-[32px]">
-                  {t.tags.map((tag) => (
+                  {t.tags.map((tag: string) => (
                     <span key={tag} className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-medium border border-[#B8A99A] rounded px-3.5 py-2">{tag}</span>
                   ))}
                 </div>
+                )}
               </div>
             );
 
