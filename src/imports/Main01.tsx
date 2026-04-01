@@ -603,7 +603,7 @@ function Frame35({ isScrolled, isMenuOpen, setIsMenuOpen }: { isScrolled?: boole
             animate={{
               rotate: isMenuOpen ? 45 : 0,
               y: isMenuOpen ? 8 : 0,
-              backgroundColor: (isScrolled && !isMenuOpen && !isMobile) ? "#1c1614" : "#ffffff",
+              backgroundColor: (isScrolled && !isMenuOpen) ? "#1c1614" : "#ffffff",
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="block w-[24px] h-[2px] rounded-full absolute top-[7px]"
@@ -613,7 +613,7 @@ function Frame35({ isScrolled, isMenuOpen, setIsMenuOpen }: { isScrolled?: boole
             animate={{
               opacity: isMenuOpen ? 0 : 1,
               scaleX: isMenuOpen ? 0 : 1,
-              backgroundColor: (isScrolled && !isMenuOpen && !isMobile) ? "#1c1614" : "#ffffff",
+              backgroundColor: (isScrolled && !isMenuOpen) ? "#1c1614" : "#ffffff",
             }}
             transition={{ duration: 0.2, ease: "easeInOut" }}
             className="block w-[24px] h-[2px] rounded-full absolute top-[15px]"
@@ -623,7 +623,7 @@ function Frame35({ isScrolled, isMenuOpen, setIsMenuOpen }: { isScrolled?: boole
             animate={{
               rotate: isMenuOpen ? -45 : 0,
               y: isMenuOpen ? -8 : 0,
-              backgroundColor: (isScrolled && !isMenuOpen && !isMobile) ? "#1c1614" : "#ffffff",
+              backgroundColor: (isScrolled && !isMenuOpen) ? "#1c1614" : "#ffffff",
             }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
             className="block w-[24px] h-[2px] rounded-full absolute top-[23px]"
@@ -669,9 +669,7 @@ export function Frame36() {
         animate={{ 
           y: 0, 
           opacity: 1,
-          backgroundColor: isMobile 
-            ? "rgba(250, 246, 241, 0.98)" 
-            : (isMenuOpen ? "rgba(250, 246, 241, 0)" : (isScrolled ? "rgba(255, 255, 255, 0.1)" : "rgba(250, 246, 241, 0)")),
+          backgroundColor: isMenuOpen ? "rgba(250, 246, 241, 0)" : (isScrolled ? "rgba(255, 255, 255, 0.1)" : "rgba(250, 246, 241, 0)"),
           alignItems: isMobile ? "center" : (isScrolled ? "center" : "flex-end"),
           paddingTop: isMobile ? 12 : (isScrolled ? 20 : 30),
           paddingBottom: isMobile ? 12 : (isScrolled ? 20 : 30),
@@ -688,8 +686,8 @@ export function Frame36() {
           paddingBottom: { duration: 0.3 }
         }} 
         style={{
-          backdropFilter: (!isMobile && isScrolled && !isMenuOpen) ? "blur(20px)" : "blur(0px)",
-          WebkitBackdropFilter: (!isMobile && isScrolled && !isMenuOpen) ? "blur(20px)" : "blur(0px)",
+          backdropFilter: (isScrolled && !isMenuOpen) ? "blur(20px)" : "blur(0px)",
+          WebkitBackdropFilter: (isScrolled && !isMenuOpen) ? "blur(20px)" : "blur(0px)",
         }}
         className="absolute flex justify-between top-0 z-[1000] items-end"
       >
@@ -1038,7 +1036,7 @@ function Frame4() {
 
 function Frame12() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[12px] items-center leading-none relative shrink-0 w-[420px] max-md:w-full max-md:text-center">
+    <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[16px] items-center leading-none relative shrink-0 w-[420px] max-md:w-full max-md:text-center">
       <Frame4 />
       <p className="font-['Pretendard',sans-serif] font-normal min-w-full not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] w-[min-content] max-md:whitespace-normal max-md:leading-[1.5]">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
     </div>
@@ -1287,17 +1285,22 @@ function Frame43() {
   ];
   if (isMobile) {
     return (
-      <div className="relative w-full bg-[#FBF6F1] flex flex-col items-center gap-6 px-5 py-10">
-        <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-semibold tracking-[3px] text-center">[ ALL-DEPTH LIFTING ]</span>
-        <h2 className="font-['Pretendard'] text-[#222] text-[24px] font-bold text-center">올 뎁스 리프팅</h2>
+      <div className="relative w-full bg-[#FBF6F1] flex flex-col items-center gap-[16px] px-5 py-10">
+        <div className="flex flex-col items-center gap-[10px] leading-none">
+          <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-semibold tracking-[3px] text-center leading-none">[ ALL-DEPTH LIFTING ]</span>
+          <h2 className="font-['Pretendard'] text-[#222] text-[24px] font-bold text-center leading-none">올 뎁스 리프팅</h2>
+        </div>
         <p className="font-['Pretendard'] text-[#666] text-sm text-center">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
         <div className="flex flex-col gap-8 w-full">
           {liftingCards.map((c) => (
             <div key={c.title} className="flex flex-col gap-3">
               <div className="w-full h-[240px] rounded-lg overflow-hidden"><img src={c.img} alt={c.title} className="w-full h-full object-cover" /></div>
-              <h3 className="font-['Montserrat'] text-black text-[28px] font-medium leading-[1.25] whitespace-pre-line">{c.title}</h3>
+              <h3 className="font-['Montserrat'] text-black text-[28px] font-medium leading-[1.25] whitespace-nowrap">{c.title.replace('\n', ' ')}</h3>
               <span className="font-['Pretendard'] text-[#b8a99a] text-base font-medium">{c.subtitle}</span>
               <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm leading-[1.7]">{c.desc}</p>
+              <div className="flex flex-col font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm font-light leading-[1.67]">
+                {c.bullets.map((b, i) => (<div key={i} className="flex gap-2"><span className="w-[20px] shrink-0 text-center">•</span><span>{b}</span></div>))}
+              </div>
             </div>
           ))}
         </div>
@@ -1307,10 +1310,12 @@ function Frame43() {
   return (
     <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[2660px]">
       <div className="w-full bg-[#FBF6F1] flex flex-col items-center gap-12 px-[50px] pt-[100px] pb-[80px]">
-        <div className="flex flex-col items-center gap-[30px]">
-          <span className="font-['Montserrat'] text-[#b8a99a] text-base font-semibold tracking-[4px] text-center">[ ALL-DEPTH LIFTING ]</span>
-          <h2 className="font-['Pretendard'] text-[#222] text-[46px] font-bold leading-[1] text-center">올 뎁스 리프팅</h2>
-          <p className="font-['Pretendard'] text-[#666] text-base leading-[1] text-center">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
+        <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[16px] items-center leading-none relative shrink-0">
+          <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap max-md:whitespace-normal leading-none">
+            <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase leading-none">[ ALL-DEPTH LIFTING ]</p>
+            <p className="font-['Pretendard'] font-bold not-italic relative shrink-0 text-[#222] text-[46px] max-md:text-[24px] leading-none">올 뎁스 리프팅</p>
+          </div>
+          <p className="font-['Pretendard'] font-normal not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] text-center max-md:leading-[1.5]">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
         </div>
         <div className="flex gap-5 w-full max-w-[1820px]">
           {liftingCards.map((c) => (
@@ -1558,7 +1563,7 @@ function Frame29() {
 function Frame30() {
   const isMobile = useIsMobile();
   return (
-    <div className={`content-stretch flex flex-col items-start ${isMobile ? 'w-full gap-[10px]' : 'w-[700px] gap-[20px]'}`}>
+    <div className={`content-stretch flex flex-col items-start ${isMobile ? 'w-full gap-[16px]' : 'w-[700px] gap-[20px]'}`}>
       <Frame18 />
       <Frame29 />
     </div>
@@ -2083,7 +2088,7 @@ export function QuickReservation() {
 
 function Frame15() {
   return (
-    <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[12px] items-center leading-none relative shrink-0">
+    <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[16px] items-center leading-none relative shrink-0">
       <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
         <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase">[ EQUIPMENT ]</p>
         <p className="font-['Pretendard'] font-bold not-italic relative shrink-0 text-[#222] text-[46px] max-md:text-[24px]">장비소개</p>
@@ -2513,10 +2518,10 @@ function Frame40() {
       <div className="relative w-full flex flex-col items-center justify-center px-5 py-10" style={{background:"rgba(32,24,20,0.78)"}}>
         <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-semibold tracking-[4px] text-center mb-[10px]">[ REFINE PHILOSOPHY ]</span>
         <h2 className="text-white text-[24px] font-bold leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
-        <div className="flex items-center justify-center flex-wrap">
-          <span className="text-white text-[24px] font-bold leading-[1.5] font-['Pretendard']">본연의 아름다움을 </span>
+        <div className="flex items-center justify-center flex-wrap gap-[5px]">
+          <span className="text-white text-[24px] font-bold leading-[1.5] font-['Pretendard']">본연의 아름다움을</span>
           <span className="text-[#F2E7DA] text-[24px] font-bold leading-[1.5] font-['Montserrat']">Refine</span>
-          <span className="text-white text-[24px] font-bold leading-[1.5] font-['Pretendard']"> 하다.</span>
+          <span className="text-white text-[24px] font-bold leading-[1.5] font-['Pretendard']">하다.</span>
         </div>
       </div>
     );
@@ -2527,10 +2532,10 @@ function Frame40() {
         <span className="font-['Montserrat'] text-[#b8a99a] text-base font-semibold tracking-[4px] text-center mb-[16px]">[ REFINE PHILOSOPHY ]</span>
         <div className="flex flex-col items-center w-full max-w-[864px]">
           <h2 className="text-white text-[60px] font-bold leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
-          <div className="flex items-center justify-center w-full flex-wrap">
-            <span className="text-white text-[60px] font-bold leading-[1.5] font-['Pretendard']">본연의 아름다움을 </span>
+          <div className="flex items-center justify-center w-full flex-wrap gap-[14px]">
+            <span className="text-white text-[60px] font-bold leading-[1.5] font-['Pretendard']">본연의 아름다움을</span>
             <span className="text-[#F2E7DA] text-[60px] font-bold leading-[1.5] font-['Montserrat']">Refine</span>
-            <span className="text-white text-[60px] font-bold leading-[1.5] font-['Pretendard']"> 하다.</span>
+            <span className="text-white text-[60px] font-bold leading-[1.5] font-['Pretendard']">하다.</span>
           </div>
         </div>
       </div>
@@ -2695,14 +2700,42 @@ function Frame44() {
   const isMobile = useIsMobile();
   if (isMobile) {
     return (
-      <div className="relative w-full bg-[#FBF6F1] flex flex-col gap-6 px-5 py-8">
-        <div className="w-full h-[400px] rounded overflow-hidden bg-[#E8E4DE]">
+      <div className="relative w-full bg-[#FBF6F1] flex flex-col gap-6 px-5 pt-0 pb-8">
+        <div className="w-full h-[215px] rounded overflow-hidden bg-[#E8E4DE] -mt-[22px] relative z-10">
           <img src={imgDoctor} alt="박상선 원장" className="w-full h-full object-cover" />
         </div>
-        <div className="flex flex-col gap-2">
-          <span className="font-['Montserrat'] text-[#666] text-sm">Chief Director</span>
-          <span className="font-['Pretendard'] text-[#1C1D1C] text-[36px] font-semibold">박상선</span>
-          <p className="text-[#555] text-sm leading-[1.6] opacity-50 font-['Pretendard']">개인의 피부가 가진 본래의 구조와 결을 깊이 이해하고, 이를 온전히 보존하면서 최적의 아름다움을 이끌어내는 것을 가장 중요한 목표로 삼습니다.</p>
+        <div className="flex flex-col gap-6">
+          <div className="flex items-center justify-between w-full">
+            <div className="flex flex-col gap-2">
+              <span className="font-['Montserrat'] text-[#666] text-sm tracking-[0.4px]">Chief Director</span>
+              <span className="font-['Pretendard'] text-[#1C1D1C] text-[36px] font-semibold">박상선</span>
+            </div>
+            <div className="w-[60px] h-[60px] opacity-50 overflow-hidden shrink-0">
+              <img src={imgRefineLogo} alt="Refine Logo" className="w-full h-full object-contain" />
+            </div>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A]">
+            <p className="text-[#555] text-sm leading-[1.6] tracking-[0.32px] opacity-50 font-['Pretendard']">개인의 피부가 가진 본래의 구조와 결을 깊이 이해하고, 이를 온전히 보존하면서 최적의 아름다움을 이끌어내는 것을 가장 중요한 목표로 삼습니다.</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p className="font-semibold">(현) Refine 원장</p>
+            <p>(전) 올림피움채움의원 강남점 원장</p><p>(전) 다시봄날의원 성신여대점 원장</p><p>(전) 밴스의원 대전둔산점 원장</p><p>(전) 톡스앤필 광주점 원장</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>연세대학교</p><p>충남의학전문대학원</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>국제미용항노화학회 학술이사</p><p>미용성형레이저학회 학술이사</p><p>쁘띠성형에스테틱포럼 부회장</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>비만연구의사회 정회원</p>
+          </div>
+          <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>대한비만미용학회 정회원</p><p>대한미용성형레이저 정회원</p><p>대한필러학회 정회원</p>
+          </div>
+          <div className="py-3 text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
+            <p>로얄필러 자문의</p><p>매직실 자문의</p><p>울트라브이실 자문의</p>
+          </div>
         </div>
       </div>
     );
@@ -2714,8 +2747,8 @@ function Frame44() {
           <img src={imgDoctor} alt="박상선 원장" className="w-full h-auto object-cover rounded relative" style={{top:"-120px", zIndex:10}} />
         </div>
         <div className="flex flex-col w-[543px]">
-          <div className="flex items-start justify-between w-full">
-            <div className="flex flex-col gap-2 w-[223px]">
+          <div className="flex items-center justify-between w-full">
+            <div className="flex flex-col gap-[16px]">
               <span className="font-['Montserrat'] text-[#666] text-base tracking-[0.4px] leading-[0.94]">Chief Director</span>
               <span className="font-['Pretendard'] text-[#1C1D1C] text-[56px] font-semibold leading-[0.86] tracking-[-0.85px]">박상선</span>
             </div>
