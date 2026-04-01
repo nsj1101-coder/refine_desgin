@@ -7,15 +7,19 @@ export default function PetitPage() {
     {
       id: "botox",
       num: "01",
-      title: "보톡스 (Botox)",
+      title: "보톡스",
+      titleEn: "BOTOX",
       subtitle: "Botulinum Toxin",
       img: "https://images.unsplash.com/photo-1754941622117-97957c5d669b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      headline: "\"표정 근육을 정밀하게 이완시켜 주름과 윤곽을 동시에 잡는 보톡스\"",
       desc: "표정 근육을 일시적으로 이완시켜 이마, 미간, 눈가 등의 주름을 개선하거나 발달된 사각턱, 승모근 등의 근육 부피를 줄여 매끄러운 라인을 만들어줍니다.",
-      points: [
-        "표정 주름 완화 및 예방",
-        "사각턱, 종아리 등 체형 윤곽 개선",
-        "간편하고 빠른 시술로 일상생활 즉시 복귀"
+      points: [],
+      headline2: "\"보툴리눔 톡신이 신경-근육 접합부에 작용하여 근육 이완\"",
+      details: [
+        "보툴리눔 톡신이 과도하게 수축하는 표정 근육의 신경 신호를 차단하여 주름을 부드럽게 펴줍니다.",
+        "발달된 사각턱이나 승모근에 적용하면 근육 부피가 점차 줄어들어 매끄럽고 세련된 라인을 완성합니다.",
       ],
+      tags: ["Wrinkle Relaxation", "Jawline Contouring", "Quick Procedure"],
       duration: "5분 ~ 10분",
       anesthesia: "아이스 쿨링 또는 크림 마취",
       recovery: "즉시 일상생활 가능",
@@ -24,15 +28,19 @@ export default function PetitPage() {
     {
       id: "filler",
       num: "02",
-      title: "필러 (Filler)",
+      title: "필러",
+      titleEn: "FILLER",
       subtitle: "Hyaluronic Acid",
       img: "https://images.unsplash.com/photo-1690306815613-f839b74af330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      headline: "\"히알루론산으로 즉각적인 입체감과 볼륨을 완성하는 필러\"",
       desc: "인체 성분과 유사한 히알루론산을 주입하여 깊게 패인 주름이나 볼륨이 부족한 코, 입술, 이마 등에 즉각적인 입체감을 더해주는 시술입니다.",
-      points: [
-        "즉각적인 볼륨 및 윤곽 개선",
-        "비대칭 교정 및 동안 얼굴 완성",
-        "녹일 수 있는 안전한 성분 사용"
+      points: [],
+      headline2: "\"히알루론산이 진피층에서 수분을 끌어당겨 볼륨을 형성\"",
+      details: [
+        "체내 성분과 동일한 히알루론산 겔이 주입 즉시 빈 공간을 채우고 주변의 수분을 끌어당겨 자연스러운 볼륨을 형성합니다.",
+        "제품의 점도와 탄성에 따라 코, 턱, 입술 등 부위별 맞춤 필러를 선택하여 조화로운 입체감을 디자인합니다.",
       ],
+      tags: ["Volume Restoration", "Facial Contouring", "Instant Result"],
       duration: "10분 ~ 20분",
       anesthesia: "크림 마취 또는 국소 마취",
       recovery: "1~2일 내 잔붓기 완화",
@@ -41,15 +49,19 @@ export default function PetitPage() {
     {
       id: "thread",
       num: "03",
-      title: "실리프팅 (Thread Lifting)",
+      title: "실리프팅",
+      titleEn: "THREAD LIFTING",
       subtitle: "PDO/PCL Thread",
       img: "https://images.unsplash.com/photo-1748543669178-efd3de4e64e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      headline: "\"녹는 실로 처진 피부를 끌어올리고 콜라겐까지 유도하는 실리프팅\"",
       desc: "의료용 녹는 실을 피부 진피층에 삽입하여 처진 피부를 직접 당겨 올리고 주변 콜라겐 생성을 촉진해 탄력을 개선하는 강력한 리프팅 시술입니다.",
-      points: [
-        "강력한 V라인 리프팅 효과",
-        "늘어진 턱선, 팔자주름 즉각 개선",
-        "실이 녹으며 진피층 콜라겐 생성 유도"
+      points: [],
+      headline2: "\"코그(돌기) 달린 의료용 실이 조직을 물리적으로 견인\"",
+      details: [
+        "미세한 코그(돌기)가 달린 의료용 실을 피부 속에 삽입하여 처진 조직을 물리적으로 당겨 올려 즉각적인 V라인을 완성합니다.",
+        "삽입된 실이 체내에서 서서히 녹으면서 주변 조직에 콜라겐 생성을 유도하여, 시술 효과가 수개월에 걸쳐 더욱 향상됩니다.",
       ],
+      tags: ["V-Line Lifting", "Collagen Induction", "Non-Surgical"],
       duration: "30분 ~ 40분",
       anesthesia: "국소 마취",
       recovery: "3~5일 (멍이나 붓기가 있을 수 있음)",

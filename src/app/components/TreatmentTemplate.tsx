@@ -197,7 +197,7 @@ export default function TreatmentTemplate({
                   setActiveTreatment(idx);
                   document.getElementById(`sec-${t.id}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
-                className={`flex-1 h-[100px] flex items-center justify-center text-xl transition-all duration-300 cursor-pointer ${
+                className={`flex-1 h-[100px] max-md:h-[48px] flex items-center justify-center text-xl max-md:text-base transition-all duration-300 cursor-pointer ${
                   activeTreatment === idx
                     ? "border-b-4 border-[#1C1614] text-[#1C1614] font-bold"
                     : "border-b border-[rgba(28,22,20,0.2)] text-[#B8A99A] font-medium"
@@ -211,17 +211,17 @@ export default function TreatmentTemplate({
           {treatments.map((t, idx) => {
             const isImageLeft = idx % 2 === 0;
             const imageBlock = (
-              <div className="w-full md:w-[500px] h-[500px] md:h-[896px] shrink-0 overflow-hidden">
+              <div className="w-[67vw] md:w-[500px] shrink-0 overflow-hidden aspect-[262/443] md:aspect-[500/896]">
                 <ImageWithFallback src={t.img} alt={t.title} className="w-full h-full object-cover" />
               </div>
             );
             const contentBlock = (
-              <div className="flex-1 relative px-6 md:px-0" style={{minHeight: 661}}>
+              <div className="flex-1 relative px-5 md:px-0" style={{minHeight: 661}}>
                 <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-light leading-[1.5]">{t.subtitle}</span>
                 <h3 className="font-['Montserrat',sans-serif] text-[#504945] text-[40px] md:text-[64px] font-bold tracking-[-1px] mt-[10px]" style={{lineHeight:"0.84"}}>{t.titleEn}</h3>
                 <span className="block text-[#B5B0AC] text-[24px] md:text-[32px] font-medium tracking-[-1px] mt-[16px]" style={{lineHeight:"1.69"}}>{t.title}</span>
 
-                <p className="text-[#4A3F3A] text-lg md:text-xl leading-[1.3] mt-[30px]">{t.headline}</p>
+                <p className="text-[#4A3F3A] text-lg md:text-xl font-normal leading-[1.3] mt-[30px]">{t.headline}</p>
                 <p className="text-[#6E6560] text-lg font-light leading-[1.6] max-w-[667px] mt-[8px]">{t.desc}</p>
 
                 <div className="flex flex-wrap gap-5 mt-[28px]">
@@ -238,7 +238,7 @@ export default function TreatmentTemplate({
                   ))}
                 </div>
 
-                {t.headline2 && <p className="text-[#4A3F3A] text-lg md:text-xl leading-[1.3] mt-[32px]">{t.headline2}</p>}
+                {t.headline2 && <p className="text-[#4A3F3A] text-lg md:text-xl font-normal leading-[1.3] mt-[32px]">{t.headline2}</p>}
                 {t.details && t.details.length > 0 && (
                 <div className="flex flex-col gap-5 max-w-[689px] mt-[10px]">
                   {t.details.map((d: string, i: number) => (
@@ -259,13 +259,8 @@ export default function TreatmentTemplate({
 
             return (
               <FadeIn key={t.id}>
-                <div id={`sec-${t.id}`} className="flex flex-col md:flex-row items-center gap-[40px] md:gap-[80px] px-6 md:px-[326px] py-[60px] md:py-[100px]">
-                  {/* 모바일: 항상 이미지 먼저 / 데스크톱: 좌우 교대 */}
-                  <div className="md:hidden w-full">{imageBlock}</div>
-                  <div className="md:hidden w-full">{contentBlock}</div>
-                  <div className="hidden md:contents">
-                    {isImageLeft ? <>{imageBlock}{contentBlock}</> : <>{contentBlock}{imageBlock}</>}
-                  </div>
+                <div id={`sec-${t.id}`} className={`flex flex-col items-center gap-[40px] md:gap-[80px] px-0 md:px-[326px] py-[60px] md:py-[100px] ${isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                  {imageBlock}{contentBlock}
                 </div>
               </FadeIn>
             );

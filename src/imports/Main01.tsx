@@ -1294,7 +1294,7 @@ function Frame43() {
         <div className="flex flex-col gap-8 w-full">
           {liftingCards.map((c) => (
             <div key={c.title} className="flex flex-col gap-3">
-              <div className="w-full overflow-hidden" style={{ aspectRatio: '430 / 460' }}><img src={c.img} alt={c.title} className="w-full h-full object-cover" /></div>
+              <div className="w-full overflow-hidden group" style={{ aspectRatio: '430 / 460' }}><img src={c.img} alt={c.title} className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" /></div>
               <div className="flex items-center justify-center w-max h-[32px] bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)] px-3">
                 <span className="font-['Pretendard'] text-white text-sm font-medium">프리미엄 리프팅</span>
               </div>
@@ -1323,7 +1323,7 @@ function Frame43() {
         <div className="flex gap-5 w-full max-w-[1820px]">
           {liftingCards.map((c) => (
             <div key={c.title} className="flex-1 flex flex-col gap-5">
-              <div className="w-full h-[460px] overflow-hidden"><img src={c.img} alt={c.title} className="w-full h-full object-cover" /></div>
+              <div className="w-full h-[460px] overflow-hidden group"><img src={c.img} alt={c.title} className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" /></div>
               <div className="flex items-center justify-center w-[145px] h-[39px] rounded bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)]">
                 <span className="font-['Pretendard'] text-white text-base font-medium">프리미엄 리프팅</span>
               </div>
@@ -2707,8 +2707,8 @@ function Frame44() {
   if (isMobile) {
     return (
       <div className="relative w-full bg-[#FBF6F1] flex flex-col px-5 pt-0 pb-8">
-        <div className="w-full overflow-hidden -mt-[22px] relative z-10" style={{ aspectRatio: '460 / 613' }}>
-          <img src={imgDoctor} alt="박상선 원장" className="w-full h-full object-cover" />
+        <div className="w-full overflow-hidden -mt-[22px] relative z-10 group" style={{ aspectRatio: '460 / 613' }}>
+          <img src={imgDoctor} alt="박상선 원장" className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" />
         </div>
         <div className="flex flex-col">
           <div className="flex items-center justify-between w-full pb-3">
@@ -2749,8 +2749,8 @@ function Frame44() {
   return (
     <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[1710px] overflow-visible">
       <div className="w-full bg-[#FBF6F1] flex gap-[50px] px-[120px] py-[60px] overflow-visible" style={{minHeight:1000}}>
-        <div className="relative w-[774px] shrink-0 overflow-visible">
-          <img src={imgDoctor} alt="박상선 원장" className="w-full h-auto object-cover relative" style={{top:"-120px", zIndex:10}} />
+        <div className="relative w-[774px] shrink-0 overflow-hidden group">
+          <img src={imgDoctor} alt="박상선 원장" className="w-full h-auto object-cover relative transition-transform duration-1000 ease-out group-hover:scale-105" style={{top:"-120px", zIndex:10}} />
         </div>
         <div className="flex flex-col w-[543px]">
           <div className="flex items-center justify-between w-full">
