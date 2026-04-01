@@ -156,9 +156,9 @@ export default function TreatmentTemplate({
         </section>
 
         {/* ===== Core Principle (Figma) ===== */}
-        <section className="w-full bg-[#201814] relative flex flex-col md:flex-row justify-between overflow-hidden" style={{minHeight:358}}>
+        <section className="w-full bg-[#201814] relative flex flex-col md:flex-row overflow-hidden" style={{minHeight:358}}>
           {/* Left: Title */}
-          <div className="flex flex-col gap-0 pt-10 pl-[50px] max-md:px-6 max-md:pt-8 shrink-0">
+          <div className="flex flex-col gap-0 pt-10 pl-[50px] max-md:px-6 max-md:pt-8 shrink-0 md:w-[774px]">
             <FadeIn>
               <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-medium leading-[1.5]">Core Principle</span>
               <h2 className="text-[#FBF6F1] text-[32px] md:text-[44px] font-bold leading-[1.3] tracking-[-1px] mt-[6px] font-['Pretendard',sans-serif]">
@@ -169,10 +169,10 @@ export default function TreatmentTemplate({
           </div>
 
           {/* Vertical Divider (desktop only) */}
-          <div className="hidden md:block absolute w-px h-[46px] bg-[#FBF6F1] opacity-50" style={{left:774,top:95}} />
+          <div className="hidden md:block w-px h-[46px] bg-[#FBF6F1] opacity-50 shrink-0 mt-[95px]" />
 
           {/* Right: Description */}
-          <div className="flex flex-col gap-5 pt-[40px] md:pt-[86px] pr-[50px] max-md:px-6 max-md:pb-10" style={{maxWidth:740}}>
+          <div className="flex flex-col gap-5 pt-[40px] md:pt-[86px] pl-[24px] pr-[50px] max-md:px-6 max-md:pb-10 flex-1">
             <FadeIn delay={0.1}>
               {coreDesc.map((desc, idx) => (
                 <p key={idx} className="text-white text-[17px] font-light leading-[1.6]">{desc}</p>
@@ -224,14 +224,14 @@ export default function TreatmentTemplate({
                 <p className="text-[#4A3F3A] text-lg md:text-xl font-normal leading-[1.3] mt-[30px]">{t.headline}</p>
                 <p className="text-[#6E6560] text-lg font-light leading-[1.6] max-w-[667px] mt-[8px]">{t.desc}</p>
 
-                <div className="flex flex-wrap gap-5 mt-[28px]">
+                <div className="grid grid-cols-2 md:flex md:flex-wrap gap-5 mt-[28px]">
                   {[
                     { label: "시술시간", value: t.duration },
                     { label: "마취 여부", value: t.anesthesia },
                     { label: "회복 기간", value: t.recovery },
                     { label: "추천/유지", value: t.maintenance },
                   ].map((info) => (
-                    <div key={info.label} className="flex flex-col gap-3 bg-[#FBF6F1] p-2.5">
+                    <div key={info.label} className="flex flex-col gap-3 bg-[#FBF6F1] p-2.5 items-center text-center">
                       <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-xs font-medium tracking-[2px] leading-[1.5]">{info.label}</span>
                       <span className="text-[#504945] text-base font-medium leading-[1.5]">{info.value}</span>
                     </div>

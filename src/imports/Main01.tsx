@@ -760,7 +760,7 @@ export function Frame36() {
                 <div className="cursor-pointer pt-[8px] max-md:pt-[6px]">
                   <p className="inline-block transform font-['Montserrat',sans-serif] font-medium text-[38px] max-md:text-[28px] text-[rgba(250,246,241,0.5)] group-hover/treat:text-[#faf6f1] group-hover/treat:translate-x-4 uppercase transition-all duration-500 ease-out">Treatment</p>
                 </div>
-                <div className="max-h-0 group-hover/treat:max-h-[200px] max-md:group-hover/treat:max-h-[250px] overflow-hidden transition-all duration-500 ease-in-out">
+                <div className="max-h-0 group-hover/treat:max-h-[200px] max-md:group-hover/treat:max-h-[500px] overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="flex gap-[40px] max-md:gap-[16px] max-md:flex-col pt-[8px] pb-[12px] max-md:pt-[6px] max-md:pb-[8px] pl-[8px] flex-wrap">
                     <span onClick={() => handleMenuNav('/treatment/lifting')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Lifting</span>
                     <span onClick={() => handleMenuNav('/treatment/pigmentation')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Brightening & Redness</span>
