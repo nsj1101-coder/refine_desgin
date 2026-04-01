@@ -1402,7 +1402,7 @@ function Frame16() {
 
 function Frame18() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-start justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
+    <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-start max-md:items-center justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
       <p className="font-['Montserrat',sans-serif] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[2px] max-md:tracking-[1.5px] uppercase">{`[ DIRECTIONS & A MEDICAL GUIDE ]`}</p>
       <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#222] text-[40px] max-md:text-[22px]">{`오시는 길 & 진료안내`}</p>
     </div>
@@ -1831,12 +1831,15 @@ export function DirectionsSection() {
   const isMobile = useIsMobile();
   if (isMobile) {
     return (
-      <div className="relative flex flex-col-reverse items-stretch w-full bg-[#faf6f1]">
-        <div className="w-full flex flex-col justify-center px-5 py-6 relative">
-          <Frame30 />
+      <div className="relative flex flex-col items-stretch w-full bg-[#faf6f1]">
+        <div className="w-full flex flex-col justify-center px-5 pt-6 pb-[24px] relative">
+          <Frame18 />
         </div>
         <div className="w-full h-[200px] relative">
           <Map />
+        </div>
+        <div className="w-full flex flex-col justify-center px-5 py-6 relative">
+          <Frame29 />
         </div>
       </div>
     );
@@ -2701,16 +2704,16 @@ function Frame44() {
   if (isMobile) {
     return (
       <div className="relative w-full bg-[#FBF6F1] flex flex-col gap-6 px-5 pt-0 pb-8">
-        <div className="w-full h-[215px] rounded overflow-hidden bg-[#E8E4DE] -mt-[22px] relative z-10">
+        <div className="w-full rounded overflow-hidden bg-[#E8E4DE] -mt-[22px] relative z-10" style={{ aspectRatio: '460 / 613' }}>
           <img src={imgDoctor} alt="박상선 원장" className="w-full h-full object-cover" />
         </div>
-        <div className="flex flex-col gap-6">
-          <div className="flex items-center justify-between w-full">
+        <div className="flex flex-col">
+          <div className="flex items-center justify-between w-full pb-3">
             <div className="flex flex-col gap-2">
               <span className="font-['Montserrat'] text-[#666] text-sm tracking-[0.4px]">Chief Director</span>
-              <span className="font-['Pretendard'] text-[#1C1D1C] text-[36px] font-semibold">박상선</span>
+              <span className="font-['Pretendard'] text-[#1C1D1C] text-[48px] font-semibold">박상선</span>
             </div>
-            <div className="w-[60px] h-[60px] opacity-50 overflow-hidden shrink-0">
+            <div className="w-[76px] h-[78px] opacity-50 overflow-hidden shrink-0">
               <img src={imgRefineLogo} alt="Refine Logo" className="w-full h-full object-contain" />
             </div>
           </div>
