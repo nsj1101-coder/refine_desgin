@@ -260,7 +260,12 @@ export default function TreatmentTemplate({
             return (
               <FadeIn key={t.id}>
                 <div id={`sec-${t.id}`} className="flex flex-col md:flex-row items-center gap-[40px] md:gap-[80px] px-6 md:px-[326px] py-[60px] md:py-[100px]">
-                  {isImageLeft ? <>{imageBlock}{contentBlock}</> : <>{contentBlock}{imageBlock}</>}
+                  {/* 모바일: 항상 이미지 먼저 / 데스크톱: 좌우 교대 */}
+                  <div className="md:hidden w-full">{imageBlock}</div>
+                  <div className="md:hidden w-full">{contentBlock}</div>
+                  <div className="hidden md:contents">
+                    {isImageLeft ? <>{imageBlock}{contentBlock}</> : <>{contentBlock}{imageBlock}</>}
+                  </div>
                 </div>
               </FadeIn>
             );
