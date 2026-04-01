@@ -1186,7 +1186,7 @@ function Group14() {
     return (
       <div className="flex flex-col gap-[8px] w-full relative shrink-0">
         {accordionData.map((item, index) => (
-          <div key={index} className="relative h-[140px] overflow-hidden rounded-lg">
+          <div key={index} className="relative h-[140px] overflow-hidden">
             <div className="absolute inset-0 z-0">
               <img src={item.img} alt={item.title} className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-black/50" />
@@ -1294,7 +1294,10 @@ function Frame43() {
         <div className="flex flex-col gap-8 w-full">
           {liftingCards.map((c) => (
             <div key={c.title} className="flex flex-col gap-3">
-              <div className="w-full h-[240px] rounded-lg overflow-hidden"><img src={c.img} alt={c.title} className="w-full h-full object-cover" /></div>
+              <div className="w-full overflow-hidden" style={{ aspectRatio: '430 / 460' }}><img src={c.img} alt={c.title} className="w-full h-full object-cover" /></div>
+              <div className="flex items-center justify-center w-max h-[32px] bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)] px-3">
+                <span className="font-['Pretendard'] text-white text-sm font-medium">프리미엄 리프팅</span>
+              </div>
               <h3 className="font-['Montserrat'] text-black text-[28px] font-medium leading-[1.25] whitespace-nowrap">{c.title.replace('\n', ' ')}</h3>
               <span className="font-['Pretendard'] text-[#b8a99a] text-base font-medium">{c.subtitle}</span>
               <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm leading-[1.7]">{c.desc}</p>
@@ -1320,7 +1323,7 @@ function Frame43() {
         <div className="flex gap-5 w-full max-w-[1820px]">
           {liftingCards.map((c) => (
             <div key={c.title} className="flex-1 flex flex-col gap-5">
-              <div className="w-full h-[460px] rounded-lg overflow-hidden"><img src={c.img} alt={c.title} className="w-full h-full object-cover" /></div>
+              <div className="w-full h-[460px] overflow-hidden"><img src={c.img} alt={c.title} className="w-full h-full object-cover" /></div>
               <div className="flex items-center justify-center w-[145px] h-[39px] rounded bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)]">
                 <span className="font-['Pretendard'] text-white text-base font-medium">프리미엄 리프팅</span>
               </div>
@@ -1341,7 +1344,7 @@ function Frame43() {
 function Image() {
   const isMobile = useIsMobile();
   return (
-    <div className={`relative shrink-0 ${isMobile ? 'h-[180px] w-full' : 'h-[970px] w-[960px]'}`} data-name="image">
+    <div className={`relative shrink-0 ${isMobile ? 'w-full' : 'h-[970px] w-[960px]'}`} style={isMobile ? { aspectRatio: '960 / 970' } : undefined} data-name="image">
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none">
         <img alt="Promotion Image" className="absolute max-w-none object-cover size-full" src={promoImage} />
       </div>
@@ -1402,7 +1405,7 @@ function Frame16() {
 
 function Frame18() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-start max-md:items-center justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
+    <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-start justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
       <p className="font-['Montserrat',sans-serif] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[2px] max-md:tracking-[1.5px] uppercase">{`[ DIRECTIONS & A MEDICAL GUIDE ]`}</p>
       <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#222] text-[40px] max-md:text-[22px]">{`오시는 길 & 진료안내`}</p>
     </div>
@@ -1832,14 +1835,14 @@ export function DirectionsSection() {
   if (isMobile) {
     return (
       <div className="relative flex flex-col items-stretch w-full bg-[#faf6f1]">
-        <div className="w-full flex flex-col justify-center px-5 pt-6 pb-[24px] relative">
-          <Frame18 />
-        </div>
         <div className="w-full h-[200px] relative">
           <Map />
         </div>
         <div className="w-full flex flex-col justify-center px-5 py-6 relative">
-          <Frame29 />
+          <Frame18 />
+          <div className="mt-[16px]">
+            <Frame29 />
+          </div>
         </div>
       </div>
     );
@@ -2485,7 +2488,7 @@ function Frame39() {
   const isMobile = useIsMobile();
   if (isMobile) {
     return (
-      <div className="relative flex flex-col gap-[16px] items-center w-full px-5 py-8 bg-[#faf6f1]">
+      <div className="relative flex flex-col gap-[16px] items-center w-full px-5 py-10 bg-[#faf6f1]">
         <Frame15 />
         <EquipmentCarousel />
       </div>
@@ -2703,8 +2706,8 @@ function Frame44() {
   const isMobile = useIsMobile();
   if (isMobile) {
     return (
-      <div className="relative w-full bg-[#FBF6F1] flex flex-col gap-6 px-5 pt-0 pb-8">
-        <div className="w-full rounded overflow-hidden bg-[#E8E4DE] -mt-[22px] relative z-10" style={{ aspectRatio: '460 / 613' }}>
+      <div className="relative w-full bg-[#FBF6F1] flex flex-col px-5 pt-0 pb-8">
+        <div className="w-full overflow-hidden -mt-[22px] relative z-10" style={{ aspectRatio: '460 / 613' }}>
           <img src={imgDoctor} alt="박상선 원장" className="w-full h-full object-cover" />
         </div>
         <div className="flex flex-col">
@@ -2747,7 +2750,7 @@ function Frame44() {
     <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[1710px] overflow-visible">
       <div className="w-full bg-[#FBF6F1] flex gap-[50px] px-[120px] py-[60px] overflow-visible" style={{minHeight:1000}}>
         <div className="relative w-[774px] shrink-0 overflow-visible">
-          <img src={imgDoctor} alt="박상선 원장" className="w-full h-auto object-cover rounded relative" style={{top:"-120px", zIndex:10}} />
+          <img src={imgDoctor} alt="박상선 원장" className="w-full h-auto object-cover relative" style={{top:"-120px", zIndex:10}} />
         </div>
         <div className="flex flex-col w-[543px]">
           <div className="flex items-center justify-between w-full">
