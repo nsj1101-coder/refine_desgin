@@ -77,7 +77,7 @@ export default function ColumnDetailPage() {
                   <p className="font-['Montserrat',sans-serif] font-medium text-[14px] tracking-[2px] mb-4 uppercase text-[#b8a99a]">
                     {column.category}
                   </p>
-                  <h2 className="text-[32px] md:text-[44px] text-[#1c1614] font-['Pretendard',sans-serif] font-medium tracking-[-1px] leading-[1.3] mb-6">
+                  <h2 className="text-[28px] md:text-[42px] text-[#222] font-['Pretendard',sans-serif] font-light tracking-[-1px] leading-[1.3] mb-6">
                     {column.title}
                   </h2>
                   <div className="w-full h-[1px] bg-[#1c1614] mb-6"></div>

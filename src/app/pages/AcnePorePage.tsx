@@ -5,88 +5,73 @@ import subHeroImg from "figma:asset/893cd708452e1b0c7059f6e9f42508951216f01b.png
 export default function AcnePorePage() {
   const treatments = [
     {
-      id: "capri",
+      id: "potenza",
       num: "01",
-      title: "카프리 레이저",
-      titleEn: "CAPRI",
-      subtitle: "Capri Laser",
+      title: "포텐자",
+      titleEn: "POTENZA",
+      subtitle: "Microneedling RF",
       img: "https://images.unsplash.com/photo-1754941622117-97957c5d669b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      headline: "\"피지선 파괴와 여드름균 살균을 동시에, 카프리(CAPRI) 레이저\"",
-      desc: "여드름의 주 원인인 피지선을 파괴하는 1450nm 파장과 여드름균을 살균하는 블루라이트를 동시에 조사하여, 좁쌀 여드름부터 화농성 여드름까지 효과적으로 치료합니다.",
-      points: [],
-      headline2: "\"1450nm 열에너지 + 블루라이트의 듀얼 살균 시스템\"",
+      headline: "마이크로 니들(미세침)을 통해 진피층에 고주파(RF) 에너지를 직접 전달하여 넓어진 모공과 여드름 흉터를 개선하고, 콜라겐 생성을 유도해 피부 근본의 건강함과 탄력을 되찾아 줍니다.",
+      desc: "",
+      points: ["모공 축소 및 흉터 개선", "콜라겐 생성 촉진", "피부결 및 탄력 회복"],
+      headline2: "이런 분께 추천합니다.",
       details: [
-        "1450nm 파장의 열에너지가 과활성화된 피지선을 직접 타겟팅하여 크기를 줄이고 피지 분비를 억제합니다.",
-        "동시에 블루라이트가 여드름 원인균(P.acnes)을 살균하여, 재발의 악순환 고리를 근본적으로 차단합니다.",
+        "넓어진 모공과 여드름 흉터가 고민인 분",
+        "피부결과 피부톤을 동시에 개선하고 싶은 분",
+        "콜라겐 부스팅으로 탄력을 회복하고 싶은 분",
+        "맞춤형 피부 재생 시술을 원하는 분",
       ],
-      tags: ["Acne Treatment", "Sebum Control", "Sterilization"],
-      duration: "15분 ~ 20분",
-      anesthesia: "불필요 (냉각 가스 동시 분사)",
-      recovery: "즉시 일상생활 가능",
-      maintenance: "1~2주 간격 3~5회 권장"
-    },
-    {
-      id: "agnes",
-      num: "02",
-      title: "아그네스",
-      titleEn: "AGNES",
-      subtitle: "Agnes RF",
-      img: "https://images.unsplash.com/photo-1690306815613-f839b74af330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      headline: "\"표피 손상 없이 피지선만 선택적으로 파괴하는 아그네스(AGNES) RF\"",
-      desc: "특수 코팅된 미세 절연침을 피지선에 직접 찌른 후 고주파(RF) 에너지를 전달하여, 표피 손상 없이 트러블의 근본 원인인 피지선만을 선택적으로 파괴하는 시술입니다.",
-      points: [],
-      headline2: "\"절연 코팅 미세침이 피지선에만 고주파 에너지를 전달\"",
-      details: [
-        "특수 절연 코팅된 미세침이 피부 표면은 보호하면서 피지선까지 정확히 도달합니다.",
-        "침 끝에서만 고주파 에너지가 방출되어 피지선을 영구적으로 파괴하고, 같은 자리의 여드름 재발을 근본적으로 차단합니다.",
-      ],
-      tags: ["Cystic Acne", "Sebaceous Gland", "Permanent Solution"],
+      tags: ["Pore & Scar Refining", "Collagen Boost", "Skin Rejuvenation"],
       duration: "30분 ~ 40분",
       anesthesia: "크림 마취",
-      recovery: "시술 다음날 압출 관리 필요",
-      maintenance: "4주 간격 3회 권장"
+      recovery: "1~2일",
+      maintenance: "3~4주 간격 3회 이상 권장"
     },
     {
-      id: "pico",
-      num: "03",
-      title: "피코 프락셀",
-      titleEn: "PICO FRAXEL",
-      subtitle: "Pico Fraxel",
-      img: "https://images.unsplash.com/photo-1696607069078-3f65d5bc3b4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      headline: "\"피부 표면 손상 없이 진피층 콜라겐을 재생하는 피코 프락셀\"",
-      desc: "피부 표면에 물리적인 상처를 내지 않고 진피층에만 미세한 광학적 구멍(LIOB)을 만들어 냅니다. 강력한 콜라겐 재생을 유도하여 넓어진 모공과 패인 흉터를 매끄럽게 채워줍니다.",
-      points: [],
-      headline2: "\"피부 속에만 미세 공동(LIOB)을 형성하여 콜라겐 리모델링 유도\"",
+      id: "hollywood",
+      num: "02",
+      title: "헐리우드 스펙트라",
+      titleEn: "HOLLYWOOD SPECTRA",
+      subtitle: "Nd:YAG Dual Wavelength Laser",
+      img: "https://images.unsplash.com/photo-1690306815613-f839b74af330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      headline: "532nm과 1064nm 듀얼 파장의 Nd:YAG 레이저로 모공 속 피지와 각질을 제거하고, 진피층 콜라겐 리모델링을 유도하여 넓어진 모공을 촘촘하게 조여주는 모공 전문 레이저입니다.",
+      desc: "",
+      points: ["모공 속 피지·각질 제거", "콜라겐 리모델링으로 모공 축소", "피부톤 및 피부결 동시 개선"],
+      headline2: "이런 분께 추천합니다.",
       details: [
-        "피코초 레이저가 표피를 통과하여 진피층에만 미세한 광학적 공동(LIOB)을 생성합니다.",
-        "손상 없이 만들어진 공동 주위로 새로운 콜라겐과 엘라스틴이 채워지면서 패인 흉터와 넓은 모공이 매끄럽게 개선됩니다.",
+        "세로로 길게 늘어지는 모공이 신경 쓰이는 분",
+        "과도한 피지 분비로 모공이 막히기 쉬운 분",
+        "여드름 자국과 모공을 함께 개선하고 싶은 분",
+        "다운타임 없이 꾸준한 모공 관리를 원하는 분",
       ],
-      tags: ["Pore Minimizing", "Scar Resurfacing", "Collagen Boost"],
+      tags: ["Pore Minimizing", "Skin Texture", "Brightening"],
       duration: "15분 ~ 20분",
-      anesthesia: "크림 마취",
-      recovery: "1~2일 내 붉은기 완화",
-      maintenance: "3~4주 간격 3~5회 권장"
+      anesthesia: "불필요",
+      recovery: "즉시 일상생활 가능",
+      maintenance: "1~2주 간격 10회 이상 권장"
     },
     {
-      id: "secret",
-      num: "04",
-      title: "시크릿 고주파",
-      titleEn: "SECRET RF",
-      subtitle: "Secret RF",
-      img: "https://images.unsplash.com/photo-1748543669178-efd3de4e64e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      headline: "\"모공·흉터·탄력을 동시에 개선하는 마이크로 니들 RF, 시크릿\"",
-      desc: "마이크로 니들이 피부 진피층까지 직접 들어가 고주파 에너지를 전달합니다. 과도한 피지 분비를 줄여 여드름을 예방하고, 손상된 피부 세포를 재생시켜 흉터와 모공을 치료합니다.",
-      points: [],
-      headline2: "\"마이크로 니들 + RF 에너지의 듀얼 재생 메커니즘\"",
+      id: "juvelook",
+      num: "03",
+      title: "쥬베룩",
+      titleEn: "JUVELOOK",
+      subtitle: "PDLLA + HA Skin Booster",
+      img: "https://images.unsplash.com/photo-1696607069078-3f65d5bc3b4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
+      headline: "고분자 PDLLA와 히알루론산을 진피층에 주입하여 자가 콜라겐 생성을 유도하고, 넓어진 모공과 패인 흉터 주변에 새로운 콜라겐이 채워지면서 피부결을 매끄럽게 개선합니다.",
+      desc: "",
+      points: ["자가 콜라겐으로 모공·흉터 충전", "피부결 및 탄력 개선", "자연스러운 볼륨 회복"],
+      headline2: "이런 분께 추천합니다.",
       details: [
-        "25개의 미세 금침이 설정된 깊이까지 정밀하게 삽입되어 물리적 재생 반응을 유도합니다.",
-        "침 끝에서 고주파 에너지가 방출되면서 콜라겐 수축과 신생을 동시에 촉진하여, 모공 축소와 흉터 개선, 피부 탄력 회복을 한 번에 실현합니다.",
+        "여드름 흉터가 깊게 패여 고민인 분",
+        "모공이 넓어지면서 피부결이 거칠어진 분",
+        "레이저와 병행하여 시너지 효과를 원하는 분",
+        "자연스러운 콜라겐 재생으로 피부를 채우고 싶은 분",
       ],
-      tags: ["Pore & Scar", "Skin Rejuvenation", "Microneedle RF"],
+      tags: ["Scar Filling", "Collagen Induction", "Skin Texture"],
       duration: "20분 ~ 30분",
       anesthesia: "크림 마취",
-      recovery: "1~2일 내 붉은기 완화",
-      maintenance: "3~4주 간격 3회 이상 권장"
+      recovery: "1~2일 내 붉은기 및 잔붓기 완화",
+      maintenance: "4주 간격 3회 권장"
     }
   ];
 
@@ -130,7 +115,7 @@ export default function AcnePorePage() {
         "여드름 치료의 핵심은 피지선 컨트롤과 피부 환경의 정상화입니다.",
         "일시적으로 염증을 가라앉히는 것에 그치지 않고, 여드름균을 사멸하고 비정상적으로 발달한 피지선만을 선택적으로 파괴하여 재발의 고리를 끊어냅니다. 또한 이미 넓어진 모공과 패인 흉터는 진피층의 콜라겐 리모델링을 유도하여 새살이 촘촘하게 차오르도록 돕습니다."
       ]}
-      coreHighlight="여드름의 진행 상태와 흉터의 모양은 사람마다 다릅니다.\nREFINE은 획일화된 공장형 시술이 아닌 1:1 맞춤 복합 치료를 진행합니다."
+      coreHighlight="여드름의 진행 상태와 흉터의 모양은 사람마다 다릅니다. REFINE은 획일화된 공장형 시술이 아닌 1:1 맞춤 복합 치료를 진행합니다."
       coreImg="https://images.unsplash.com/photo-1696607069078-3f65d5bc3b4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       treatmentTitle="여드름 / 모공 시술 종류"
       treatments={treatments}

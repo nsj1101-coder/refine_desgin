@@ -53,7 +53,7 @@ export default function DoctorPage() {
                 transition={{ duration: 1.2, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
               >About</motion.p>
               <motion.h1
-                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-bold leading-[1.1] mb-6 uppercase"
+                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-light leading-[1.1] mb-6 uppercase"
                 initial={{ filter: "blur(6px)", opacity: 0, scale: 1.02 }}
                 animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -106,7 +106,7 @@ export default function DoctorPage() {
                     />
                     <div className="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/60 to-transparent">
                       <p className="font-['Montserrat',sans-serif] text-white/80 text-[14px] uppercase tracking-[2px] mb-2">Chief Director</p>
-                      <h3 className="font-['Pretendard',sans-serif] text-white text-[32px] font-medium">박상선</h3>
+                      <h3 className="font-['Pretendard',sans-serif] text-white text-[32px] font-light">박상선</h3>
                     </div>
                   </div>
                 </FadeInUp>
@@ -120,37 +120,37 @@ export default function DoctorPage() {
                   </p>
                   
                   <div className="flex flex-col gap-[32px]">
-                    <div className="text-[26px] md:text-[36px] text-[#1c1614] leading-[1.4] font-medium tracking-[-1px] break-keep">
+                    <div className="text-[28px] md:text-[42px] text-[#222] leading-[1.4] font-light tracking-[-1px] break-keep">
                       안녕하세요.<br />
-                      리파인의원 대표원장 <span className="text-[#8c7a6b] font-semibold">박상선</span>입니다.
+                      리파인의원 대표원장 <span className="text-[#8c7a6b] font-light">박상선</span>입니다.
                     </div>
 
                     <div className="flex flex-col gap-[24px] text-[16px] md:text-[18px] text-[#3a322e] leading-[1.8] font-normal tracking-[-0.5px] break-keep">
                       <p>
-                        아름다움의 기준에는 정답이 없습니다.<br className="hidden md:block" />
+                        아름다움의 기준에는 정답이 없습니다.<br />
                         중요한 것은 나다운 얼굴의 조화로움을 찾는 일이라고 생각합니다.
                       </p>
                       
                       <p className="pl-[20px] md:pl-[24px] border-l-[2px] border-[#b8a99a] my-2 py-2 text-[#2d2420] font-medium leading-[1.7] bg-[#f5efe9]/50">
-                        리파인(Refine)은 세심하고 정교하게 다듬고, 균형을 맞추어<br className="hidden md:block" />
+                        리파인(Refine)은 세심하고 정교하게 다듬고, 균형을 맞추어<br />
                         본연의 매력을 더욱 또렷하게 만들고자 하는 뜻을 담았습니다.
                       </p>
 
                       <p>
-                        개개인이 가지고 있는 본연의 자연스러운 아름다움을 만들어내는 것,<br className="hidden md:block" />
+                        개개인이 가지고 있는 본연의 자연스러운 아름다움을 만들어내는 것,<br />
                         그것이 리파인의 가치입니다.
                       </p>
 
                       <p>
-                        데이터를 기반으로 피부 상태와 얼굴 구조를 정확히 진단하고,<br className="hidden md:block" />
-                        그 위에 풍부한 의료 경험과 심미안을 더해,<br className="hidden md:block" />
-                        가장 자연스럽고 조화로운 결과를 완성하기 위해 노력하고 있습니다.<br className="hidden md:block" />
+                        데이터를 기반으로 피부 상태와 얼굴 구조를 정확히 진단하고,<br />
+                        그 위에 풍부한 의료 경험과 심미안을 더해,<br />
+                        가장 자연스럽고 조화로운 결과를 완성하기 위해 노력하고 있습니다.<br />
                         불필요한 시술은 권하지 않으며, 필요한 만큼만 정직하게 제안합니다.
                       </p>
 
                       <p className="pt-6 text-[#2d2420] font-medium">
-                        리파인에서의 시간이<br className="hidden md:block" />
-                        스스로를 향한 자부심을 되찾고,<br className="hidden md:block" />
+                        리파인에서의 시간이<br />
+                        스스로를 향한 자부심을 되찾고,<br />
                         일상이 리프레시 되는 경험이 되시길 바랍니다.
                       </p>
 

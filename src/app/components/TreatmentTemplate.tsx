@@ -120,7 +120,7 @@ export default function TreatmentTemplate({
                 transition={{ duration: 1.2, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
               >Treatment</motion.p>
               <motion.h1
-                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-bold leading-[1.1] mb-6 uppercase"
+                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-light leading-[1.1] mb-6 uppercase"
                 initial={{ filter: "blur(6px)", opacity: 0, scale: 1.02 }}
                 animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -158,10 +158,10 @@ export default function TreatmentTemplate({
         {/* ===== Core Principle (Figma) ===== */}
         <section className="w-full bg-[#201814] relative flex flex-col md:flex-row overflow-hidden" style={{minHeight:358}}>
           {/* Left: Title */}
-          <div className="flex flex-col gap-0 pt-10 pl-[50px] max-md:px-6 max-md:pt-8 shrink-0 md:w-[774px]">
+          <div className="flex flex-col gap-0 pt-10 pl-[50px] max-md:px-6 max-md:pt-8 shrink-0 md:w-[40%]">
             <FadeIn>
               <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-medium leading-[1.5]">Core Principle</span>
-              <h2 className="text-[#FBF6F1] text-[32px] md:text-[44px] font-bold leading-[1.3] tracking-[-1px] mt-[6px] font-['Pretendard',sans-serif]">
+              <h2 className="text-[#FBF6F1] text-[28px] md:text-[42px] font-light leading-[1.3] tracking-[-1px] mt-[6px] font-['Pretendard',sans-serif]">
                 {coreTitle}
               </h2>
               <div className="w-[46px] h-px bg-[#FBF6F1] opacity-50 mt-[14px]" />
@@ -172,7 +172,7 @@ export default function TreatmentTemplate({
           <div className="hidden md:block w-px h-[46px] bg-[#FBF6F1] opacity-50 shrink-0 mt-[95px]" />
 
           {/* Right: Description */}
-          <div className="flex flex-col gap-5 pt-[40px] md:pt-[86px] pl-[24px] pr-[50px] max-md:px-6 max-md:pb-10 flex-1">
+          <div className="flex flex-col gap-5 pt-[40px] md:pt-[86px] pl-[24px] pr-[382px] max-md:px-6 max-md:pb-10 w-full md:flex-1">
             <FadeIn delay={0.1}>
               {coreDesc.map((desc, idx) => (
                 <p key={idx} className="text-white text-[17px] font-light leading-[1.6]">{desc}</p>
@@ -218,13 +218,24 @@ export default function TreatmentTemplate({
             const contentBlock = (
               <div className="flex-1 relative px-5 md:px-0" style={{minHeight: 661}}>
                 <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-light leading-[1.5]">{t.subtitle}</span>
-                <h3 className="font-['Montserrat',sans-serif] text-[#504945] text-[40px] md:text-[64px] font-bold tracking-[-1px] mt-[10px]" style={{lineHeight:"0.84"}}>{t.titleEn}</h3>
-                <span className="block text-[#B5B0AC] text-[24px] md:text-[32px] font-medium tracking-[-1px] mt-[16px]" style={{lineHeight:"1.69"}}>{t.title}</span>
+                <h3 className="font-['Montserrat',sans-serif] text-[#504945] text-[40px] md:text-[64px] font-light tracking-[-1px] mt-[10px] leading-[1.2]">{t.titleEn}</h3>
+                <span className="block text-[#B5B0AC] text-[24px] md:text-[32px] font-light tracking-[-1px] mt-2 leading-[1.4]">{t.title}</span>
 
-                <p className="text-[#4A3F3A] text-lg md:text-xl font-normal leading-[1.3] mt-[30px]">{t.headline}</p>
-                <p className="text-[#6E6560] text-lg font-light leading-[1.6] max-w-[667px] mt-[8px]">{t.desc}</p>
+                <p className="text-[#4A3F3A] text-lg md:text-xl font-normal leading-[1.6] max-w-[667px] mt-[24px]">{t.headline}</p>
+                {t.desc && <p className="text-[#6E6560] text-lg font-light leading-[1.6] max-w-[667px] mt-[8px]">{t.desc}</p>}
 
-                <div className="grid grid-cols-2 md:flex md:flex-wrap gap-5 mt-[28px]">
+                {t.points && t.points.length > 0 && (
+                <ul className="flex flex-col gap-2 mt-[16px]">
+                  {t.points.map((p: string, i: number) => (
+                    <li key={i} className="flex items-start gap-2 text-[#6E6560] text-lg font-light leading-[1.6]">
+                      <span className="mt-[10px] w-[5px] h-[5px] rounded-full bg-[#6E6560] shrink-0" />
+                      {p}
+                    </li>
+                  ))}
+                </ul>
+                )}
+
+                <div className="grid grid-cols-2 md:flex md:flex-wrap gap-5 mt-[24px]">
                   {[
                     { label: "시술시간", value: t.duration },
                     { label: "마취 여부", value: t.anesthesia },
@@ -232,23 +243,23 @@ export default function TreatmentTemplate({
                     { label: "추천/유지", value: t.maintenance },
                   ].map((info) => (
                     <div key={info.label} className="flex flex-col gap-3 bg-[#FBF6F1] p-2.5 items-center text-center">
-                      <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-xs font-medium tracking-[2px] leading-[1.5]">{info.label}</span>
-                      <span className="text-[#504945] text-base font-medium leading-[1.5]">{info.value}</span>
+                      <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-xs font-light tracking-[2px] leading-[1.5]">{info.label}</span>
+                      <span className="text-[#504945] text-base font-light leading-[1.5]">{info.value}</span>
                     </div>
                   ))}
                 </div>
 
-                {t.headline2 && <p className="text-[#4A3F3A] text-lg md:text-xl font-normal leading-[1.3] mt-[32px]">{t.headline2}</p>}
+                {t.headline2 && <p className="text-[#4A3F3A] text-lg md:text-xl font-normal leading-[1.3] mt-[24px] mb-4">{t.headline2}</p>}
                 {t.details && t.details.length > 0 && (
-                <div className="flex flex-col gap-5 max-w-[689px] mt-[10px]">
+                <div className="flex flex-col gap-2 max-w-[689px]">
                   {t.details.map((d: string, i: number) => (
-                    <p key={i} className="text-[#6E6560] text-lg font-light leading-[1.6]">{d}</p>
+                    <p key={i} className="text-[#6E6560] text-lg font-light leading-[1.6]">{i + 1}. {d}</p>
                   ))}
                 </div>
                 )}
 
                 {t.tags && t.tags.length > 0 && (
-                <div className="flex flex-wrap gap-3 mt-[32px]">
+                <div className="flex flex-wrap gap-3 mt-[24px]">
                   {t.tags.map((tag: string) => (
                     <span key={tag} className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-medium border border-[#B8A99A] rounded px-3.5 py-2">{tag}</span>
                   ))}
@@ -275,7 +286,7 @@ export default function TreatmentTemplate({
                 <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
                   Process
                 </p>
-                <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold">
+                <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light">
                   시술 과정
                 </h2>
               </div>
@@ -313,7 +324,7 @@ export default function TreatmentTemplate({
                   <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
                     Recommend
                   </p>
-                  <h2 className="text-[32px] md:text-[44px] text-[#faf6f1] tracking-[-1px] font-['Pretendard',sans-serif] font-bold">
+                  <h2 className="text-[28px] md:text-[42px] text-[#faf6f1] tracking-[-1px] font-['Pretendard',sans-serif] font-light">
                     이런 분께 추천드려요
                   </h2>
                 </FadeIn>
@@ -345,7 +356,7 @@ export default function TreatmentTemplate({
                   <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
                     Q&A
                   </p>
-                  <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold">
+                  <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light">
                     자주 묻는 질문
                   </h2>
                 </div>

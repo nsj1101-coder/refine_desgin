@@ -5,6 +5,10 @@ import { ScaledPageWrapper, useScaledViewportHeight } from "../components/Scaled
 import { SubpageDirectionsSection, SubpageFooter } from "../../imports/Main01";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
 import subHeroImg from "figma:asset/1abc62602d7139f0f3c40ce65b44e34743d1ec1f.png";
+import skinLayerEpidermis from "../../assets/skin-layer-epidermis.png";
+import skinLayerFat from "../../assets/skin-layer-fat.png";
+import skinLayerFascia from "../../assets/skin-layer-fascia.png";
+import skinLayerMuscle from "../../assets/skin-layer-muscle.png";
 
 /* ───── animation helpers ───── */
 function FadeInUp({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
@@ -22,6 +26,8 @@ function FadeInUp({ children, className = "", delay = 0 }: { children: React.Rea
 }
 
 /* ───── skin-layer data ───── */
+const SKIN_LAYER_IMAGES = [skinLayerEpidermis, skinLayerFat, skinLayerFascia, skinLayerMuscle];
+
 const SKIN_LAYERS = [
   {
     id: "epidermis",
@@ -30,6 +36,7 @@ const SKIN_LAYERS = [
     color: "#D4B896",
     colorLight: "#F5EDE2",
     colorDark: "#b8a080",
+    img: skinLayerEpidermis,
     target: "거친 피부결, 헐거워진 탄력",
     effect: "고주파 에너지가 진피층 콜라겐을 활성화시켜 피부결과 탄력을 개선합니다.",
     depth: "0 – 2mm",
@@ -41,17 +48,19 @@ const SKIN_LAYERS = [
     color: "#C4A67A",
     colorLight: "#EDE0CD",
     colorDark: "#a38a5e",
+    img: skinLayerFat,
     target: "심부볼, 이중턱 등 무겁게 처진 지방",
     effect: "마이크로파&초음파 에너지를 통해 불필요한 지방 부피를 줄여 얼굴의 무게감을 덜어내고 라인을 탄탄하게 만듭니다.",
     depth: "2 – 6mm",
   },
   {
     id: "fascia",
-    labelEn: "Fascia (SMAS)",
+    labelEn: "Fascia",
     labelKr: "근막층",
     color: "#9E7C5A",
     colorLight: "#DDD0C0",
     colorDark: "#7d6040",
+    img: skinLayerFascia,
     target: "중력으로 인해 무너진 얼굴 윤곽",
     effect: "초음파 에너지가 피부 지지 구조인 SMAS(근막)층에 강력하게 전달하여 피부의 탄력을 끌어올립니다.",
     depth: "4.5mm",
@@ -63,6 +72,7 @@ const SKIN_LAYERS = [
     color: "#7A5C3E",
     colorLight: "#CFC0AE",
     colorDark: "#5a4028",
+    img: skinLayerMuscle,
     target: "피부를 아래로 끌어당기는 근육의 힘",
     effect: "과도하게 아래로 당기는 근육(내림근)과 표정 근육의 움직임을 조절하여 자연스러운 리프팅 효과가 지속되도록 합니다.",
     depth: "Deep",
@@ -177,7 +187,7 @@ export default function AllDepthLiftingPage() {
                 All-depth Lifting
               </motion.p>
               <motion.h1
-                className="text-[50px] md:text-[86px] text-[#faf6f1] font-['Montserrat',sans-serif] font-bold leading-[1.1] mb-6 uppercase"
+                className="text-[50px] md:text-[86px] text-[#faf6f1] font-['Montserrat',sans-serif] font-light leading-[1.1] mb-6 uppercase"
                 initial={{ filter: "blur(6px)", opacity: 0, scale: 1.02 }}
                 animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -231,7 +241,7 @@ export default function AllDepthLiftingPage() {
                     <div className="w-[40px] h-[1px] bg-[#b8a99a]" />
                     <span className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[13px] tracking-[3px] uppercase">Philosophy</span>
                   </div>
-                  <h2 className="text-[28px] md:text-[42px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold leading-[1.35] mb-6">
+                  <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light leading-[1.35] mb-6">
                     피부의 겉부터 근육층까지,<br />
                     <span className="text-[#b8a99a]">최적의 조합</span>으로<br className="hidden md:block" /> 설계되는 리프팅
                   </h2>
@@ -239,7 +249,7 @@ export default function AllDepthLiftingPage() {
 
                 <FadeInUp delay={0.15}>
                   <p className="text-[16px] md:text-[18px] text-[#4a3f3a] leading-[1.9] font-light">
-                    피부는 개인의 상태에 따라 노화의 원인을 층별로 정확히 타겟해야 합니다. 리파인 올뎁스 리프팅은 표피부터 진피, 지방, 근막을 넘어 근육의 흐름까지 복합적으로 설계하는 리프팅 프로그램입니다.
+                    피부는 개인의 상태에 따라 노화의 원인을 층 별로 정확히 타겟해야 합니다. 리파인 올뎁스 리프팅은 표피부터 진피, 지방, 근막을 넘어 근육의 흐름까지 복합적으로 설계하는 리프팅 프로그램입니다.
                   </p>
                 </FadeInUp>
 
@@ -288,7 +298,7 @@ export default function AllDepthLiftingPage() {
                 <span className="inline-block border border-[#b8a99a]/40 text-[#b8a99a] font-['Montserrat',sans-serif] font-medium text-[11px] tracking-[3px] uppercase px-5 py-[6px] mb-6">
                   Skin Structure
                 </span>
-                <h2 className="text-[28px] md:text-[44px] tracking-[-1px] font-['Pretendard',sans-serif] font-bold leading-[1.35]">
+                <h2 className="text-[28px] md:text-[42px] text-[#ffffff] tracking-[-1px] font-['Pretendard',sans-serif] font-light leading-[1.35]">
                   올뎁스 리프팅이 타겟하는<br />피부의 <span className="text-[#b8a99a]">4가지 층</span>
                 </h2>
               </div>
@@ -296,52 +306,39 @@ export default function AllDepthLiftingPage() {
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-[60px] lg:gap-[80px] items-start">
 
-              {/* LEFT — Interactive Cross-Section Diagram */}
+              {/* LEFT — Interactive Cross-Section Image */}
               <div className="lg:col-span-5 flex justify-center">
                 <div className="w-full max-w-[420px]">
-                  {/* Skin cross-section visual */}
-                  <div className="relative w-full">
+                  <div className="relative w-full flex flex-col">
                     {SKIN_LAYERS.map((layer, idx) => {
                       const isActive = activeLayer === idx;
-                      const heights = [100, 100, 70, 90]; // relative layer heights
                       return (
                         <motion.div
                           key={layer.id}
                           onClick={() => setActiveLayer(idx)}
-                          className="relative w-full cursor-pointer group overflow-hidden"
-                          style={{ height: `${heights[idx]}px` }}
+                          className="relative w-full cursor-pointer overflow-hidden"
                           animate={{
-                            backgroundColor: isActive ? layer.color : `${layer.color}33`,
-                            scale: isActive ? 1 : 1,
+                            opacity: isActive ? 1 : 0.4,
+                            scale: isActive ? 1.02 : 1,
                           }}
-                          whileHover={{ backgroundColor: `${layer.color}99` }}
+                          whileHover={{ opacity: 0.8 }}
                           transition={{ duration: 0.5 }}
                         >
-                          {/* Inner pattern */}
-                          <div
-                            className="absolute inset-0 opacity-20"
-                            style={{
-                              background: idx === 0
-                                ? `repeating-linear-gradient(0deg, transparent, transparent 4px, ${layer.colorDark}40 4px, ${layer.colorDark}40 5px)`
-                                : idx === 1
-                                ? `radial-gradient(circle 3px, ${layer.colorDark}30 100%, transparent 100%) 0 0 / 12px 12px`
-                                : idx === 2
-                                ? `repeating-linear-gradient(45deg, transparent, transparent 6px, ${layer.colorDark}25 6px, ${layer.colorDark}25 7px)`
-                                : `repeating-linear-gradient(90deg, transparent, transparent 3px, ${layer.colorDark}25 3px, ${layer.colorDark}25 4px)`,
-                            }}
-                          />
+                          <img src={layer.img} alt={layer.labelEn} className="w-full h-auto block" />
 
-                          {/* Layer label */}
-                          <div className={`absolute inset-0 flex items-center justify-between px-6 md:px-8 transition-all duration-500 ${isActive ? 'opacity-100' : 'opacity-60 group-hover:opacity-80'}`}>
-                            <div className="flex items-center gap-3">
-                              <span className="font-['Montserrat',sans-serif] font-semibold text-[13px] md:text-[14px] tracking-[1px] uppercase text-white drop-shadow-sm">
-                                {layer.labelEn}
-                              </span>
-                            </div>
-                            <span className="font-['Pretendard',sans-serif] text-[13px] md:text-[14px] text-white/80">
+                          {/* Layer label overlay */}
+                          <motion.div
+                            className="absolute inset-0 flex items-center justify-between px-6 md:px-8"
+                            animate={{ opacity: isActive ? 1 : 0 }}
+                            transition={{ duration: 0.3 }}
+                          >
+                            <span className="font-['Montserrat',sans-serif] font-semibold text-[13px] md:text-[14px] tracking-[1px] uppercase text-white" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.25)' }}>
+                              {layer.labelEn}
+                            </span>
+                            <span className="font-['Pretendard',sans-serif] font-medium text-[13px] md:text-[14px] text-white" style={{ textShadow: '0 1px 4px rgba(0,0,0,0.25)' }}>
                               {layer.labelKr}
                             </span>
-                          </div>
+                          </motion.div>
 
                           {/* Active indicator */}
                           {isActive && (
@@ -351,28 +348,9 @@ export default function AllDepthLiftingPage() {
                               transition={{ type: "spring", stiffness: 400, damping: 30 }}
                             />
                           )}
-
-                          {/* Depth label */}
-                          <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-white/10" />
                         </motion.div>
                       );
                     })}
-
-                    {/* Depth scale */}
-                    <div className="absolute -left-[50px] md:-left-[60px] top-0 bottom-0 flex flex-col justify-between items-end py-2">
-                      <span className="font-['Montserrat',sans-serif] text-[10px] text-[#b8a99a]/60 tracking-[1px]">표면</span>
-                      <span className="font-['Montserrat',sans-serif] text-[10px] text-[#b8a99a]/60 tracking-[1px]">Deep</span>
-                    </div>
-                    <div className="absolute -left-[20px] top-0 bottom-0 w-[1px] bg-gradient-to-b from-[#b8a99a]/40 via-[#b8a99a]/20 to-[#b8a99a]/40" />
-
-                    {/* Arrow annotation */}
-                    <div className="absolute -right-[60px] md:-right-[80px] top-0 bottom-0 flex flex-col items-center justify-center">
-                      <div className="w-[1px] h-full bg-gradient-to-b from-transparent via-[#b8a99a]/30 to-transparent relative">
-                        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-b-[6px] border-transparent border-b-[#b8a99a]/40" />
-                        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-0 h-0 border-l-[4px] border-r-[4px] border-t-[6px] border-transparent border-t-[#b8a99a]/40" />
-                      </div>
-                      <span className="font-['Montserrat',sans-serif] text-[10px] text-[#b8a99a]/50 tracking-[2px] uppercase mt-2 [writing-mode:vertical-rl] absolute">All-depth</span>
-                    </div>
                   </div>
 
                   {/* Legend */}
@@ -397,17 +375,17 @@ export default function AllDepthLiftingPage() {
                   >
                     {/* Layer header */}
                     <div>
-                      <div className="flex items-center gap-4 mb-4">
-                        <div className="w-[48px] h-[48px] rounded-full flex items-center justify-center" style={{ backgroundColor: activeLayerData.color }}>
-                          <span className="font-['Montserrat',sans-serif] font-bold text-[16px] text-white">
+                      <div className="flex items-start gap-4 mb-4">
+                        <div className="w-[48px] h-[48px] rounded-full flex items-center justify-center shrink-0 mt-[4px]" style={{ backgroundColor: activeLayerData.color }}>
+                          <span className="font-['Montserrat',sans-serif] font-light text-[16px] text-white">
                             {String(activeLayer + 1).padStart(2, '0')}
                           </span>
                         </div>
                         <div>
-                          <h3 className="font-['Montserrat',sans-serif] font-semibold text-[24px] md:text-[32px] tracking-[-0.5px] text-white leading-none mb-1">
+                          <h3 className="font-['Montserrat',sans-serif] font-light text-[24px] md:text-[32px] tracking-[-0.5px] text-white leading-none">
                             {activeLayerData.labelEn}
                           </h3>
-                          <p className="font-['Pretendard',sans-serif] text-[16px] md:text-[18px] text-[#b8a99a]">
+                          <p className="font-['Pretendard',sans-serif] text-[16px] md:text-[18px] text-[#b8a99a] mt-2">
                             {activeLayerData.labelKr}
                           </p>
                         </div>
@@ -421,7 +399,7 @@ export default function AllDepthLiftingPage() {
                           <div className="w-[6px] h-[6px] rounded-full" style={{ backgroundColor: activeLayerData.color }} />
                           <span className="font-['Montserrat',sans-serif] font-medium text-[12px] tracking-[2px] uppercase text-[#b8a99a]">Target</span>
                         </div>
-                        <p className="text-[17px] md:text-[20px] text-white font-medium leading-[1.5]">
+                        <p className="text-[17px] md:text-[20px] text-white font-light leading-[1.5]">
                           {activeLayerData.target}
                         </p>
                       </div>
@@ -485,14 +463,14 @@ export default function AllDepthLiftingPage() {
         {/* ═══════════════════════════════════════════
             TREATMENT PROGRAMS
         ═══════════════════════════════════════════ */}
-        <section className="w-full bg-[#faf6f1]">
+        {false && <section className="w-full bg-[#faf6f1]">
           <div className="w-full max-w-[1920px] mx-auto px-6 md:px-[140px] py-[100px] md:py-[160px]">
             <FadeInUp>
               <div className="flex flex-col items-center text-center mb-[60px] md:mb-[100px]">
                 <span className="inline-block border border-[#1c1614]/20 text-[#1c1614] font-['Montserrat',sans-serif] font-medium text-[11px] tracking-[3px] uppercase px-5 py-[6px] mb-6">
                   Programs
                 </span>
-                <h2 className="text-[28px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold leading-[1.35]">
+                <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light leading-[1.35]">
                   리프팅 프로그램
                 </h2>
               </div>
@@ -601,7 +579,7 @@ export default function AllDepthLiftingPage() {
               </motion.div>
             </AnimatePresence>
           </div>
-        </section>
+        </section>}
 
         {/* ═══════════════════════════════════════════
             RECOMMEND SECTION
@@ -616,7 +594,7 @@ export default function AllDepthLiftingPage() {
                       <div className="w-[40px] h-[1px] bg-[#b8a99a]" />
                       <span className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[13px] tracking-[3px] uppercase">Recommend</span>
                     </div>
-                    <h2 className="text-[28px] md:text-[40px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold leading-[1.35]">
+                    <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light leading-[1.35]">
                       이런 분께<br />추천드려요
                     </h2>
                   </div>
@@ -654,7 +632,7 @@ export default function AllDepthLiftingPage() {
                 <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
                   Process
                 </p>
-                <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold">
+                <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light">
                   시술 과정
                 </h2>
               </div>
@@ -694,7 +672,7 @@ export default function AllDepthLiftingPage() {
                   <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
                     Q&A
                   </p>
-                  <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold">
+                  <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light">
                     자주 묻는 질문
                   </h2>
                 </div>

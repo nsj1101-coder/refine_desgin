@@ -52,7 +52,7 @@ export default function BrandValuePage() {
                 transition={{ duration: 1.2, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
               >About</motion.p>
               <motion.h1
-                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-bold leading-[1.1] mb-6 uppercase"
+                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-light leading-[1.1] mb-6 uppercase"
                 initial={{ filter: "blur(6px)", opacity: 0, scale: 1.02 }}
                 animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -96,10 +96,10 @@ export default function BrandValuePage() {
               <div className="md:w-[40%] md:sticky top-[160px]">
                 <FadeInUp>
                   <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
-                    Brand Story
+                    Brand Value
                   </p>
-                  <h2 className="text-[36px] md:text-[52px] text-[#1c1614] tracking-[-2px] font-['Pretendard',sans-serif] font-medium mb-8 leading-[1.3]">
-                    가장 세련된 조화를<br />완성하는 미학 연구소
+                  <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light mb-8 leading-[1.3]">
+                    브랜드 가치
                   </h2>
                 </FadeInUp>
               </div>
@@ -121,11 +121,8 @@ export default function BrandValuePage() {
                 </FadeInUp>
                 <FadeInUp>
                   <div className="text-[17px] md:text-[19px] text-[#4a3f3a] leading-[1.9] font-normal tracking-[-0.3px] break-keep">
-                    <p className="mb-6">
-                      리파인은 단순히 시술을 제공하는 곳을 넘어, 리프레시 할 수 있는 공간이 되겠습니다.
-                    </p>
                     <p>
-                      이곳을 다니는 것만으로도 자신감을 얻고 에너지를 채워 일상이 행복해지는 진정한 리프레시를 경험하시길 바랍니다.<br className="hidden md:block" /> 리파인에서 시간이 흐를수록 더 깊어지는 나만의 품격 있는 아름다움을 완성해 보시길 바랍니다.
+                      리파인은 단순히 시술을 제공하는 곳을 넘어, 리프레시 할 수 있는 공간이 되겠습니다. 이곳을 다니는 것만으로도 자신감을 얻고 에너지를 채워 일상이 행복해지는 진정한 리프레시를 경험하시길 바랍니다. 리파인에서 시간이 흐를수록 더 깊어지는 나만의 품격 있는 아름다움을 완성해 보시길 바랍니다.
                     </p>
                   </div>
                 </FadeInUp>
@@ -142,7 +139,7 @@ export default function BrandValuePage() {
                 <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
                   Core Values
                 </p>
-                <h2 className="text-[36px] md:text-[48px] text-[#1c1614] tracking-[-1px] font-['Montserrat',sans-serif] font-medium leading-[1.2]">
+                <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Montserrat',sans-serif] font-light leading-[1.2]">
                   REFINE ESSENCE
                 </h2>
               </div>

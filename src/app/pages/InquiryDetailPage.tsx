@@ -105,7 +105,7 @@ export default function InquiryDetailPage() {
                 transition={{ duration: 1.2, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
               >Community</motion.p>
               <motion.h1
-                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-bold leading-[1.1] mb-6 uppercase"
+                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-light leading-[1.1] mb-6 uppercase"
                 initial={{ filter: "blur(6px)", opacity: 0, scale: 1.02 }}
                 animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -158,7 +158,7 @@ export default function InquiryDetailPage() {
                       <span className="text-[12px] font-medium text-[#b8a99a] border border-[#e8e5e0] px-3 py-1">답변대기</span>
                     )}
                   </div>
-                  <h2 className="text-[28px] md:text-[36px] text-[#1c1614] font-medium tracking-[-1px] leading-[1.3] mb-6">
+                  <h2 className="text-[28px] md:text-[42px] text-[#222] font-light tracking-[-1px] leading-[1.3] mb-6">
                     {inquiry.title}
                   </h2>
                   <div className="flex items-center gap-4 text-[14px] text-[#b8a99a]">

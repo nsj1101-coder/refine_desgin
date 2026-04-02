@@ -827,7 +827,7 @@ export function Frame36() {
                 <p className="font-['Montserrat',sans-serif] text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.7)] hidden md:block">Tel. 02-1234-5678</p>
               </div>
               <p className="font-['Pretendard',sans-serif] font-normal text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.6)]">
-                서울 강남구 테헤란로 123 리파인빌딩 4층
+                서울특별시 강남구 논현로 175길 38 5층 리파인의원 (압구정역 5번 출구 도보 4분)
               </p>
               <div className="flex items-center gap-[24px] max-md:gap-[16px] mt-[8px]">
                 <span className="font-['Pretendard',sans-serif] font-medium text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.6)] cursor-pointer hover:text-[#faf6f1] transition-colors tracking-wide">카카오톡 상담</span>
@@ -930,7 +930,7 @@ function Component() {
 function Frame2() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] max-md:gap-[12px] items-center not-italic relative shrink-0 text-white whitespace-nowrap">
-      <p className="font-['Pretendard',sans-serif] font-semibold leading-[1.3] relative shrink-0 text-[56px] max-md:text-[24px] max-md:whitespace-normal max-md:text-center max-md:leading-[1.5]">세심하고, 정교하게 다듬어 본연의 아름다움을 만들다</p>
+      <p className="font-['Pretendard',sans-serif] font-light leading-[1.3] relative shrink-0 text-[56px] max-md:text-[24px] max-md:whitespace-normal max-md:text-center max-md:leading-[1.5]">세심하고, 정교하게 다듬어 본연의 아름다움을 만들다</p>
       <div className="font-['Pretendard',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[17px] max-md:text-[16px]">
         <p className="mb-0 max-md:whitespace-normal max-md:text-center">세심한 안목으로 본연의 아름다움을 찾고, 정교한 손길로 세련된 가치를 완성합니다.</p>
       </div>
@@ -1028,8 +1028,8 @@ function Map() {
 function Frame4() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap">
-      <p className="font-['Montserrat',sans-serif] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase">[ ALL-DEPTH LIFTING ]</p>
-      <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#222] text-[46px] max-md:text-[24px]">올 뎁스 리프팅</p>
+      <p className="font-['Montserrat',sans-serif] font-normal relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase">ALL-DEPTH LIFTING</p>
+      <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#222] text-[42px] max-md:text-[24px]">올 뎁스 리프팅</p>
     </div>
   );
 }
@@ -1278,7 +1278,7 @@ function Group14() {
 function Frame43() {
   const isMobile = useIsMobile();
   const liftingCards = [
-    { img: imgLifting1, title: "Epidermis\n& Dermis", subtitle: "피부결과 탄력 개선", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["겉으로 보이는 잔주름을 매끄럽게 정돈합니다.", "피부 속 콜라겐 생성을 유도하여 얇아진 피부 본연의 힘과 윤기를 되찾아줍니다."] },
+    { img: imgLifting1, title: "Epidermis & Dermis", subtitle: "피부결과 탄력 개선", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["겉으로 보이는 잔주름을 매끄럽게 정돈합니다.", "피부 속 콜라겐 생성을 유도하여 얇아진 피부 본연의 힘과 윤기를 되찾아줍니다."] },
     { img: imgLifting2, title: "Fat", subtitle: "얼굴의 무게감을 덜어내고 라인을 탄탄하게", desc: "지방을 비워내, 슬림하고 매끄러운 윤곽선", bullets: ["탄력을 저하시키는 불필요하고 무거운 처진 지방을 정돈합니다.", "둔탁해진 턱선과 심부볼의 부피를 줄여 슬림하고 매끄러운 윤곽 라인을 만듭니다."] },
     { img: imgLifting3, title: "Fascia", subtitle: "피부의 탄력을 끌어올리는", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["피부를 지지하는 뼈대 역할을 하는 근막층을 강력하게 타겟팅합니다.", "피부 깊은 곳에서부터 처진 조직을 단단하게 위로 견인하여 근본적인 리프팅을 실현합니다."] },
     { img: imgLifting4, title: "Muscle", subtitle: "자연스러운 리프팅 효과가 지속되도록", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["개개인의 표정 근육 움직임과 방향까지 고려하여 디자인합니다.", "시술 후에도 표정이 어색하지 않으며, 끌어올린 탄력이 더 오랜 기간 단단하게 유지되도록 고정력을 강화합니다."] },
@@ -1287,8 +1287,8 @@ function Frame43() {
     return (
       <div className="relative w-full bg-[#FBF6F1] flex flex-col items-center gap-[16px] px-5 py-10">
         <div className="flex flex-col items-center gap-[10px] leading-none">
-          <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-semibold tracking-[3px] text-center leading-none">[ ALL-DEPTH LIFTING ]</span>
-          <h2 className="font-['Pretendard'] text-[#222] text-[24px] font-bold text-center leading-none">올 뎁스 리프팅</h2>
+          <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-normal tracking-[3px] text-center leading-none">ALL-DEPTH LIFTING</span>
+          <h2 className="font-['Pretendard'] text-[#222] text-[24px] font-light text-center leading-none">올 뎁스 리프팅</h2>
         </div>
         <p className="font-['Pretendard'] text-[#666] text-sm text-center">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
         <div className="flex flex-col gap-8 w-full">
@@ -1298,8 +1298,8 @@ function Frame43() {
               <div className="flex items-center justify-center w-max h-[32px] bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)] px-3">
                 <span className="font-['Pretendard'] text-white text-sm font-medium">프리미엄 리프팅</span>
               </div>
-              <h3 className="font-['Montserrat'] text-black text-[28px] font-medium leading-[1.25] whitespace-nowrap">{c.title.replace('\n', ' ')}</h3>
-              <span className="font-['Pretendard'] text-[#b8a99a] text-base font-medium">{c.subtitle}</span>
+              <h3 className="font-['Montserrat'] text-black text-[28px] font-normal leading-[1.25] whitespace-nowrap">{c.title.replace('\n', ' ')}</h3>
+              <span className="font-['Pretendard'] text-[#b8a99a] text-base font-light">{c.subtitle}</span>
               <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm leading-[1.7]">{c.desc}</p>
               <div className="flex flex-col font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm font-light leading-[1.67]">
                 {c.bullets.map((b, i) => (<div key={i} className="flex gap-2"><span className="w-[20px] shrink-0 text-center">•</span><span>{b}</span></div>))}
@@ -1315,22 +1315,22 @@ function Frame43() {
       <div className="w-full bg-[#FBF6F1] flex flex-col items-center gap-12 px-[50px] pt-[100px] pb-[80px]">
         <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[16px] items-center leading-none relative shrink-0">
           <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap max-md:whitespace-normal leading-none">
-            <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase leading-none">[ ALL-DEPTH LIFTING ]</p>
-            <p className="font-['Pretendard'] font-bold not-italic relative shrink-0 text-[#222] text-[46px] max-md:text-[24px] leading-none">올 뎁스 리프팅</p>
+            <p className="font-['Montserrat'] font-normal relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase leading-none">ALL-DEPTH LIFTING</p>
+            <p className="font-['Pretendard'] font-light not-italic relative shrink-0 text-[#222] text-[42px] max-md:text-[24px] leading-none">올 뎁스 리프팅</p>
           </div>
           <p className="font-['Pretendard'] font-normal not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] text-center max-md:leading-[1.5]">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
         </div>
         <div className="flex gap-5 w-full max-w-[1820px]">
           {liftingCards.map((c) => (
-            <div key={c.title} className="flex-1 flex flex-col gap-5">
+            <div key={c.title} className="flex-1 flex flex-col gap-3">
               <div className="w-full h-[460px] overflow-hidden group"><img src={c.img} alt={c.title} className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" /></div>
               <div className="flex items-center justify-center w-[145px] h-[39px] rounded bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)]">
                 <span className="font-['Pretendard'] text-white text-base font-medium">프리미엄 리프팅</span>
               </div>
-              <h3 className="font-['Montserrat'] text-black text-[52px] font-medium leading-[1.25] whitespace-pre-line">{c.title}</h3>
-              <span className="font-['Pretendard'] text-[#b8a99a] text-[22px] font-medium leading-[1.5]">{c.subtitle}</span>
-              <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-lg leading-[1.8]">{c.desc}</p>
-              <div className="flex flex-col font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-lg font-light leading-[1.67]">
+              <h3 className="font-['Montserrat'] text-black text-[40px] font-normal leading-[1] whitespace-nowrap min-h-[56px] flex items-center">{c.title}</h3>
+              <span className="font-['Pretendard'] text-[#b8a99a] text-[22px] font-light leading-[1.5] min-h-[33px]">{c.subtitle}</span>
+              <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-lg leading-[1.8] min-h-[32px]">{c.desc}</p>
+              <div className="flex flex-col font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-lg font-light leading-[1.67] min-h-[120px]">
                 {c.bullets.map((b, i) => (<div key={i} className="flex gap-2.5"><span className="w-[30px] shrink-0 text-center">•</span><span>{b}</span></div>))}
               </div>
             </div>
@@ -1355,8 +1355,8 @@ function Image() {
 function Frame17() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center relative shrink-0">
-      <p className="font-['Montserrat',sans-serif] font-semibold leading-none relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] tracking-[4px] max-md:tracking-[3px] uppercase">[ PROMOTION <span className="tracking-[0px]">]</span></p>
-      <div className="font-['Pretendard',sans-serif] font-bold leading-[1.5] max-md:leading-[1.4] relative shrink-0 text-[#222] text-[40px] max-md:text-[22px]">
+      <p className="font-['Montserrat',sans-serif] font-normal leading-none relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] tracking-[4px] max-md:tracking-[3px] uppercase">PROMOTION</p>
+      <div className="font-['Pretendard',sans-serif] font-light leading-[1.5] max-md:leading-[1.4] relative shrink-0 text-[#222] text-[42px] max-md:text-[22px]">
         <p className="mb-0">신규 고객</p>
         <p>첫 방문 프로모션</p>
       </div>
@@ -1406,8 +1406,8 @@ function Frame16() {
 function Frame18() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-start justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
-      <p className="font-['Montserrat',sans-serif] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[2px] max-md:tracking-[1.5px] uppercase">{`[ DIRECTIONS & A MEDICAL GUIDE ]`}</p>
-      <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#222] text-[40px] max-md:text-[22px]">{`오시는 길 & 진료안내`}</p>
+      <p className="font-['Montserrat',sans-serif] font-normal relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[2px] max-md:tracking-[1.5px] uppercase">{`DIRECTIONS & A MEDICAL GUIDE`}</p>
+      <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#222] text-[42px] max-md:text-[22px]">{`오시는 길 & 진료안내`}</p>
     </div>
   );
 }
@@ -1426,7 +1426,7 @@ function Frame24() {
     <div className="content-stretch flex flex-col gap-[20px] max-md:gap-[12px] items-start py-[36px] max-md:py-[20px] relative shrink-0 w-full">
       <div aria-hidden="true" className="absolute border-[#ddd] border-b border-solid inset-0 pointer-events-none" />
       <Frame25 />
-      <p className="font-['Pretendard',sans-serif] font-medium leading-none max-md:leading-[1.5] min-w-full not-italic relative shrink-0 text-[#1c1614] text-[20px] max-md:text-[16px] w-[min-content]">서울특별시 강남구 테헤란로 123 REFINE 피부과의원 5층</p>
+      <p className="font-['Pretendard',sans-serif] font-medium leading-none max-md:leading-[1.5] min-w-full not-italic relative shrink-0 text-[#1c1614] text-[20px] max-md:text-[16px] w-[min-content]">서울특별시 강남구 논현로 175길 38 5층 리파인의원 (압구정역 5번 출구 도보 4분)</p>
     </div>
   );
 }
@@ -1442,19 +1442,22 @@ function Frame27() {
 
 function Frame31() {
   return (
-    <div className="font-['Pretendard',sans-serif] font-medium gap-x-[77px] max-md:gap-x-[24px] gap-y-[20px] max-md:gap-y-[10px] grid-cols-[repeat(2,fit-content(100%))] grid-rows-[repeat(3,fit-content(100%))] inline-grid relative shrink-0 text-[#222] text-[18px] max-md:text-[16px]">
-      <p className="col-1 justify-self-start relative row-1 self-start shrink-0 tracking-[0.36px] whitespace-pre">{`평       일`}</p>
-      <p className="col-2 justify-self-start relative row-1 self-start shrink-0 whitespace-nowrap">10:00 - 19:00</p>
-      <p className="col-1 justify-self-start relative row-2 self-start shrink-0 whitespace-pre">{`토  요  일`}</p>
-      <p className="col-2 justify-self-start relative row-2 self-start shrink-0 whitespace-nowrap">10:00 - 15:00</p>
-      <p className="col-1 justify-self-start relative row-3 self-start shrink-0 tracking-[0.72px] whitespace-nowrap">점심시간</p>
-      <p className="col-2 justify-self-start relative row-3 self-start shrink-0 whitespace-nowrap">13:00 - 14:00</p>
+    <div className="font-['Pretendard',sans-serif] font-medium gap-x-[77px] max-md:gap-x-[24px] gap-y-[20px] max-md:gap-y-[10px] grid-cols-[repeat(2,fit-content(100%))] grid-rows-[repeat(5,fit-content(100%))] inline-grid relative shrink-0 text-[#222] text-[18px] max-md:text-[16px]">
+      <p className="col-1 justify-self-start relative row-1 self-start shrink-0 whitespace-nowrap">월, 화, 목</p>
+      <p className="col-2 justify-self-start relative row-1 self-start shrink-0 whitespace-nowrap">10:00 ~ 19:00</p>
+      <p className="col-1 justify-self-start relative row-2 self-start shrink-0 whitespace-nowrap">금</p>
+      <p className="col-2 justify-self-start relative row-2 self-start shrink-0 whitespace-nowrap">10:00 ~ 20:30 (야간진료)</p>
+      <p className="col-1 justify-self-start relative row-3 self-start shrink-0 whitespace-nowrap">토</p>
+      <p className="col-2 justify-self-start relative row-3 self-start shrink-0 whitespace-nowrap">10:00 ~ 16:30</p>
+      <p className="col-1 justify-self-start relative row-4 self-start shrink-0 whitespace-nowrap">점심시간</p>
+      <p className="col-2 justify-self-start relative row-4 self-start shrink-0 whitespace-nowrap">13:00 ~ 14:00</p>
+      <p className="col-span-2 justify-self-start relative row-5 self-start shrink-0 whitespace-nowrap text-[#999]">토요일 점심시간 없음</p>
     </div>
   );
 }
 
 function Frame28() {
-  const closedText = `\ud734\uc9c4 (Closed)  \uc77c\uc694\uc77c / \uacf5\ud734\uc77c  (sun/public holiday)`;
+  const closedText = `휴진 (Closed)  수요일 / 일요일 / 공휴일`;
   return (
     <div className="content-stretch flex flex-col gap-[18px] items-start leading-none not-italic relative shrink-0 w-full max-md:leading-[1.5]">
       <Frame31 />
@@ -1548,6 +1551,10 @@ function Frame32() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] max-md:gap-[12px] items-start py-[36px] max-md:py-[20px] relative shrink-0 w-full">
       <Frame33 />
+      <div className="flex flex-col gap-[6px]">
+        <p className="font-['Pretendard',sans-serif] font-medium text-[#1c1614] text-[20px] max-md:text-[16px]">예약방법</p>
+        <p className="font-['Pretendard',sans-serif] font-normal text-[#666] text-[16px] max-md:text-[14px] leading-[1.6]">충분한 상담과 정밀한 진료를 위해 예약제로 운영됩니다.<br />편하신 채널을 통해 예약해 주세요.</p>
+      </div>
       <Frame34 />
     </div>
   );
@@ -1636,7 +1643,7 @@ function FooterColInfo() {
         <p>리파인의원</p>
         <p>대표자명 : 김리파</p>
         <p>사업자등록번호 : 123-45-67890</p>
-        <p>서울특별시 강남구 테헤란로 123, 4층</p>
+        <p>서울특별시 강남구 논현로 175길 38 5층 리파인의원 (압구정역 5번 출구 도보 4분)</p>
         <p className="font-['Montserrat'] mt-2">T. 02-1234-5678</p>
         <p className="font-['Montserrat']">E. contact@refineclinic.com</p>
       </div>
@@ -1649,19 +1656,24 @@ function FooterColHours() {
     <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[12px] items-start overflow-clip relative shrink-0 w-[200px] max-md:w-full">
       <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[14px] text-[#faf6f1] tracking-[2px] uppercase">Clinic Hours</p>
       <div className="flex flex-col gap-[8px] font-['Pretendard'] font-light text-[14px] text-[#faf6f1]/70 leading-relaxed">
-        <div className="flex justify-between w-full max-w-[160px]">
-          <span>월 - 목</span>
-          <span className="font-['Montserrat']">10:00 - 19:00</span>
+        <div className="flex justify-between w-full max-w-[200px]">
+          <span>월, 화, 목</span>
+          <span className="font-['Montserrat']">10:00 ~ 19:00</span>
         </div>
-        <div className="flex justify-between w-full max-w-[160px]">
-          <span>금요일</span>
-          <span className="font-['Montserrat']">10:00 - 20:30</span>
+        <div className="flex justify-between w-full max-w-[200px]">
+          <span>금</span>
+          <span className="font-['Montserrat']">10:00 ~ 20:30</span>
         </div>
-        <div className="flex justify-between w-full max-w-[160px]">
-          <span>토요일</span>
-          <span className="font-['Montserrat']">10:00 - 16:00</span>
+        <div className="flex justify-between w-full max-w-[200px]">
+          <span>토</span>
+          <span className="font-['Montserrat']">10:00 ~ 16:30</span>
         </div>
-        <p className="mt-2 text-[#faf6f1]/50 text-[13px]">* 일요일 및 공휴일 휴진</p>
+        <div className="flex justify-between w-full max-w-[200px]">
+          <span>점심시간</span>
+          <span className="font-['Montserrat']">13:00 ~ 14:00</span>
+        </div>
+        <p className="mt-2 text-[#faf6f1]/50 text-[13px]">* 토요일 점심시간 없음</p>
+        <p className="text-[#faf6f1]/50 text-[13px]">* 수요일 / 일요일 / 공휴일 휴진</p>
       </div>
     </div>
   );
@@ -1738,7 +1750,7 @@ function SubpageFrame18() {
   return (
     <div className="content-stretch flex flex-col gap-[26px] max-md:gap-[10px] items-start justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
       <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[0px] max-md:tracking-[0px] uppercase">{`DIRECTIONS & A MEDICAL GUIDE`}</p>
-      <p className="font-['Pretendard',sans-serif] font-bold relative shrink-0 text-[#222] text-[40px] max-md:text-[22px]">{`오시는 길 & 진료안내`}</p>
+      <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#222] text-[42px] max-md:text-[22px]">{`오시는 길 & 진료안내`}</p>
     </div>
   );
 }
@@ -2096,8 +2108,8 @@ function Frame15() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[16px] items-center leading-none relative shrink-0">
       <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
-        <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase">[ EQUIPMENT ]</p>
-        <p className="font-['Pretendard'] font-bold not-italic relative shrink-0 text-[#222] text-[46px] max-md:text-[24px]">장비소개</p>
+        <p className="font-['Montserrat'] font-normal relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase">EQUIPMENT</p>
+        <p className="font-['Pretendard'] font-light not-italic relative shrink-0 text-[#222] text-[42px] max-md:text-[24px]">장비소개</p>
       </div>
       <p className="font-['Pretendard'] font-normal not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] text-center max-md:leading-[1.5]">정교하고 안전한 시술을 위해 검증된 프리미엄 장비만을 사용합니다.</p>
     </div>
@@ -2387,7 +2399,7 @@ function EquipmentCarousel() {
                 <div className="relative md:absolute content-stretch flex flex-col gap-[30px] max-md:gap-[14px] items-start left-0 md:top-[71px] mt-8 max-md:mt-3 md:mt-0 w-[387px] max-w-full">
                   <div className="content-stretch flex flex-col gap-[12px] max-md:gap-[8px] items-start relative shrink-0 w-full">
                     <div className="relative shrink-0 w-full" data-name="Heading 3">
-                      <div className="font-['Montserrat'] font-medium leading-[1.2] md:leading-[65px] text-[24px] md:text-[52px] text-white whitespace-normal md:whitespace-nowrap uppercase">
+                      <div className="font-['Montserrat'] font-light leading-[1.2] md:leading-[65px] text-[24px] md:text-[52px] text-white whitespace-normal md:whitespace-nowrap uppercase">
                         <AnimatePresence mode="wait">
                           <motion.div key={currentIndex} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
                             {currentItem.nameLines.map((line, i) => <p key={i} className="mb-0">{line}</p>)}
@@ -2522,12 +2534,12 @@ function Frame40() {
   if (isMobile) {
     return (
       <div className="relative w-full flex flex-col items-center justify-center px-5 py-10" style={{background:"rgba(32,24,20,0.78)"}}>
-        <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-semibold tracking-[4px] text-center mb-[10px]">[ REFINE PHILOSOPHY ]</span>
-        <h2 className="text-white text-[24px] font-bold leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
+        <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-normal tracking-[4px] text-center mb-[10px]">REFINE PHILOSOPHY</span>
+        <h2 className="text-white text-[22px] font-light leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
         <div className="flex items-center justify-center flex-wrap gap-[5px]">
-          <span className="text-white text-[24px] font-bold leading-[1.5] font-['Pretendard']">본연의 아름다움을</span>
-          <span className="text-[#F2E7DA] text-[24px] font-bold leading-[1.5] font-['Montserrat']">Refine</span>
-          <span className="text-white text-[24px] font-bold leading-[1.5] font-['Pretendard']">하다.</span>
+          <span className="text-white text-[22px] font-light leading-[1.5] font-['Pretendard']">본연의 아름다움을</span>
+          <span className="text-[#F2E7DA] text-[22px] font-light leading-[1.5] font-['Montserrat']">Refine</span>
+          <span className="text-white text-[22px] font-light leading-[1.5] font-['Pretendard']">하다.</span>
         </div>
       </div>
     );
@@ -2535,13 +2547,13 @@ function Frame40() {
   return (
     <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 0.8 }} className="absolute left-0 w-full top-[1211px]">
       <div className="w-full flex flex-col items-center justify-center px-[120px] pt-[40px] pb-[80px]" style={{minHeight:490,background:"rgba(32,24,20,0.78)"}}>
-        <span className="font-['Montserrat'] text-[#b8a99a] text-base font-semibold tracking-[4px] text-center mb-[16px]">[ REFINE PHILOSOPHY ]</span>
+        <span className="font-['Montserrat'] text-[#b8a99a] text-base font-normal tracking-[4px] text-center mb-[16px]">REFINE PHILOSOPHY</span>
         <div className="flex flex-col items-center w-full max-w-[864px]">
-          <h2 className="text-white text-[60px] font-bold leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
+          <h2 className="text-white text-[42px] font-light leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
           <div className="flex items-center justify-center w-full flex-wrap gap-[14px]">
-            <span className="text-white text-[60px] font-bold leading-[1.5] font-['Pretendard']">본연의 아름다움을</span>
-            <span className="text-[#F2E7DA] text-[60px] font-bold leading-[1.5] font-['Montserrat']">Refine</span>
-            <span className="text-white text-[60px] font-bold leading-[1.5] font-['Pretendard']">하다.</span>
+            <span className="text-white text-[42px] font-light leading-[1.5] font-['Pretendard']">본연의 아름다움을</span>
+            <span className="text-[#F2E7DA] text-[42px] font-light leading-[1.5] font-['Montserrat']">Refine</span>
+            <span className="text-white text-[42px] font-light leading-[1.5] font-['Pretendard']">하다.</span>
           </div>
         </div>
       </div>
@@ -2714,7 +2726,7 @@ function Frame44() {
           <div className="flex items-center justify-between w-full pb-3">
             <div className="flex flex-col gap-2">
               <span className="font-['Montserrat'] text-[#666] text-sm tracking-[0.4px]">Chief Director</span>
-              <span className="font-['Pretendard'] text-[#1C1D1C] text-[48px] font-semibold">박상선</span>
+              <span className="font-['Pretendard'] text-[#222] text-[28px] font-light">박상선</span>
             </div>
             <div className="w-[76px] h-[78px] opacity-50 overflow-hidden shrink-0">
               <img src={imgRefineLogo} alt="Refine Logo" className="w-full h-full object-contain" />
@@ -2758,7 +2770,7 @@ function Frame44() {
           <div className="flex items-center justify-between w-full">
             <div className="flex flex-col gap-[16px]">
               <span className="font-['Montserrat'] text-[#666] text-base tracking-[0.4px] leading-[0.94]">Chief Director</span>
-              <span className="font-['Pretendard'] text-[#1C1D1C] text-[56px] font-semibold leading-[0.86] tracking-[-0.85px]">박상선</span>
+              <span className="font-['Pretendard'] text-[#222] text-[42px] font-light leading-[0.86] tracking-[-0.85px]">박상선</span>
             </div>
             <div className="w-[106px] h-[108px] opacity-50 overflow-hidden">
               <img src={imgRefineLogo} alt="Refine Logo" className="w-full h-full object-contain" />

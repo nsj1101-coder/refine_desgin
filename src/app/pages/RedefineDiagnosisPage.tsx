@@ -66,7 +66,7 @@ export default function RedefineDiagnosisPage() {
                 Signature Diagnosis
               </motion.p>
               <motion.h1
-                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-bold leading-[1.1] mb-6 uppercase"
+                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-light leading-[1.1] mb-6 uppercase"
                 initial={{ filter: "blur(6px)", opacity: 0, scale: 1.02 }}
                 animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -115,16 +115,16 @@ export default function RedefineDiagnosisPage() {
                 <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] md:text-[16px] tracking-[0px] uppercase mb-4">
                   Core Philosophy
                 </p>
-                <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold leading-[1.3]">
-                  당신이 몰랐던 본연의 아름다움,<br className="hidden md:block" />
-                  리파인의 맞춤 진단으로 새롭게 정의합니다.
+                <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light leading-[1.3]">
+                  당신이 몰랐던 본연의 아름다움,<br />
+                  리파인의 맞춤 진단으로 새롭게 정의<span className="font-['Montserrat',sans-serif] bg-[#201814] text-white px-2 py-1 mx-1 inline-block leading-[1.1]">RE:DEFINE</span>합니다.
                 </h2>
               </div>
             </FadeInUp>
             <FadeInUp delay={0.2}>
               <div className="max-w-[800px] mx-auto">
                 <p className="text-[#4a3f3a] text-[16px] md:text-[17px] leading-[1.9] break-keep">
-                  <span className="font-['Montserrat',sans-serif] font-bold text-[#1c1614]">RE:DEFINE</span>은 단순히 얼굴을 확인하는 것을 넘어, '피부 구조의 본질을 찾고 치료의 방향성을 새롭게 정의하는 것'을 의미합니다. 3D AI 정밀 분석 시스템을 토대로 얼굴을 입체적으로 스캔하고, 대표원장이 피부의 구조적 관점에서 가장 필요한 맞춤 시술을 진단합니다.
+                  <span className="font-['Montserrat',sans-serif] font-bold text-[#1c1614]">RE:DEFINE</span>은 단순히 얼굴을 확인하는 것을 넘어, '피부 구조의 본질을 찾고 치료의 방향성을 새롭게 정의하는 것'을 의미합니다. 3D AI 정밀 분석(<span className="font-['Montserrat',sans-serif] font-bold italic">EVE</span> V <span className="font-['Montserrat',sans-serif] font-bold italic">MUSE</span>)를 토대로 얼굴을 입체적으로 분석하고, 대표원장이 피부의 구조적 관점에서 가장 필요한 시술이 무엇인지 진단합니다.
                 </p>
               </div>
             </FadeInUp>
@@ -141,19 +141,18 @@ export default function RedefineDiagnosisPage() {
                   <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] md:text-[16px] tracking-[0px] uppercase mb-4">
                     Technology
                   </p>
-                  <h2 className="text-[32px] md:text-[44px] text-white tracking-[-1px] font-['Montserrat',sans-serif] font-bold leading-[1.3]">
+                  <h2 className="text-[32px] md:text-[44px] text-white tracking-[-1px] font-['Montserrat',sans-serif] font-light leading-[1.3]">
                     <span className="italic pr-1">EVE</span> V <span className="italic pl-1">MUSE</span><br />
                     3D AI Scanning
                   </h2>
                 </div>
                 <div className="bg-[#1c1614] p-6 md:p-8 border-l border-white mb-6">
                   <p className="text-white text-[16px] md:text-[18px] font-['Pretendard',sans-serif] font-medium leading-[1.8] whitespace-pre-line break-keep">
-                    AI 데이터가 보여주는 디테일,<br />
-                    눈에 보이지 않는 굴곡까지 포착하다
+                    AI 데이터가 보여주는 디테일, <span className="font-['Montserrat',sans-serif] italic">EVE</span> V <span className="font-['Montserrat',sans-serif] italic">MUSE</span>
                   </p>
                 </div>
                 <p className="text-[rgba(255,255,255,0.7)] text-[16px] md:text-[17px] leading-[1.9] break-keep">
-                  얼굴 전체를 입체적으로 스캔하여 육안으로 보이지 않는 미세한 굴곡과 비대칭, 주름의 깊이, 색소, 홍조 등을 다각도로 포착합니다. 첨단 광학 기술과 AI 데이터 분석을 결합하여 오차 없는 피부 지도를 완성합니다.
+                  얼굴 전체를 입체적으로 스캔하여 눈으로 보이지 않는 미세한 굴곡과 비대칭, 주름, 색소, 홍조 등을 포착합니다.
                 </p>
               </FadeInUp>
             </div>
@@ -209,18 +208,17 @@ export default function RedefineDiagnosisPage() {
                   <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] md:text-[16px] tracking-[0px] uppercase mb-4">
                     Philosophy
                   </p>
-                  <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold leading-[1.3]">
+                  <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Montserrat',sans-serif] font-light leading-[1.3]">
                     Beyond The Data
                   </h2>
                 </div>
                 <div className="bg-white p-6 md:p-8 border-l border-[#1c1614] mb-6 shadow-sm">
                   <p className="text-[#1c1614] text-[16px] md:text-[18px] font-['Pretendard',sans-serif] font-medium leading-[1.8] whitespace-pre-line break-keep">
-                    진단의 통찰력이<br />
-                    결과의 깊이를 결정합니다
+                    진단의 통찰력이 결과의 깊이를 결정합니다.
                   </p>
                 </div>
                 <p className="text-[#4a3f3a] text-[16px] md:text-[17px] leading-[1.9] break-keep">
-                  AI가 제공하는 정밀한 데이터 위에, 대표원장의 숙련된 해부학적 통찰력을 더합니다. 리파인은 당신의 피부 상태, 조직의 밀도, 골격의 구조까지 입체적으로 융합 분석하여 오직 당신만을 위한 가장 안전하고 정교한 치료 로드맵을 설계합니다.
+                  AI 정밀 데이터에 대표원장의 숙련된 통찰력을 더합니다. 리파인은 당신의 피부 상태와 해부학적 구조를 입체적으로 분석하여, 오직 당신만을 위한 정교한 치료 로드맵을 설계합니다.
                 </p>
               </FadeInUp>
             </div>
@@ -236,7 +234,7 @@ export default function RedefineDiagnosisPage() {
                   <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
                     Q&A
                   </p>
-                  <h2 className="text-[32px] md:text-[44px] text-[#1c1614] tracking-[-1px] font-['Pretendard',sans-serif] font-bold">
+                  <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light">
                     자주 묻는 질문
                   </h2>
                 </div>

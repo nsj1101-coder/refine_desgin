@@ -5,46 +5,50 @@ import subHeroImg from "figma:asset/1abc62602d7139f0f3c40ce65b44e34743d1ec1f.png
 export default function CollagenBoosterPage() {
   const treatments = [
     {
-      id: "juvelook",
+      id: "juvelook-volume",
       num: "01",
-      title: "쥬베룩 / 쥬베룩 볼륨",
-      titleEn: "JUVELOOK",
-      subtitle: "PDLLA + HA",
+      title: "쥬베룩 볼륨",
+      titleEn: "JUVELOOK VOLUME",
+      subtitle: "High-Concentration PDLLA + HA",
       img: "https://images.unsplash.com/photo-1754941622117-97957c5d669b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      headline: "\"PLA와 히알루론산의 시너지로 자가 콜라겐을 채우는 쥬베룩\"",
-      desc: "고분자 PLA와 히알루론산을 결합하여 자가 콜라겐 생성을 유도하는 시술입니다. 피부결, 잔주름 개선은 물론 꺼진 볼륨을 자연스럽게 채워주는 효과가 뛰어납니다.",
-      points: [],
-      headline2: "\"PDLLA 미세입자가 진피층에서 콜라겐 골격을 형성\"",
+      headline: "고농축 PDLLA와 히알루론산을 결합하여 강력한 자가 콜라겐 생성을 유도하고, 꺼진 볼·관자놀이·팔자주름 등에 자연스러운 볼륨을 채워주는 프리미엄 콜라겐 부스터입니다.",
+      desc: "",
+      points: ["고농축 콜라겐 생성 유도", "자연스러운 풀페이스 볼륨", "피부결 및 잔주름 동시 개선"],
+      headline2: "이런 분께 추천합니다.",
       details: [
-        "생분해성 PDLLA 미세입자가 진피층에 주입되어 콜라겐이 생성될 수 있는 골격(스캐폴드)을 형성합니다.",
-        "히알루론산이 즉각적인 수분과 볼륨을 제공하는 동안, PDLLA가 서서히 분해되며 수개월에 걸쳐 자가 콜라겐을 촘촘하게 채워줍니다.",
+        "얼굴살이 빠지면서 볼이나 관자놀이가 꺼진 분",
+        "인위적인 필러보다 자연스러운 볼륨감을 원하는 분",
+        "팔자주름이 깊어지고 피부 탄력이 떨어진 분",
+        "오래 지속되는 자연스러운 안티에이징을 원하는 분",
       ],
-      tags: ["Collagen Induction", "Natural Volume", "Skin Texture"],
+      tags: ["Collagen Induction", "Natural Volume", "Full-Face Rejuvenation"],
       duration: "20분 ~ 30분",
       anesthesia: "크림 마취",
       recovery: "1~2일 내 붉은기 및 잔붓기 완화",
       maintenance: "4주 간격 3회 시술 시 1년 이상"
     },
     {
-      id: "sculptra",
+      id: "radiesse",
       num: "02",
-      title: "스컬트라",
-      titleEn: "SCULPTRA",
-      subtitle: "PLLA",
+      title: "레디어스",
+      titleEn: "RADIESSE",
+      subtitle: "Calcium Hydroxylapatite (CaHA)",
       img: "https://images.unsplash.com/photo-1690306815613-f839b74af330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      headline: "\"FDA 승인 PLLA 성분으로 강력한 콜라겐 생성을 유도하는 스컬트라\"",
-      desc: "FDA 승인을 받은 PLLA 성분을 주입해 체내 콜라겐 생성을 강력하게 촉진합니다. 얼굴 전체적인 볼륨 감소와 깊은 주름 개선에 탁월한 프리미엄 시술입니다.",
-      points: [],
-      headline2: "\"PLLA 입자가 섬유아세포를 자극하여 콜라겐 네트워크 재건\"",
+      headline: "칼슘 하이드록시아파타이트(CaHA) 미세입자가 진피층과 피하조직에 즉각적인 볼륨을 제공하는 동시에, 주변 섬유아세포를 자극하여 자가 콜라겐 생성을 장기적으로 촉진하는 듀얼 액션 콜라겐 부스터입니다.",
+      desc: "",
+      points: ["즉각적 볼륨 + 콜라겐 생성 동시 효과", "FDA 승인 CaHA 성분", "최대 18개월 장기 유지"],
+      headline2: "이런 분께 추천합니다.",
       details: [
-        "주입된 PLLA 미세입자가 체내에서 서서히 분해되면서 주변 섬유아세포에 지속적인 자극을 가해 콜라겐 생성을 유도합니다.",
-        "새로 생성된 콜라겐이 촘촘한 네트워크를 형성하여 꺼진 볼, 관자놀이, 팔자주름 등에 자연스러운 볼륨을 최대 2년간 유지합니다.",
+        "즉각적인 볼륨감과 장기적인 콜라겐 효과를 동시에 원하는 분",
+        "손등, 목 등 바디 부위의 탄력과 볼륨이 감소한 분",
+        "깊은 팔자주름이나 마리오네트 주름이 고민인 분",
+        "검증된 FDA 승인 제품으로 안전한 시술을 원하는 분",
       ],
-      tags: ["Full-Face Volume", "Long-Lasting", "FDA Approved"],
-      duration: "30분",
+      tags: ["Dual Action", "Long-Lasting Volume", "FDA Approved"],
+      duration: "20분 ~ 30분",
       anesthesia: "크림 마취",
-      recovery: "결절 예방을 위한 마사지 필요(5-5-5 법칙)",
-      maintenance: "4~6주 간격 3회 시술 시 약 2년"
+      recovery: "1~2일 내 잔붓기 완화",
+      maintenance: "12~18개월 유지"
     }
   ];
 
@@ -88,7 +92,7 @@ export default function CollagenBoosterPage() {
         "노화로 인해 소실된 피부 콜라겐을 인위적인 물질이 아닌, 내 몸의 자가 콜라겐으로 채워주는 시술입니다.",
         "생분해성 고분자 물질(PLA)을 진피층과 피하조직에 주입하여 섬유아세포를 자극하고 콜라겐 생성을 유도합니다. 볼륨 감소가 심한 볼, 팔자주름, 관자놀이 등을 자연스럽게 개선하며, 피부 전반의 두께와 탄력을 증가시켜 생기 있는 동안 얼굴을 완성합니다."
       ]}
-      coreHighlight="섬세한 용량 조절과 주입 스킬이 필수적인 시술인 만큼,\nREFINE의 숙련된 의료진이 1:1 맞춤 디자인으로 안전하게 시술합니다."
+      coreHighlight="섬세한 용량 조절과 주입 스킬이 필수적인 시술인 만큼, REFINE의 숙련된 의료진이 1:1 맞춤 디자인으로 안전하게 시술합니다."
       coreImg="https://images.unsplash.com/photo-1696607069078-3f65d5bc3b4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       treatmentTitle="콜라겐 부스터 종류"
       treatments={treatments}

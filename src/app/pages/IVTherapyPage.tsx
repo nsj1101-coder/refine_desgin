@@ -5,67 +5,50 @@ import subHeroImg from "figma:asset/1abc62602d7139f0f3c40ce65b44e34743d1ec1f.png
 export default function IVTherapyPage() {
   const treatments = [
     {
-      id: "cinderella",
+      id: "vitamin-b",
       num: "01",
-      title: "신데렐라 주사",
-      titleEn: "CINDERELLA",
-      subtitle: "Thioctic Acid",
+      title: "비타민B",
+      titleEn: "VITAMIN B",
+      subtitle: "Vitamin B Complex IV",
       img: "https://images.unsplash.com/photo-1754941622117-97957c5d669b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      headline: "\"비타민 C의 400배 항산화력으로 피로와 노화를 동시에 잡는 신데렐라 주사\"",
-      desc: "항산화 작용이 비타민 C의 400배에 달하는 티옥트산을 주성분으로 하여, 체내 활성산소를 억제하고 신진대사를 촉진시켜 피로 회복과 피부 노화 방지에 도움을 주는 수액입니다.",
-      points: [],
-      headline2: "\"알파리포산(티옥트산)이 체내 활성산소를 강력하게 중화\"",
+      headline: "비타민 B군 복합체(B1, B2, B5, B6, B12)를 정맥에 직접 투여하여 에너지 대사를 활성화하고, 근육 피로 물질을 분해하며 신경계 기능을 강화하여 만성 피로와 무기력감을 빠르게 해소합니다.",
+      desc: "",
+      points: ["에너지 대사 활성화", "근육 피로 및 젖산 분해", "신경계 기능 강화"],
+      headline2: "이런 분께 추천합니다.",
       details: [
-        "알파리포산이 수용성과 지용성 환경 모두에서 활성산소를 중화하여, 세포 손상을 막고 피부 노화를 억제합니다.",
-        "동시에 미토콘드리아의 에너지 대사를 활성화시켜 체지방 연소를 촉진하고, 만성 피로를 빠르게 해소합니다.",
+        "야근과 과로로 만성 피로에 시달리는 분",
+        "과음 후 빠른 숙취 해소가 필요한 분",
+        "운동 후 근육 회복과 컨디션 충전을 원하는 분",
+        "무기력감과 집중력 저하가 지속되는 분",
       ],
-      tags: ["Antioxidant", "Fat Metabolism", "Fatigue Recovery"],
+      tags: ["Energy Boost", "Fatigue Recovery", "Hangover Relief"],
       duration: "30분 ~ 40분",
       anesthesia: "불필요",
       recovery: "즉시 일상생활 가능",
       maintenance: "주 1~2회 권장"
     },
     {
-      id: "white-jade",
+      id: "vitamin-c",
       num: "02",
-      title: "백옥 주사",
-      titleEn: "GLUTATHIONE",
-      subtitle: "Glutathione",
+      title: "비타민C",
+      titleEn: "VITAMIN C",
+      subtitle: "High-Dose Ascorbic Acid IV",
       img: "https://images.unsplash.com/photo-1690306815613-f839b74af330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      headline: "\"글루타치온으로 멜라닌 합성을 억제하고 전신 미백을 실현하는 백옥 주사\"",
-      desc: "멜라닌 색소의 합성을 억제하는 글루타치온을 정맥에 직접 투여하여, 피부톤을 맑고 환하게 가꿔주며 간 해독 작용을 도와 전반적인 컨디션을 회복시키는 수액입니다.",
-      points: [],
-      headline2: "\"글루타치온이 멜라닌 생성 경로를 차단하여 전신 톤업\"",
+      headline: "고용량 비타민 C를 정맥 주사로 직접 투여하여 강력한 항산화 작용으로 활성산소를 중화하고, 멜라닌 생성을 억제하여 피부 미백과 면역력 증진, 콜라겐 합성 촉진 효과를 동시에 실현합니다.",
+      desc: "",
+      points: ["강력한 항산화 및 미백 효과", "면역력 증진", "콜라겐 합성 촉진"],
+      headline2: "이런 분께 추천합니다.",
       details: [
-        "글루타치온이 멜라닌 합성 효소인 티로시나아제의 활성을 억제하여, 기미·잡티의 생성을 원천적으로 차단합니다.",
-        "강력한 해독 작용으로 간에 축적된 독소와 중금속을 배출시키고, 세포의 산화 스트레스를 줄여 전반적인 컨디션을 회복합니다.",
+        "칙칙한 피부톤을 맑고 화사하게 개선하고 싶은 분",
+        "면역력이 떨어져 감기나 피로에 자주 시달리는 분",
+        "피부 노화 방지와 항산화 관리를 원하는 분",
+        "피부과 시술과 병행하여 미백 시너지를 높이고 싶은 분",
       ],
-      tags: ["Whitening", "Liver Detox", "Skin Tone Up"],
+      tags: ["Antioxidant", "Whitening", "Immune Boost"],
       duration: "30분 ~ 40분",
       anesthesia: "불필요",
       recovery: "즉시 일상생활 가능",
       maintenance: "주 1~2회 권장"
-    },
-    {
-      id: "garlic",
-      num: "03",
-      title: "마늘 주사",
-      titleEn: "VITAMIN B1",
-      subtitle: "Vitamin B1",
-      img: "https://images.unsplash.com/photo-1748543669178-efd3de4e64e0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      headline: "\"고농축 비타민 B1으로 근육 피로를 분해하고 즉각 에너지를 충전하는 마늘 주사\"",
-      desc: "주사 시 마늘 특유의 향이 나서 붙여진 이름으로, 고농축 비타민 B1(알리신)을 공급하여 근육의 피로 물질을 분해하고 에너지를 즉각적으로 보충해 주는 활력 수액입니다.",
-      points: [],
-      headline2: "\"비타민 B1이 젖산을 분해하고 에너지 회로를 가동\"",
-      details: [
-        "고농축 비타민 B1이 근육에 쌓인 젖산(피로 물질)을 빠르게 분해하여 근육통과 피로감을 해소합니다.",
-        "탄수화물 대사를 촉진하여 ATP 에너지 생성을 돕고, 과음 후 알코올 분해를 가속화하여 숙취를 빠르게 해소합니다.",
-      ],
-      tags: ["Energy Boost", "Hangover Relief", "Muscle Recovery"],
-      duration: "30분 ~ 40분",
-      anesthesia: "불필요",
-      recovery: "즉시 일상생활 가능",
-      maintenance: "피로 시 수시 권장"
     }
   ];
 
@@ -109,7 +92,7 @@ export default function IVTherapyPage() {
         "고농축 비타민, 미네랄, 항산화제 등 우리 몸에 꼭 필요한 영양 성분을 정맥혈관을 통해 직접 투여하는 웰니스 케어입니다.",
         "경구 섭취(영양제 복용)의 경우 위장관을 거치면서 흡수율이 20~30%로 떨어지지만, 정맥 주사는 유효 성분이 세포에 100% 가깝게 직접 도달하여 즉각적인 피로 회복, 면역력 증진, 피부 항산화 효과를 발휘합니다."
       ]}
-      coreHighlight="프라이빗하고 편안한 1인 수액실에서, 전문 의료진의 진단을 통해\n현재 컨디션에 가장 필요한 1:1 맞춤 영양 수액을 처방받으실 수 있습니다."
+      coreHighlight="프라이빗하고 편안한 1인 수액실에서, 전문 의료진의 진단을 통해 현재 컨디션에 가장 필요한 1:1 맞춤 영양 수액을 처방받으실 수 있습니다."
       coreImg="https://images.unsplash.com/photo-1696607069078-3f65d5bc3b4f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
       treatmentTitle="수액 종류"
       treatments={treatments}

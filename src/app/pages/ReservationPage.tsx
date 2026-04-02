@@ -52,7 +52,7 @@ export default function ReservationPage() {
                 transition={{ duration: 1.2, delay: 0.15, ease: [0.25, 0.46, 0.45, 0.94] }}
               >Reservation</motion.p>
               <motion.h1
-                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-bold leading-[1.1] mb-6 uppercase"
+                className="text-[50px] md:text-[86px] text-white font-['Montserrat',sans-serif] font-light leading-[1.1] mb-6 uppercase"
                 initial={{ filter: "blur(6px)", opacity: 0, scale: 1.02 }}
                 animate={{ filter: "blur(0px)", opacity: 1, scale: 1 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -95,7 +95,7 @@ export default function ReservationPage() {
                 <p className="font-['Montserrat',sans-serif] font-medium text-[#b8a99a] text-[16px] tracking-[0px] uppercase mb-4">
                   Book Now
                 </p>
-                <h2 className="text-[40px] md:text-[56px] text-[#1c1614] tracking-[-1.5px] font-['Pretendard',sans-serif] font-bold mb-8">
+                <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light mb-8">
                   상담 및 예약 안내
                 </h2>
                 <p className="text-[18px] md:text-[22px] text-[#4a3f3a] leading-[1.8] font-light">

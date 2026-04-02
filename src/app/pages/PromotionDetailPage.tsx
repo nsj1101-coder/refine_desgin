@@ -129,7 +129,7 @@ REFINE 전지점에서 동시 진행하는 단 2주간의 특별한 혜택입니
                       {event.branch}
                     </span>
                   </div>
-                  <h2 className="text-[32px] md:text-[40px] text-[#1c1614] font-['Pretendard',sans-serif] font-medium tracking-[-1px] leading-[1.3] mb-4">
+                  <h2 className="text-[28px] md:text-[42px] text-[#222] font-['Pretendard',sans-serif] font-light tracking-[-1px] leading-[1.3] mb-4">
                     {event.title}
                   </h2>
                   <p className="text-[16px] text-[#a09a96] font-['Montserrat',sans-serif] tracking-[1px]">
