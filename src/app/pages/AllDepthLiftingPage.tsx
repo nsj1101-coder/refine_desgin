@@ -276,7 +276,7 @@ export default function AllDepthLiftingPage() {
                       />
                     </div>
                     {/* Floating badge */}
-                    <div className="absolute -bottom-6 -left-6 md:-bottom-8 md:-left-8 bg-[#1c1614] text-[#faf6f1] px-8 py-6 md:px-10 md:py-8">
+                    <div className="absolute -bottom-6 -left-6 md:-bottom-8 md:-left-8 bg-[#1c1614] text-[#faf6f1] px-8 py-6 md:px-10 md:py-8 flex flex-col items-center">
                       <p className="font-['Montserrat',sans-serif] font-light text-[32px] md:text-[48px] leading-none mb-1">4</p>
                       <p className="text-[13px] md:text-[14px] text-[#b8a99a] font-['Montserrat',sans-serif] tracking-[2px] uppercase">Layers</p>
                     </div>
@@ -647,7 +647,7 @@ export default function AllDepthLiftingPage() {
                     </span>
                     <div className="relative z-10">
                       {step.icon && <step.icon className="w-[32px] h-[32px] text-[#1c1614] stroke-[1] mb-8" />}
-                      <h4 className="text-[20px] md:text-[24px] text-[#1c1614] font-['Pretendard',sans-serif] font-bold mb-4 tracking-[-0.5px]">
+                      <h4 className="text-[20px] md:text-[24px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-4 tracking-[-0.5px]">
                         {step.title}
                       </h4>
                       <p className="text-[16px] md:text-[16px] text-[#6b5f58] leading-[1.8] whitespace-pre-line break-keep">
@@ -748,7 +748,7 @@ export default function AllDepthLiftingPage() {
                 </div>
                 <div className="relative z-10 flex flex-col md:flex-row items-center justify-between p-[50px] md:p-[80px] gap-8">
                   <div className="text-center md:text-left">
-                    <h3 className="text-[26px] md:text-[36px] text-[#faf6f1] font-['Pretendard',sans-serif] font-bold tracking-[-1px] mb-4 leading-[1.35]">
+                    <h3 className="text-[26px] md:text-[36px] text-[#faf6f1] font-['Pretendard',sans-serif] font-light tracking-[-1px] mb-4 leading-[1.35]">
                       1:1 맞춤 상담으로<br className="md:hidden" /> 최적의 리프팅을 찾아보세요
                     </h3>
                     <p className="text-[15px] md:text-[17px] text-[#faf6f1]/50 font-light">

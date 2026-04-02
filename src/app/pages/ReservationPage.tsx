@@ -107,33 +107,48 @@ export default function ReservationPage() {
 
             <FadeInUp delay={0.2}>
               <div className="flex flex-col md:flex-row border border-[#1c1614] max-w-[1400px] mx-auto">
-                <div className="flex-1 flex flex-col justify-center items-center p-[60px] md:p-[100px] border-b md:border-b-0 md:border-r border-[#1c1614] group hover:bg-[#1c1614] transition-colors duration-500 cursor-pointer text-center">
+                <div className="flex-1 md:basis-1/3 flex flex-col justify-center items-center p-[60px] md:p-[80px] border-b md:border-b-0 md:border-r border-[#1c1614] group hover:bg-[#1c1614] transition-colors duration-500 cursor-pointer text-center min-w-0">
                   <p className="font-['Montserrat',sans-serif] text-[16px] tracking-[0px] text-[#b8a99a] uppercase mb-8 group-hover:text-white/60 transition-colors">
                     Phone Call
                   </p>
-                  <h3 className="text-[28px] md:text-[36px] text-[#1c1614] font-['Pretendard',sans-serif] font-bold mb-6 group-hover:text-white transition-colors">
+                  <h3 className="text-[28px] md:text-[36px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-6 group-hover:text-white transition-colors">
                     전화 상담 및 예약
                   </h3>
                   <p className="text-[16px] md:text-[18px] text-[#6b5f58] mb-12 group-hover:text-white/80 transition-colors">
                     진료 시간 내 전화를 주시면<br />친절하게 예약을 도와드립니다.
                   </p>
-                  <p className="font-['Montserrat',sans-serif] text-[40px] md:text-[56px] font-light text-[#1c1614] tracking-[2px] group-hover:text-white transition-colors">
+                  <p className="font-['Montserrat',sans-serif] text-[32px] font-light text-[#1c1614] tracking-[2px] whitespace-nowrap group-hover:text-white transition-colors">
                     02-1234-5678
                   </p>
                 </div>
 
-                <div className="flex-1 flex flex-col justify-center items-center p-[60px] md:p-[100px] group hover:bg-[#fee500] transition-colors duration-500 cursor-pointer text-center">
+                <div className="flex-1 md:basis-1/3 flex flex-col justify-center items-center p-[60px] md:p-[80px] border-b md:border-b-0 md:border-r border-[#1c1614] group hover:bg-[#fee500] transition-colors duration-500 cursor-pointer text-center min-w-0">
                   <p className="font-['Montserrat',sans-serif] text-[16px] tracking-[0px] text-[#b8a99a] uppercase mb-8 group-hover:text-[#1c1614]/60 transition-colors">
                     Kakao Talk
                   </p>
-                  <h3 className="text-[28px] md:text-[36px] text-[#1c1614] font-['Pretendard',sans-serif] font-bold mb-6">
+                  <h3 className="text-[28px] md:text-[36px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-6">
                     카카오톡 상담 예약
                   </h3>
                   <p className="text-[16px] md:text-[18px] text-[#6b5f58] mb-12 group-hover:text-[#1c1614]/80 transition-colors">
                     카카오톡 채널을 추가하시면<br />언제든 편하게 문의가 가능합니다.
                   </p>
-                  <p className="font-['Montserrat',sans-serif] text-[40px] md:text-[56px] font-light text-[#1c1614] tracking-[2px]">
+                  <p className="font-['Montserrat',sans-serif] text-[32px] font-light text-[#1c1614] tracking-[2px] whitespace-nowrap">
                     @refine_clinic
+                  </p>
+                </div>
+
+                <div className="flex-1 md:basis-1/3 flex flex-col justify-center items-center p-[60px] md:p-[80px] group hover:bg-[#03C75A] transition-colors duration-500 cursor-pointer text-center min-w-0">
+                  <p className="font-['Montserrat',sans-serif] text-[16px] tracking-[0px] text-[#b8a99a] uppercase mb-8 group-hover:text-white/60 transition-colors">
+                    Naver
+                  </p>
+                  <h3 className="text-[28px] md:text-[36px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-6 group-hover:text-white transition-colors">
+                    네이버 상담 예약
+                  </h3>
+                  <p className="text-[16px] md:text-[18px] text-[#6b5f58] mb-12 group-hover:text-white/80 transition-colors">
+                    네이버 예약을 통해<br />간편하게 상담을 신청하세요.
+                  </p>
+                  <p className="font-['Montserrat',sans-serif] text-[32px] font-light text-[#1c1614] tracking-[2px] whitespace-nowrap group-hover:text-white transition-colors">
+                    네이버 예약
                   </p>
                 </div>
               </div>

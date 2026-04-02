@@ -153,8 +153,8 @@ export default function BrandValuePage() {
                     01
                   </span>
                   <div className="relative z-10">
-                    <h3 className="font-['Montserrat',sans-serif] font-medium text-[24px] md:text-[28px] text-[#1c1614] tracking-[-1px] uppercase leading-[1] mb-2">Essence</h3>
-                    <p className="font-['Pretendard',sans-serif] text-[16px] md:text-[18px] text-[#1c1614] font-medium mb-6">"본연의 아름다움"</p>
+                    <h3 className="font-['Montserrat',sans-serif] font-light text-[24px] md:text-[28px] text-[#1c1614] tracking-[-1px] uppercase leading-[1] mb-2">Essence</h3>
+                    <p className="font-['Pretendard',sans-serif] text-[16px] md:text-[18px] text-[#B5B0AC] font-medium mb-6">"본연의 아름다움"</p>
                     <p className="text-[16px] md:text-[17px] text-[#4a3f3a] leading-[1.8] font-light break-keep">
                       획일적인 미의 기준이 아닌, 당신만이 가진 본연의 아름다움을 발견하여 가장 자연스럽게 빛나도록 이끄는 것이 리파인 미학의 출발점입니다.
                     </p>
@@ -169,8 +169,8 @@ export default function BrandValuePage() {
                     02
                   </span>
                   <div className="relative z-10">
-                    <h3 className="font-['Montserrat',sans-serif] font-medium text-[24px] md:text-[28px] text-[#1c1614] tracking-[-1px] uppercase leading-[1] mb-2">Balance</h3>
-                    <p className="font-['Pretendard',sans-serif] text-[16px] md:text-[18px] text-[#1c1614] font-medium mb-6">"조화로운 아름다움"</p>
+                    <h3 className="font-['Montserrat',sans-serif] font-light text-[24px] md:text-[28px] text-[#1c1614] tracking-[-1px] uppercase leading-[1] mb-2">Balance</h3>
+                    <p className="font-['Pretendard',sans-serif] text-[16px] md:text-[18px] text-[#B5B0AC] font-medium mb-6">"조화로운 아름다움"</p>
                     <p className="text-[16px] md:text-[17px] text-[#4a3f3a] leading-[1.8] font-light break-keep">
                       진정한 아름다움은 어느 한 곳의 도드라짐이 아닌, 전체가 이루는 균형에서 옵니다. 피부 상태, 얼굴 구조 등 핵심을 정밀하게 진단하여 균형있는 입체감과 조화의 아름다움을 선사합니다.
                     </p>
@@ -185,8 +185,8 @@ export default function BrandValuePage() {
                     03
                   </span>
                   <div className="relative z-10">
-                    <h3 className="font-['Montserrat',sans-serif] font-medium text-[24px] md:text-[28px] text-[#1c1614] tracking-[-1px] uppercase leading-[1] mb-2">Refine</h3>
-                    <p className="font-['Pretendard',sans-serif] text-[16px] md:text-[18px] text-[#1c1614] font-medium mb-6">"정제된 아름다움"</p>
+                    <h3 className="font-['Montserrat',sans-serif] font-light text-[24px] md:text-[28px] text-[#1c1614] tracking-[-1px] uppercase leading-[1] mb-2">Refine</h3>
+                    <p className="font-['Pretendard',sans-serif] text-[16px] md:text-[18px] text-[#B5B0AC] font-medium mb-6">"정제된 아름다움"</p>
                     <p className="text-[16px] md:text-[17px] text-[#4a3f3a] leading-[1.8] font-light break-keep">
                       풍부한 경험으로 쌓인 숙련된 테크닉으로 시술하여 정제되고 품격있는 우아함을 완성합니다. 리파인을 통해 얻은 자신감이 일상의 리프레시로 이어져, 나의 삶이 더욱 가치 있게 느껴지도록 완성합니다.
                     </p>

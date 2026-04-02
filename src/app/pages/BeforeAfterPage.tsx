@@ -216,7 +216,7 @@ export default function BeforeAfterPage() {
                             {item.category}
                           </span>
                         </div>
-                        <h3 className="text-[28px] md:text-[32px] text-[#1c1614] font-['Pretendard',sans-serif] font-medium tracking-[-1px] mb-4">
+                        <h3 className="text-[28px] md:text-[32px] text-[#1c1614] font-['Pretendard',sans-serif] font-light tracking-[-1px] mb-4">
                           {item.title}
                         </h3>
                         <p className="text-[16px] md:text-[18px] text-[#6b5f58] font-['Pretendard',sans-serif] font-light leading-[1.7]">

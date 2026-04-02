@@ -301,7 +301,7 @@ export default function TreatmentTemplate({
                     </span>
                     <div className="relative z-10">
                       {step.icon && <step.icon className="w-[32px] h-[32px] text-[#1c1614] stroke-[1] mb-8" />}
-                      <h4 className="text-[20px] md:text-[24px] text-[#1c1614] font-['Pretendard',sans-serif] font-bold mb-4 tracking-[-0.5px]">
+                      <h4 className="text-[20px] md:text-[24px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-4 tracking-[-0.5px]">
                         {step.title}
                       </h4>
                       <p className="text-[16px] md:text-[16px] text-[#6b5f58] leading-[1.8] whitespace-pre-line break-keep">
@@ -421,7 +421,7 @@ export default function TreatmentTemplate({
             <FadeIn>
               <div className="bg-[#1c1614] w-full flex flex-col md:flex-row items-center justify-between p-[50px] md:p-[80px] gap-8">
                 <div className="text-center md:text-left">
-                  <h3 className="text-[28px] md:text-[36px] text-[#faf6f1] font-['Pretendard',sans-serif] font-bold tracking-[-1px] mb-4 leading-[1.3]">
+                  <h3 className="text-[28px] md:text-[36px] text-[#faf6f1] font-['Pretendard',sans-serif] font-light tracking-[-1px] mb-4 leading-[1.3]">
                     {ctaTitle}
                   </h3>
                   <p className="text-[16px] md:text-[18px] text-[rgba(250,246,241,0.6)] font-light break-keep">

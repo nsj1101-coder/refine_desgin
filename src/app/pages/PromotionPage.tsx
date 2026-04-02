@@ -204,7 +204,7 @@ export default function PromotionPage() {
                         <div className="text-[13px] font-['Montserrat',sans-serif] text-white/80 font-medium tracking-[2px] uppercase mb-4">
                           {event.branch}
                         </div>
-                        <div className="text-[40px] md:text-[48px] font-['Montserrat',sans-serif] text-white font-semibold tracking-tight uppercase">
+                        <div className="text-[40px] md:text-[48px] font-['Montserrat',sans-serif] text-white font-light tracking-tight uppercase">
                           {event.monthText}
                         </div>
                       </div>
@@ -219,7 +219,7 @@ export default function PromotionPage() {
                           {event.statusText}
                         </div>
                       </div>
-                      <h3 className={`text-[28px] md:text-[36px] font-['Pretendard',sans-serif] font-semibold tracking-[-1px] leading-[1.3] ${event.isEnded ? 'text-[#8c8279]' : 'text-[#1c1614]'}`}>
+                      <h3 className={`text-[28px] md:text-[36px] font-['Pretendard',sans-serif] font-light tracking-[-1px] leading-[1.3] ${event.isEnded ? 'text-[#8c8279]' : 'text-[#1c1614]'}`}>
                         {event.title}
                       </h3>
                       <div className="mt-12 flex items-center gap-4">
