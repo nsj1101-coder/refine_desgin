@@ -25,6 +25,12 @@ import imgLifting3 from "../assets/img04.png";
 import imgLifting4 from "../assets/img05.png";
 import imgRefineLogo from "../assets/refine_logo.png";
 import eqHollywood from "figma:asset/de1782d0fafd7b5fac075eb4dee129fcbbe9b4ad.png";
+import eqDensity from "../assets/eq-density.png";
+import eqPotenza from "../assets/eq-potenza.png";
+import eqShurink from "../assets/eq-shurink.png";
+import eqOndaNew from "../assets/eq-onda.png";
+import eqClarityNew from "../assets/eq-clarity.png";
+import eqHollywoodNew from "../assets/eq-hollywood.png";
 import { imgGroup } from "./svg-k5xuk";
 import imgHeroModel from "figma:asset/0a9e7116625cbca8e49f45810f894aeb8e59ca41.png";
 
@@ -116,55 +122,81 @@ function HeroIndicator() {
 const EQUIPMENT_DATA = [
   {
     id: 1,
-    nameLines: ["Hollywood", "Spectra"],
-    subtitle: "헐리우드 스펙트라",
-    tags: ["#기미", "#모공", "#색소침착", "#여드름흉터"],
+    nameLines: ["Density"],
+    subtitle: "덴서티",
+    tags: ["#탄력", "#콜라겐", "#피부결", "#타이트닝"],
     desc: [
-      "기미나 잡티 같은 다양한 색소질환에 균일하게",
-      "레이저 빔을 전달해 얕은 색소부터 깊은 색소까지",
-      "폭넓게 개선하는데 탁월한 효과를 보여줍니다."
+      "6.78MHz 고주파(RF) 에너지를 진피층에 전달하여",
+      "콜라겐 생성을 유도하고 무너진 페이스 라인을",
+      "매끄럽고 단단하게 재건하는 프리미엄 탄력 리프팅입니다."
     ],
-    img: eqHollywood,
-    imgScale: 1.3
+    img: eqDensity,
+    imgScale: 1
   },
   {
     id: 2,
-    nameLines: ["Jeisys", "Diamond"],
-    subtitle: "제이시스 다이아몬드",
-    tags: ["#리프팅", "#탄력", "#피부결", "#타이트닝"],
+    nameLines: ["Onda"],
+    subtitle: "온다",
+    tags: ["#윤곽", "#지방감소", "#타이트닝", "#바디"],
     desc: [
-      "피부 속 깊은 곳부터 탄력을 채워주는",
-      "프리미엄 리프팅 장비로 자연스러운",
-      "볼륨감과 타이트닝 효과를 제공합니다."
+      "특허받은 마이크로웨이브(극초음파) 에너지로",
+      "표피 손상 없이 지방층을 감소시키고 진피층의",
+      "콜라겐을 리모델링하는 프리미엄 윤곽 타이트닝입니다."
     ],
-    img: eqJeisys,
+    img: eqOndaNew,
     imgScale: 1
   },
   {
     id: 3,
-    nameLines: ["Clarity", "Pro"],
-    subtitle: "클라리티 프로",
-    tags: ["#제모", "#홍조", "#혈관", "#모공"],
+    nameLines: ["Potenza"],
+    subtitle: "포텐자",
+    tags: ["#모공", "#흉터", "#재생", "#콜라겐"],
     desc: [
-      "듀얼 파장을 이용해 제모부터 혈관 병변까지",
-      "맞춤형 치료가 가능하며 적은 통증으로",
-      "안전하고 효과적인 시술이 가능합니다."
+      "마이크로 니들을 통해 진피층에 고주파(RF) 에너지를",
+      "직접 전달하여 모공과 흉터를 개선하고 콜라겐 생성을",
+      "유도해 피부 근본의 건강함과 탄력을 되찾아 줍니다."
     ],
-    img: eqClarity,
+    img: eqPotenza,
     imgScale: 1
   },
   {
     id: 4,
-    nameLines: ["Deka", "Onda"],
-    subtitle: "데카 온다",
-    tags: ["#바디컨투어링", "#셀룰라이트", "#탄력", "#리프팅"],
+    nameLines: ["Clarity"],
+    subtitle: "클라리티",
+    tags: ["#홍조", "#혈관", "#색소", "#듀얼파장"],
     desc: [
-      "극초단파를 이용해 지방세포를 파괴하고",
-      "콜라겐 생성을 유도하여 탄력있는",
-      "바디라인을 완성하는 프리미엄 장비입니다."
+      "755nm 알렉산드라이트와 1064nm Nd:YAG 듀얼 파장으로",
+      "멜라닌 색소와 확장된 혈관을 동시에 치료하며",
+      "홍조부터 색소 질환까지 폭넓게 대응합니다."
     ],
-    img: eqOnda,
-    imgScale: 3.5
+    img: eqHollywoodNew,
+    imgScale: 2.5
+  },
+  {
+    id: 5,
+    nameLines: ["Hollywood", "Spectra"],
+    subtitle: "헐리우드 스펙트라",
+    tags: ["#기미", "#모공", "#색소침착", "#피부톤"],
+    desc: [
+      "532nm과 1064nm 듀얼 파장의 Nd:YAG 레이저로",
+      "표피부터 진피까지 깊이별 색소를 정밀하게 타겟팅하여",
+      "기미·주근깨·잡티와 피부톤을 복합적으로 개선합니다."
+    ],
+    img: eqClarityNew,
+    imgScale: 1
+  },
+  {
+    id: 6,
+    nameLines: ["Shurink"],
+    subtitle: "슈링크",
+    tags: ["#리프팅", "#V라인", "#근막층", "#HIFU"],
+    desc: [
+      "고강도 집속 초음파(HIFU) 에너지를 피부 속 가장",
+      "깊은 근막층(SMAS)까지 전달하여 수술 없이도",
+      "강력한 리프팅 효과를 선사하는 프리미엄 장비입니다."
+    ],
+    img: eqShurink,
+    imgScale: 1
   }
 ];
 
