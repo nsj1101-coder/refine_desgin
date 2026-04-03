@@ -80,35 +80,53 @@ const HERO_IMAGES = [
 const HERO_INTERVAL = 5000; // ms per slide
 
 // Context to share hero carousel state between ImageHeroBackground and Frame
-const HeroCarouselContext = createContext({ currentIndex: 0, progress: 0, count: HERO_IMAGES.length });
+const heroProgressRef = { current: 0 };
+const HeroCarouselContext = createContext({ currentIndex: 0, count: HERO_IMAGES.length });
 
 function HeroIndicator() {
-  const { count, currentIndex: activeIndex, progress } = useContext(HeroCarouselContext);
+  const { count, currentIndex: activeIndex } = useContext(HeroCarouselContext);
   const circumference = 2 * Math.PI * 10;
+  const circleRefs = useRef<(SVGCircleElement | null)[]>([]);
+
+  useEffect(() => {
+    let frameId = 0;
+    const update = () => {
+      const progress = heroProgressRef.current;
+      circleRefs.current.forEach((circle, i) => {
+        if (!circle) return;
+        const isActive = i === activeIndex;
+        const isPast = i < activeIndex;
+        circle.setAttribute('stroke-dashoffset', String(
+          isActive
+            ? circumference * (1 - progress)
+            : isPast
+            ? 0
+            : circumference
+        ));
+      });
+      frameId = requestAnimationFrame(update);
+    };
+    frameId = requestAnimationFrame(update);
+    return () => cancelAnimationFrame(frameId);
+  }, [activeIndex, circumference]);
+
   return (
     <div className="flex items-center gap-[14px] max-md:gap-[10px] mt-[40px] max-md:mt-[24px]">
       {Array.from({ length: count }).map((_, i) => {
         const isActive = i === activeIndex;
-        const isPast = i < activeIndex;
         return (
           <span key={i} className="relative flex items-center justify-center w-[24px] h-[24px] max-md:w-[16px] max-md:h-[16px]">
             <svg width="100%" height="100%" viewBox="0 0 30 30">
               <circle cx="15" cy="15" r="10" fill="none" stroke="rgba(255,255,255,0.4)" strokeWidth="4" />
               <circle
+                ref={(el) => { circleRefs.current[i] = el; }}
                 cx="15" cy="15" r="10" fill="none"
                 stroke="#ffffff" strokeWidth="4"
                 strokeDasharray={circumference}
-                strokeDashoffset={
-                  isActive
-                    ? circumference * (1 - progress)
-                    : isPast
-                    ? 0
-                    : circumference
-                }
+                strokeDashoffset={circumference}
                 style={{
                   transform: 'rotate(-90deg)',
                   transformOrigin: '50% 50%',
-                  transition: isActive ? 'stroke-dashoffset 0.1s linear' : 'none',
                 }}
               />
             </svg>
@@ -202,17 +220,16 @@ const EQUIPMENT_DATA = [
 
 function useHeroCarousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [progress, setProgress] = useState(0);
   const startTimeRef = useRef(Date.now());
 
   useEffect(() => {
     startTimeRef.current = Date.now();
-    setProgress(0);
+    heroProgressRef.current = 0;
     const frame = { id: 0 };
     const tick = () => {
       const elapsed = Date.now() - startTimeRef.current;
       const p = Math.min(elapsed / HERO_INTERVAL, 1);
-      setProgress(p);
+      heroProgressRef.current = p;
       if (p >= 1) {
         setCurrentIndex((prev) => (prev + 1) % HERO_IMAGES.length);
       } else {
@@ -223,7 +240,7 @@ function useHeroCarousel() {
     return () => cancelAnimationFrame(frame.id);
   }, [currentIndex]);
 
-  return { currentIndex, progress, count: HERO_IMAGES.length };
+  return { currentIndex, count: HERO_IMAGES.length };
 }
 
 function ImageHeroBackground({ heroHeight }: { heroHeight?: number }) {
@@ -1310,11 +1327,16 @@ function Group14() {
 function Frame43() {
   const isMobile = useIsMobile();
   const liftingCards = [
-    { img: imgLifting1, title: "Epidermis & Dermis", subtitle: "피부결과 탄력 개선", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["겉으로 보이는 잔주름을 매끄럽게 정돈합니다.", "피부 속 콜라겐 생성을 유도하여 얇아진 피부 본연의 힘과 윤기를 되찾아줍니다."] },
-    { img: imgLifting2, title: "Fat", subtitle: "얼굴의 무게감을 덜어내고 라인을 탄탄하게", desc: "지방을 비워내, 슬림하고 매끄러운 윤곽선", bullets: ["탄력을 저하시키는 불필요하고 무거운 처진 지방을 정돈합니다.", "둔탁해진 턱선과 심부볼의 부피를 줄여 슬림하고 매끄러운 윤곽 라인을 만듭니다."] },
-    { img: imgLifting3, title: "Fascia", subtitle: "피부의 탄력을 끌어올리는", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["피부를 지지하는 뼈대 역할을 하는 근막층을 강력하게 타겟팅합니다.", "피부 깊은 곳에서부터 처진 조직을 단단하게 위로 견인하여 근본적인 리프팅을 실현합니다."] },
-    { img: imgLifting4, title: "Muscle", subtitle: "자연스러운 리프팅 효과가 지속되도록", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["개개인의 표정 근육 움직임과 방향까지 고려하여 디자인합니다.", "시술 후에도 표정이 어색하지 않으며, 끌어올린 탄력이 더 오랜 기간 단단하게 유지되도록 고정력을 강화합니다."] },
+    { img: imgLifting1, tag: "프리미엄 리프팅", title: "Epidermis & Dermis", subtitle: "피부결과 탄력 개선", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["겉으로 보이는 잔주름을 매끄럽게 정돈합니다.", "피부 속 콜라겐 생성을 유도하여 얇아진 피부 본연의 힘과 윤기를 되찾아줍니다."] },
+    { img: imgLifting2, tag: "지방층", title: "Fat", subtitle: "얼굴의 무게감을 덜어내고 라인을 탄탄하게", desc: "지방을 비워내, 슬림하고 매끄러운 윤곽선", bullets: ["탄력을 저하시키는 불필요하고 무거운 처진 지방을 정돈합니다.", "둔탁해진 턱선과 심부볼의 부피를 줄여 슬림하고 매끄러운 윤곽 라인을 만듭니다."] },
+    { img: imgLifting3, tag: "근막층", title: "Fascia", subtitle: "피부의 탄력을 끌어올리는", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["피부를 지지하는 뼈대 역할을 하는 근막층을 강력하게 타겟팅합니다.", "피부 깊은 곳에서부터 처진 조직을 단단하게 위로 견인하여 근본적인 리프팅을 실현합니다."] },
+    { img: imgLifting4, tag: "근육층", title: "Muscle", subtitle: "자연스러운 리프팅 효과가 지속되도록", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["개개인의 표정 근육 움직임과 방향까지 고려하여 디자인합니다.", "시술 후에도 표정이 어색하지 않으며, 끌어올린 탄력이 더 오랜 기간 단단하게 유지되도록 고정력을 강화합니다."] },
   ];
+  const [mobileIndex, setMobileIndex] = useState(0);
+  const handleLiftingPrev = () => setMobileIndex((prev) => (prev - 1 + liftingCards.length) % liftingCards.length);
+  const handleLiftingNext = () => setMobileIndex((prev) => (prev + 1) % liftingCards.length);
+  const currentLifting = liftingCards[mobileIndex];
+
   if (isMobile) {
     return (
       <div className="relative w-full bg-[#FBF6F1] flex flex-col items-center gap-[16px] px-5 py-10">
@@ -1323,21 +1345,87 @@ function Frame43() {
           <h2 className="font-['Pretendard'] text-[#222] text-[24px] font-light text-center leading-none">올 뎁스 리프팅</h2>
         </div>
         <p className="font-['Pretendard'] text-[#666] text-sm text-center">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
-        <div className="flex flex-col gap-8 w-full">
-          {liftingCards.map((c) => (
-            <div key={c.title} className="flex flex-col gap-3">
-              <div className="w-full overflow-hidden group" style={{ aspectRatio: '430 / 460' }}><img src={c.img} alt={c.title} className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" /></div>
-              <div className="flex items-center justify-center w-max h-[32px] bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)] px-3">
-                <span className="font-['Pretendard'] text-white text-sm font-medium">프리미엄 리프팅</span>
+
+        <div className="w-full overflow-hidden relative flex flex-col">
+          {/* Image area */}
+          <div className="relative w-full" style={{ aspectRatio: '430 / 460' }}>
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={mobileIndex}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
+                transition={{ duration: 0.5 }}
+                src={currentLifting.img}
+                alt={currentLifting.title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+            </AnimatePresence>
+          </div>
+
+          {/* Content area */}
+          <div className="flex flex-col gap-3 pt-4">
+            <div className="relative">
+              {/* Hidden grid: all cards stacked in same cell to get max height */}
+              <div className="grid" style={{ gridArea: '1/1' }}>
+                {liftingCards.map((c, idx) => (
+                  <div key={idx} className="flex flex-col gap-3" style={{ visibility: 'hidden', gridRow: 1, gridColumn: 1, pointerEvents: 'none' }} aria-hidden="true">
+                    <div className="h-[32px]" />
+                    <h3 className="font-['Montserrat'] text-black text-[28px] font-normal leading-[1.25] whitespace-nowrap m-0">{c.title}</h3>
+                    <span className="font-['Pretendard'] text-[#b8a99a] text-base font-light">{c.subtitle}</span>
+                    <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm leading-[1.7] m-0">{c.desc}</p>
+                    <div className="flex flex-col font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm font-light leading-[1.67]">
+                      {c.bullets.map((b, bi) => (
+                        <div key={bi} className="flex gap-2"><span className="w-[20px] shrink-0 text-center">•</span><span>{b}</span></div>
+                      ))}
+                    </div>
+                  </div>
+                ))}
               </div>
-              <h3 className="font-['Montserrat'] text-black text-[28px] font-normal leading-[1.25] whitespace-nowrap">{c.title.replace('\n', ' ')}</h3>
-              <span className="font-['Pretendard'] text-[#b8a99a] text-base font-light">{c.subtitle}</span>
-              <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm leading-[1.7]">{c.desc}</p>
-              <div className="flex flex-col font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm font-light leading-[1.67]">
-                {c.bullets.map((b, i) => (<div key={i} className="flex gap-2"><span className="w-[20px] shrink-0 text-center">•</span><span>{b}</span></div>))}
+              {/* Visible: current card */}
+              <div className="absolute top-0 left-0 right-0">
+                <div className="flex items-center justify-center w-max h-[32px] bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)] px-3">
+                  <span className="font-['Pretendard'] text-white text-sm font-medium">{currentLifting.tag}</span>
+                </div>
+                <AnimatePresence mode="wait">
+                  <motion.div key={mobileIndex} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }} className="flex flex-col gap-3 mt-3">
+                    <h3 className="font-['Montserrat'] text-black text-[28px] font-normal leading-[1.25] whitespace-nowrap m-0">{currentLifting.title}</h3>
+                    <span className="font-['Pretendard'] text-[#b8a99a] text-base font-light">{currentLifting.subtitle}</span>
+                    <p className="font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm leading-[1.7] m-0">{currentLifting.desc}</p>
+                    <div className="flex flex-col font-['Pretendard'] text-[rgba(0,0,0,0.8)] text-sm font-light leading-[1.67]">
+                      {currentLifting.bullets.map((b, i) => (
+                        <div key={i} className="flex gap-2"><span className="w-[20px] shrink-0 text-center">•</span><span>{b}</span></div>
+                      ))}
+                    </div>
+                  </motion.div>
+                </AnimatePresence>
               </div>
             </div>
-          ))}
+
+            {/* Navigation */}
+            <div className="flex gap-[16px] items-center mt-2">
+              <button onClick={handleLiftingPrev} className="cursor-pointer bg-transparent border-none p-0 outline-none hover:opacity-70 transition-opacity">
+                <div className="relative rounded-full shrink-0 size-[40px]">
+                  <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.3)] inset-0 pointer-events-none rounded-full" />
+                  <div className="flex items-center justify-center size-full">
+                    <svg className="size-[18px]" fill="none" viewBox="0 0 24 24"><path d="M15 18L9 12L15 6" stroke="black" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>
+                  </div>
+                </div>
+              </button>
+              <p className="font-['Montserrat'] font-medium text-[16px] text-black tracking-[1.5px] whitespace-nowrap m-0">
+                <span>{(mobileIndex + 1).toString().padStart(2, '0')}</span>
+                <span className="text-[rgba(0,0,0,0.4)]">{` / ${liftingCards.length.toString().padStart(2, '0')}`}</span>
+              </p>
+              <button onClick={handleLiftingNext} className="cursor-pointer bg-transparent border-none p-0 outline-none hover:opacity-70 transition-opacity">
+                <div className="relative rounded-full shrink-0 size-[40px]">
+                  <div aria-hidden="true" className="absolute border border-[rgba(0,0,0,0.3)] inset-0 pointer-events-none rounded-full" />
+                  <div className="flex items-center justify-center size-full">
+                    <svg className="size-[18px]" fill="none" viewBox="0 0 24 24"><path d="M9 18L15 12L9 6" stroke="black" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" /></svg>
+                  </div>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     );
@@ -2396,6 +2484,7 @@ function Container8() {
 }
 
 function EquipmentCarousel() {
+  const isMobile = useIsMobile();
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -2419,19 +2508,78 @@ function EquipmentCarousel() {
           <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex flex-col gap-[120px] max-md:gap-[20px] items-start py-[70px] max-md:py-[20px] relative w-full">
             
             <div className="h-auto md:h-[361.195px] relative shrink-0 w-full" data-name="Container">
+              {/* Mobile: grid to fix height to tallest item */}
+              {isMobile && (
+                <div className="relative">
+                  <div className="grid">
+                    {EQUIPMENT_DATA.map((item, idx) => (
+                      <div key={idx} className="flex flex-col gap-[14px]" style={{ visibility: 'hidden', gridRow: 1, gridColumn: 1, pointerEvents: 'none' }} aria-hidden="true">
+                        <div className="flex flex-nowrap gap-1 h-[26px]">
+                          {item.tags.map((tag, i) => (
+                            <div key={i} className="flex items-center justify-center bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.3)] h-[26px] rounded-[16777200px] px-2.5 shrink-0">
+                              <p className="font-['Pretendard'] font-medium text-[12px] text-white tracking-[0.3px] whitespace-nowrap m-0">{tag}</p>
+                            </div>
+                          ))}
+                        </div>
+                        <div className="font-['Montserrat'] font-light text-[24px] text-white uppercase">
+                          {item.nameLines.map((line, i) => <p key={i} className="mb-0">{line}</p>)}
+                        </div>
+                        <p className="font-['Pretendard'] font-medium text-[16px] text-[#b8a99a] whitespace-nowrap m-0">{item.subtitle}</p>
+                        <div className="font-['Pretendard'] font-light text-[16px] text-[rgba(255,255,255,0.8)] leading-[22px] break-keep">
+                          {item.desc.map((line, i) => <p key={i} className="mb-0">{line}</p>)}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                  <div className="absolute top-0 left-0 right-0 flex flex-col">
+                    <div className="flex flex-nowrap gap-1 w-max mb-3">
+                      {currentItem.tags.map((tag, i) => (
+                        <div key={i} className="flex items-center justify-center bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.3)] border-solid h-[26px] rounded-[16777200px] px-2.5 shrink-0">
+                          <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[12px] text-white tracking-[0.3px] whitespace-nowrap m-0">{tag}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="flex flex-col gap-[14px]">
+                      <div className="flex flex-col gap-[8px]">
+                        <div className="font-['Montserrat'] font-light leading-[1.2] text-[24px] text-white uppercase">
+                          <AnimatePresence mode="wait">
+                            <motion.div key={currentIndex} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
+                              {currentItem.nameLines.map((line, i) => <p key={i} className="mb-0">{line}</p>)}
+                            </motion.div>
+                          </AnimatePresence>
+                        </div>
+                        <AnimatePresence mode="wait">
+                          <motion.p key={currentIndex} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }} className="font-['Pretendard'] font-medium leading-[22px] not-italic text-[#b8a99a] text-[16px] whitespace-nowrap m-0">
+                            {currentItem.subtitle}
+                          </motion.p>
+                        </AnimatePresence>
+                      </div>
+                      <div className="font-['Pretendard'] font-light leading-[22px] text-[16px] text-[rgba(255,255,255,0.8)] break-keep">
+                        <AnimatePresence mode="wait">
+                          <motion.div key={currentIndex} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
+                            {currentItem.desc.map((line, i) => <p key={i} className="mb-0">{line}</p>)}
+                          </motion.div>
+                        </AnimatePresence>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              )}
+              {/* Desktop: original layout */}
+              {!isMobile && (
               <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full flex flex-col">
-                <div className="relative flex flex-nowrap gap-2 max-md:gap-1 w-max mb-8 max-md:mb-3">
+                <div className="relative flex flex-nowrap gap-2 w-max mb-8">
                   {currentItem.tags.map((tag, i) => (
-                    <div key={i} className="flex items-center justify-center bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.3)] border-solid h-[35px] max-md:h-[26px] rounded-[16777200px] px-4 max-md:px-2.5 shrink-0" data-name="Text">
-                      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[14px] max-md:text-[12px] text-white tracking-[0.3px] whitespace-nowrap m-0">{tag}</p>
+                    <div key={i} className="flex items-center justify-center bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.3)] border-solid h-[35px] rounded-[16777200px] px-4 shrink-0" data-name="Text">
+                      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[14px] text-white tracking-[0.3px] whitespace-nowrap m-0">{tag}</p>
                     </div>
                   ))}
                 </div>
-                
-                <div className="relative md:absolute content-stretch flex flex-col gap-[30px] max-md:gap-[14px] items-start left-0 md:top-[71px] mt-8 max-md:mt-3 md:mt-0 w-[387px] max-w-full">
-                  <div className="content-stretch flex flex-col gap-[12px] max-md:gap-[8px] items-start relative shrink-0 w-full">
+
+                <div className="absolute content-stretch flex flex-col gap-[30px] items-start left-0 top-[71px] w-[387px] max-w-full">
+                  <div className="content-stretch flex flex-col gap-[12px] items-start relative shrink-0 w-full">
                     <div className="relative shrink-0 w-full" data-name="Heading 3">
-                      <div className="font-['Montserrat'] font-light leading-[1.2] md:leading-[65px] text-[24px] md:text-[52px] text-white whitespace-normal md:whitespace-nowrap uppercase">
+                      <div className="font-['Montserrat'] font-light leading-[65px] text-[52px] text-white whitespace-nowrap uppercase">
                         <AnimatePresence mode="wait">
                           <motion.div key={currentIndex} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}>
                             {currentItem.nameLines.map((line, i) => <p key={i} className="mb-0">{line}</p>)}
@@ -2441,14 +2589,14 @@ function EquipmentCarousel() {
                     </div>
                     <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Paragraph">
                       <AnimatePresence mode="wait">
-                        <motion.p key={currentIndex} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }} className="font-['Pretendard'] font-medium leading-[33px] max-md:leading-[22px] not-italic relative shrink-0 text-[#b8a99a] text-[22px] max-md:text-[16px] whitespace-nowrap m-0">
+                        <motion.p key={currentIndex} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }} className="font-['Pretendard'] font-medium leading-[33px] not-italic relative shrink-0 text-[#b8a99a] text-[22px] whitespace-nowrap m-0">
                           {currentItem.subtitle}
                         </motion.p>
                       </AnimatePresence>
                     </div>
                   </div>
-                  <div className="h-auto md:h-[97.195px] relative shrink-0 w-full" data-name="Paragraph">
-                    <div className="relative md:absolute font-['Pretendard'] font-light leading-[32.4px] max-md:leading-[22px] left-0 not-italic text-[18px] max-md:text-[16px] text-[rgba(255,255,255,0.8)] top-[-1px] w-[369px] max-w-full break-keep">
+                  <div className="h-[97.195px] relative shrink-0 w-full" data-name="Paragraph">
+                    <div className="absolute font-['Pretendard'] font-light leading-[32.4px] left-0 not-italic text-[18px] text-[rgba(255,255,255,0.8)] top-[-1px] w-[369px] max-w-full break-keep">
                       <AnimatePresence mode="wait">
                         <motion.div key={currentIndex} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.3 }}>
                           {currentItem.desc.map((line, i) => <p key={i} className="mb-0">{line}</p>)}
@@ -2458,6 +2606,7 @@ function EquipmentCarousel() {
                   </div>
                 </div>
               </div>
+              )}
             </div>
 
             <div className="h-[56px] max-md:h-[44px] relative shrink-0 w-full max-w-[387px]" data-name="Container">
@@ -2505,19 +2654,19 @@ function EquipmentCarousel() {
 
       <div className="relative lg:absolute h-[340px] lg:h-[710px] left-0 lg:left-[50%] top-0 w-full lg:w-[50%]" data-name="Container">
         <Container11 />
-        <div className="absolute h-full lg:h-[536px] left-1/2 lg:left-[calc(50%+0.5px)] top-1/2 -translate-x-1/2 -translate-y-1/2 w-full lg:w-[367px]" data-name="Image">
-          <div className="absolute inset-0 max-lg:inset-4 overflow-hidden pointer-events-none">
+        <div className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ${isMobile ? 'w-[160px] h-[340px]' : 'h-[536px] w-[367px]'}`} data-name="Image">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none flex items-center justify-center">
             <AnimatePresence mode="wait">
-              <motion.img 
-                key={currentIndex} 
-                initial={{ opacity: 0, x: 20 }} 
-                animate={{ opacity: 1, x: 0 }} 
-                exit={{ opacity: 0, x: -20 }} 
+              <motion.img
+                key={currentIndex}
+                initial={{ opacity: 0, x: 20 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -20 }}
                 transition={{ duration: 0.5 }}
-                alt={currentItem.nameLines.join(" ")} 
-                className="absolute inset-0 w-full h-full object-contain" 
+                alt={currentItem.nameLines.join(" ")}
+                className="w-full h-full object-contain"
                 src={currentItem.img}
-                style={{ transform: `scale(${currentItem.imgScale || 1})` }}
+                style={isMobile ? undefined : { transform: `scale(${currentItem.imgScale || 1})` }}
               />
             </AnimatePresence>
           </div>
