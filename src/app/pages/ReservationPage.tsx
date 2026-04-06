@@ -122,7 +122,7 @@ export default function ReservationPage() {
                     진료 시간 내 전화를 주시면<br />친절하게 예약을 도와드립니다.
                   </p>
                   <p className="font-['Montserrat',sans-serif] text-[32px] font-light text-[#1c1614] tracking-[2px] whitespace-nowrap group-hover:text-white transition-colors">
-                    02-1234-5678
+                    02-544-1005
                   </p>
                 </div>
 

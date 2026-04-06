@@ -873,7 +873,7 @@ export function Frame36() {
               <div className="flex items-center gap-[24px] max-md:gap-[16px]">
                 <p className="font-['Montserrat',sans-serif] font-semibold text-[18px] max-md:text-[16px] text-[#faf6f1] tracking-[2px] uppercase">Refine Dermatology</p>
                 <div className="w-[4px] h-[4px] rounded-full bg-[rgba(250,246,241,0.5)] hidden md:block"></div>
-                <p className="font-['Montserrat',sans-serif] text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.7)] hidden md:block">Tel. 02-1234-5678</p>
+                <p className="font-['Montserrat',sans-serif] text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.7)] hidden md:block">Tel. 02-544-1005</p>
               </div>
               <p className="font-['Pretendard',sans-serif] font-normal text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.6)]">
                 서울특별시 강남구 논현로 175길 38 5층 리파인의원 (압구정역 5번 출구 도보 4분)
@@ -979,7 +979,7 @@ function Component() {
 function Frame2() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] max-md:gap-[12px] items-center not-italic relative shrink-0 text-white whitespace-nowrap">
-      <p className="font-['Pretendard',sans-serif] font-light leading-[1.3] relative shrink-0 text-[56px] max-md:text-[24px] max-md:whitespace-normal max-md:text-center max-md:leading-[1.5]">세심하고, 정교하게 다듬어 본연의 아름다움을 만들다</p>
+      <p className="font-['Pretendard',sans-serif] font-light leading-[1.3] relative shrink-0 text-[56px] max-md:text-[24px] max-md:whitespace-normal max-md:text-center max-md:leading-[1.5]">정교하게 다듬어 본연의 아름다움을 만들다</p>
       <div className="font-['Pretendard',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[17px] max-md:text-[16px]">
         <p className="mb-0 max-md:whitespace-normal max-md:text-center">세심한 안목으로 본연의 아름다움을 찾고, 정교한 손길로 세련된 가치를 완성합니다.</p>
       </div>
@@ -1748,7 +1748,7 @@ function FooterBrand() {
     <div className="content-stretch flex flex-col gap-[24px] items-start overflow-clip relative shrink-0 w-[300px] max-md:w-full" data-name="footerBrand">
       <IsolationMode />
       <p className="font-['Pretendard'] font-light leading-relaxed not-italic relative shrink-0 text-[14px] text-[#faf6f1]/60 whitespace-nowrap max-md:whitespace-normal">
-        세심하고, 정교하게 다듬어<br/>
+        정교하게 다듬어<br/>
         본연의 아름다움을 만들다
       </p>
     </div>
@@ -1761,11 +1761,11 @@ function FooterColInfo() {
       <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[14px] text-[#faf6f1] tracking-[2px] uppercase">Information</p>
       <div className="flex flex-col gap-[8px] font-['Pretendard'] font-light text-[14px] text-[#faf6f1]/70 leading-relaxed">
         <p>리파인의원</p>
-        <p>대표자명 : 김리파</p>
-        <p>사업자등록번호 : 123-45-67890</p>
+        <p>대표자명 : 박상선</p>
+        <p>사업자등록번호 : 778-12-02986</p>
         <p>서울특별시 강남구 논현로 175길 38 5층 리파인의원 (압구정역 5번 출구 도보 4분)</p>
-        <p className="font-['Montserrat'] mt-2">T. 02-1234-5678</p>
-        <p className="font-['Montserrat']">E. contact@refineclinic.com</p>
+        <p className="font-['Montserrat'] mt-2">T. 02-544-1005</p>
+        <p className="font-['Montserrat']">E. refineclinickr@gmail.com</p>
       </div>
     </div>
   );

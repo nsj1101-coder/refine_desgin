@@ -161,7 +161,7 @@ export default function InquiryWritePage() {
                     <ul className="flex flex-col gap-3 text-[15px] text-[#6b5f58]">
                       <li className="flex items-start gap-4">
                         <span className="font-['Montserrat',sans-serif] font-medium text-[#1c1614] w-[60px]">TEL</span>
-                        <span>02-1234-5678</span>
+                        <span>02-544-1005</span>
                       </li>
                       <li className="flex items-start gap-4">
                         <span className="font-['Montserrat',sans-serif] font-medium text-[#1c1614] w-[60px]">TIME</span>

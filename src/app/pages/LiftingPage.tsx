@@ -111,8 +111,8 @@ export default function LiftingPage() {
   ];
 
   const processSteps = [
-    { step: "01", title: "1:1 맞춤 상담", desc: "피부 상태와 고민을 파악하고\n최적의 시술을 설계합니다", icon: MessageCircle },
-    { step: "02", title: "정밀 진단", desc: "피부 층별 상태를 분석하여\n시술 깊이와 강도를 결정합니다", icon: ScanLine },
+    { step: "01", title: "정밀 진단", desc: "피부 층별 상태를 분석하여\n시술 깊이와 강도를 결정합니다", icon: ScanLine },
+    { step: "02", title: "1:1 맞춤 상담", desc: "피부 상태와 고민을 파악하고\n최적의 시술을 설계합니다", icon: MessageCircle },
     { step: "03", title: "맞춤 시술", desc: "개인별 맞춤 프로토콜로\n정교하게 시술을 진행합니다", icon: Sparkles },
     { step: "04", title: "사후 관리", desc: "시술 후 경과를 체크하고\n최적의 유지 관리법을 안내합니다", icon: HeartPulse },
   ];

@@ -197,7 +197,7 @@ export default function TreatmentTemplate({
                   setActiveTreatment(idx);
                   document.getElementById(`sec-${t.id}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
                 }}
-                className={`flex-1 h-[100px] max-md:h-[48px] flex items-center justify-center text-xl max-md:text-base transition-all duration-300 cursor-pointer ${
+                className={`flex-1 h-[100px] max-md:h-[48px] flex items-center justify-center text-[17px] max-md:text-sm transition-all duration-300 cursor-pointer ${
                   activeTreatment === idx
                     ? "border-b-4 border-[#1C1614] text-[#1C1614] font-bold"
                     : "border-b border-[rgba(28,22,20,0.2)] text-[#B8A99A] font-medium"
