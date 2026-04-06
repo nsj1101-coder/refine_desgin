@@ -1,4 +1,5 @@
 import { motion, useScroll, useTransform } from "motion/react";
+import { Phone, MessageCircle, Globe } from "lucide-react";
 import { ScaledPageWrapper, useScaledViewportHeight } from "../components/ScaledPageWrapper";
 import { SubpageDirectionsSection, SubpageFooter } from "../../imports/Main01";
 import { ImageWithFallback } from "../components/figma/ImageWithFallback";
@@ -108,6 +109,9 @@ export default function ReservationPage() {
             <FadeInUp delay={0.2}>
               <div className="flex flex-col md:flex-row border border-[#1c1614] max-w-[1400px] mx-auto">
                 <div className="flex-1 md:basis-1/3 flex flex-col justify-center items-center p-[60px] md:p-[80px] border-b md:border-b-0 md:border-r border-[#1c1614] group hover:bg-[#1c1614] transition-colors duration-500 cursor-pointer text-center min-w-0">
+                  <div className="w-[72px] h-[72px] rounded-full border border-[#c8bdb6] flex items-center justify-center mb-8 group-hover:border-white/40 transition-colors duration-500">
+                    <Phone className="w-[30px] h-[30px] text-[#b8a99a] stroke-[1] group-hover:text-white/70 transition-colors duration-500" />
+                  </div>
                   <p className="font-['Montserrat',sans-serif] text-[16px] tracking-[0px] text-[#b8a99a] uppercase mb-8 group-hover:text-white/60 transition-colors">
                     Phone Call
                   </p>
@@ -123,6 +127,9 @@ export default function ReservationPage() {
                 </div>
 
                 <div className="flex-1 md:basis-1/3 flex flex-col justify-center items-center p-[60px] md:p-[80px] border-b md:border-b-0 md:border-r border-[#1c1614] group hover:bg-[#fee500] transition-colors duration-500 cursor-pointer text-center min-w-0">
+                  <div className="w-[72px] h-[72px] rounded-full border border-[#c8bdb6] flex items-center justify-center mb-8 group-hover:border-[#1c1614]/30 transition-colors duration-500">
+                    <MessageCircle className="w-[30px] h-[30px] text-[#b8a99a] stroke-[1] group-hover:text-[#1c1614]/60 transition-colors duration-500" />
+                  </div>
                   <p className="font-['Montserrat',sans-serif] text-[16px] tracking-[0px] text-[#b8a99a] uppercase mb-8 group-hover:text-[#1c1614]/60 transition-colors">
                     Kakao Talk
                   </p>
@@ -138,6 +145,9 @@ export default function ReservationPage() {
                 </div>
 
                 <div className="flex-1 md:basis-1/3 flex flex-col justify-center items-center p-[60px] md:p-[80px] group hover:bg-[#03C75A] transition-colors duration-500 cursor-pointer text-center min-w-0">
+                  <div className="w-[72px] h-[72px] rounded-full border border-[#c8bdb6] flex items-center justify-center mb-8 group-hover:border-white/40 transition-colors duration-500">
+                    <Globe className="w-[30px] h-[30px] text-[#b8a99a] stroke-[1] group-hover:text-white/70 transition-colors duration-500" />
+                  </div>
                   <p className="font-['Montserrat',sans-serif] text-[16px] tracking-[0px] text-[#b8a99a] uppercase mb-8 group-hover:text-white/60 transition-colors">
                     Naver
                   </p>
