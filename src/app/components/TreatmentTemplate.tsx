@@ -211,23 +211,23 @@ export default function TreatmentTemplate({
           {treatments.map((t, idx) => {
             const isImageLeft = idx % 2 === 0;
             const imageBlock = (
-              <div className="w-[67vw] md:w-[500px] shrink-0 overflow-hidden aspect-[262/443] md:aspect-[500/896]">
+              <div className="w-[50vw] md:w-[360px] shrink-0 overflow-hidden aspect-[262/443] md:aspect-[500/896]">
                 <ImageWithFallback src={t.img} alt={t.title} className="w-full h-full object-cover" />
               </div>
             );
             const contentBlock = (
-              <div className="flex-1 relative px-5 md:px-0" style={{minHeight: 661}}>
-                <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-light leading-[1.5]">{t.subtitle}</span>
-                <h3 className="font-['Montserrat',sans-serif] text-[#504945] text-[40px] md:text-[64px] font-light tracking-[-1px] mt-[10px] leading-[1.2]">{t.titleEn}</h3>
-                <span className="block text-[#B5B0AC] text-[24px] md:text-[32px] font-light tracking-[-1px] mt-2 leading-[1.4]">{t.title}</span>
+              <div className="flex-1 relative px-5 md:px-0" style={{minHeight: 520}}>
+                <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-sm font-light leading-[1.5]">{t.subtitle}</span>
+                <h3 className="font-['Montserrat',sans-serif] text-[#504945] text-[34px] md:text-[54px] font-light tracking-[-1px] mt-[8px] leading-[1.2]">{t.titleEn}</h3>
+                <span className="block text-[#B5B0AC] text-[20px] md:text-[26px] font-light tracking-[-1px] mt-1.5 leading-[1.4]">{t.title}</span>
 
-                <p className="text-[#4A3F3A] text-lg md:text-xl font-normal leading-[1.6] max-w-[667px] mt-[24px]">{t.headline}</p>
-                {t.desc && <p className="text-[#6E6560] text-lg font-light leading-[1.6] max-w-[667px] mt-[8px]">{t.desc}</p>}
+                <p className="text-[#4A3F3A] text-base md:text-lg font-normal leading-[1.6] max-w-[667px] mt-[18px]">{t.headline}</p>
+                {t.desc && <p className="text-[#6E6560] text-base font-light leading-[1.6] max-w-[667px] mt-[6px]">{t.desc}</p>}
 
                 {t.points && t.points.length > 0 && (
-                <ul className="flex flex-col gap-2 mt-[16px]">
+                <ul className="flex flex-col gap-1.5 mt-[12px]">
                   {t.points.map((p: string, i: number) => (
-                    <li key={i} className="flex items-start gap-2 text-[#6E6560] text-lg font-light leading-[1.6]">
+                    <li key={i} className="flex items-start gap-2 text-[#6E6560] text-base font-light leading-[1.6]">
                       <span className="mt-[10px] w-[5px] h-[5px] rounded-full bg-[#6E6560] shrink-0" />
                       {p}
                     </li>
@@ -235,33 +235,33 @@ export default function TreatmentTemplate({
                 </ul>
                 )}
 
-                <div className="grid grid-cols-2 md:flex md:flex-wrap gap-5 mt-[24px]">
+                <div className="grid grid-cols-2 md:flex md:flex-wrap gap-4 mt-[18px]">
                   {[
                     { label: "시술시간", value: t.duration },
                     { label: "마취 여부", value: t.anesthesia },
                     { label: "회복 기간", value: t.recovery },
                     { label: "추천/유지", value: t.maintenance },
                   ].map((info) => (
-                    <div key={info.label} className="flex flex-col gap-3 bg-[#FBF6F1] p-2.5 items-center text-center">
+                    <div key={info.label} className="flex flex-col gap-2 bg-[#FBF6F1] p-2 items-center text-center">
                       <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-xs font-light tracking-[2px] leading-[1.5]">{info.label}</span>
-                      <span className="text-[#504945] text-base font-light leading-[1.5]">{info.value}</span>
+                      <span className="text-[#504945] text-sm font-light leading-[1.5]">{info.value}</span>
                     </div>
                   ))}
                 </div>
 
-                {t.headline2 && <p className="text-[#4A3F3A] text-lg md:text-xl font-normal leading-[1.3] mt-[24px] mb-4">{t.headline2}</p>}
+                {t.headline2 && <p className="text-[#4A3F3A] text-base md:text-lg font-normal leading-[1.3] mt-[18px] mb-3">{t.headline2}</p>}
                 {t.details && t.details.length > 0 && (
-                <div className="flex flex-col gap-2 max-w-[689px]">
+                <div className="flex flex-col gap-1.5 max-w-[689px]">
                   {t.details.map((d: string, i: number) => (
-                    <p key={i} className="text-[#6E6560] text-lg font-light leading-[1.6]">{i + 1}. {d}</p>
+                    <p key={i} className="text-[#6E6560] text-base font-light leading-[1.6]">{i + 1}. {d}</p>
                   ))}
                 </div>
                 )}
 
                 {t.tags && t.tags.length > 0 && (
-                <div className="flex flex-wrap gap-3 mt-[24px]">
+                <div className="flex flex-wrap gap-2 mt-[18px]">
                   {t.tags.map((tag: string) => (
-                    <span key={tag} className="font-['Montserrat',sans-serif] text-[#B8A99A] text-base font-medium border border-[#B8A99A] rounded px-3.5 py-2">{tag}</span>
+                    <span key={tag} className="font-['Montserrat',sans-serif] text-[#B8A99A] text-sm font-medium border border-[#B8A99A] rounded px-3 py-1.5">{tag}</span>
                   ))}
                 </div>
                 )}
@@ -270,7 +270,7 @@ export default function TreatmentTemplate({
 
             return (
               <FadeIn key={t.id}>
-                <div id={`sec-${t.id}`} className={`flex flex-col items-center gap-[40px] md:gap-[80px] px-0 md:px-[326px] py-[60px] md:py-[100px] ${isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
+                <div id={`sec-${t.id}`} className={`flex flex-col items-center gap-[30px] md:gap-[60px] px-0 md:px-[326px] py-[45px] md:py-[75px] ${isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   {imageBlock}{contentBlock}
                 </div>
               </FadeIn>
