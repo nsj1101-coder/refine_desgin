@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useOutletContext, useNavigate } from "react-router";
 import { Check, ChevronDown, Clock, Shield, Activity, CalendarDays } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { SubpageDirectionsSection, SubpageFooter } from "../../imports/Main01";
+import { SubpageDirectionsSection as DefaultDirectionsSection, SubpageFooter as DefaultFooter } from "../../imports/Main01";
 import { ScaledPageWrapper, useScaledViewportHeight } from "./ScaledPageWrapper";
 
 function FadeIn({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
@@ -66,6 +66,18 @@ export interface TreatmentTemplateProps {
   faqs: FAQInfo[];
   ctaTitle: React.ReactNode;
   ctaDesc: string;
+  directionsSection?: React.ComponentType;
+  footer?: React.ComponentType;
+  reservationPath?: string;
+  labels?: {
+    processTitle?: string;
+    recommendTitle?: string;
+    faqTitle?: string;
+    duration?: string;
+    anesthesia?: string;
+    recovery?: string;
+    maintenance?: string;
+  };
 }
 
 export default function TreatmentTemplate({
@@ -82,8 +94,21 @@ export default function TreatmentTemplate({
   recommends,
   faqs,
   ctaTitle,
-  ctaDesc
+  ctaDesc,
+  directionsSection: DirectionsSection = DefaultDirectionsSection,
+  footer: Footer = DefaultFooter,
+  reservationPath = '/reservation',
+  labels = {},
 }: TreatmentTemplateProps) {
+  const {
+    processTitle = "시술 과정",
+    recommendTitle = "이런 분께 추천드려요",
+    faqTitle = "자주 묻는 질문",
+    duration = "시술시간",
+    anesthesia = "마취 여부",
+    recovery = "회복 기간",
+    maintenance = "추천/유지",
+  } = labels;
   const heroHeight = useScaledViewportHeight();
   const navigate = useNavigate();
   const [activeTreatment, setActiveTreatment] = useState(0);
@@ -237,10 +262,10 @@ export default function TreatmentTemplate({
 
                 <div className="grid grid-cols-2 md:flex md:flex-wrap gap-4 mt-[18px]">
                   {[
-                    { label: "시술시간", value: t.duration },
-                    { label: "마취 여부", value: t.anesthesia },
-                    { label: "회복 기간", value: t.recovery },
-                    { label: "추천/유지", value: t.maintenance },
+                    { label: duration, value: t.duration },
+                    { label: anesthesia, value: t.anesthesia },
+                    { label: recovery, value: t.recovery },
+                    { label: maintenance, value: t.maintenance },
                   ].map((info) => (
                     <div key={info.label} className="flex flex-col gap-2 bg-[#FBF6F1] p-2 items-center text-center">
                       <span className="font-['Montserrat',sans-serif] text-[#B8A99A] text-xs font-light tracking-[2px] leading-[1.5]">{info.label}</span>
@@ -287,7 +312,7 @@ export default function TreatmentTemplate({
                   Process
                 </p>
                 <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light">
-                  시술 과정
+                  {processTitle}
                 </h2>
               </div>
             </FadeIn>
@@ -325,7 +350,7 @@ export default function TreatmentTemplate({
                     Recommend
                   </p>
                   <h2 className="text-[28px] md:text-[42px] text-[#faf6f1] tracking-[-1px] font-['Pretendard',sans-serif] font-light">
-                    이런 분께 추천드려요
+                    {recommendTitle}
                   </h2>
                 </FadeIn>
               </div>
@@ -357,7 +382,7 @@ export default function TreatmentTemplate({
                     Q&A
                   </p>
                   <h2 className="text-[28px] md:text-[42px] text-[#222] tracking-[-1px] font-['Pretendard',sans-serif] font-light">
-                    자주 묻는 질문
+                    {faqTitle}
                   </h2>
                 </div>
               </div>
@@ -429,7 +454,7 @@ export default function TreatmentTemplate({
                   </p>
                 </div>
                 <button
-                  onClick={() => navigate('/reservation')}
+                  onClick={() => navigate(reservationPath)}
                   className="px-[48px] py-[20px] border border-[#faf6f1] text-[#faf6f1] font-['Montserrat',sans-serif] font-medium text-[14px] tracking-[3px] uppercase hover:bg-[#faf6f1] hover:text-[#1c1614] transition-colors duration-500 shrink-0"
                 >
                   Book Now
@@ -440,10 +465,10 @@ export default function TreatmentTemplate({
         </section>
 
         {/* ===== Location Section ===== */}
-        <SubpageDirectionsSection />
+        <DirectionsSection />
 
         {/* ===== Footer ===== */}
-        <SubpageFooter />
+        <Footer />
       </div>
     </ScaledPageWrapper>
   );

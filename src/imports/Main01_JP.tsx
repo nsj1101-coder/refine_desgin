@@ -141,12 +141,12 @@ const EQUIPMENT_DATA = [
   {
     id: 1,
     nameLines: ["Density"],
-    subtitle: "덴서티",
-    tags: ["#탄력", "#콜라겐", "#피부결", "#타이트닝"],
+    subtitle: "デンサティ",
+    tags: ["#ハリ", "#コラーゲン", "#肌質", "#タイトニング"],
     desc: [
-      "6.78MHz 고주파(RF) 에너지를 진피층에 전달하여",
-      "콜라겐 생성을 유도하고 무너진 페이스 라인을",
-      "매끄럽고 단단하게 재건하는 프리미엄 탄력 리프팅입니다."
+      "6.78MHzの高周波(RF)エネルギーを真皮層に届け、",
+      "コラーゲン生成を促し、崩れたフェイスラインを",
+      "なめらかで引き締まった状態に再建するプレミアムリフティングです。"
     ],
     img: eqDensity,
     imgScale: 1
@@ -154,12 +154,12 @@ const EQUIPMENT_DATA = [
   {
     id: 2,
     nameLines: ["Onda"],
-    subtitle: "온다",
-    tags: ["#윤곽", "#지방감소", "#타이트닝", "#바디"],
+    subtitle: "オンダ",
+    tags: ["#輪郭", "#脂肪減少", "#タイトニング", "#ボディ"],
     desc: [
-      "특허받은 마이크로웨이브(극초음파) 에너지로",
-      "표피 손상 없이 지방층을 감소시키고 진피층의",
-      "콜라겐을 리모델링하는 프리미엄 윤곽 타이트닝입니다."
+      "特許取得のマイクロ波（超高周波）エネルギーで、",
+      "表皮を傷つけずに脂肪層を減少させ、真皮層の",
+      "コラーゲンをリモデリングするプレミアム輪郭タイトニングです。"
     ],
     img: eqOndaNew,
     imgScale: 1
@@ -167,12 +167,12 @@ const EQUIPMENT_DATA = [
   {
     id: 3,
     nameLines: ["Potenza"],
-    subtitle: "포텐자",
-    tags: ["#모공", "#흉터", "#재생", "#콜라겐"],
+    subtitle: "ポテンザ",
+    tags: ["#毛穴", "#傷跡", "#再生", "#コラーゲン"],
     desc: [
-      "마이크로 니들을 통해 진피층에 고주파(RF) 에너지를",
-      "직접 전달하여 모공과 흉터를 개선하고 콜라겐 생성을",
-      "유도해 피부 근본의 건강함과 탄력을 되찾아 줍니다."
+      "マイクロニードルを通じて真皮層に高周波(RF)エネルギーを",
+      "直接届け、毛穴と傷跡を改善し、コラーゲン生成を",
+      "促して肌本来の健康とハリを取り戻します。"
     ],
     img: eqPotenza,
     imgScale: 1
@@ -180,12 +180,12 @@ const EQUIPMENT_DATA = [
   {
     id: 4,
     nameLines: ["Clarity"],
-    subtitle: "클라리티",
-    tags: ["#홍조", "#혈관", "#색소", "#듀얼파장"],
+    subtitle: "クラリティ",
+    tags: ["#赤み", "#血管", "#色素", "#デュアル波長"],
     desc: [
-      "755nm 알렉산드라이트와 1064nm Nd:YAG 듀얼 파장으로",
-      "멜라닌 색소와 확장된 혈관을 동시에 치료하며",
-      "홍조부터 색소 질환까지 폭넓게 대응합니다."
+      "755nmアレキサンドライトと1064nm Nd:YAGデュアル波長で、",
+      "メラニン色素と拡張した血管を同時に治療し、",
+      "赤みから色素疾患まで幅広く対応します。"
     ],
     img: eqHollywoodNew,
     imgScale: 2.5
@@ -193,12 +193,12 @@ const EQUIPMENT_DATA = [
   {
     id: 5,
     nameLines: ["Hollywood", "Spectra"],
-    subtitle: "헐리우드 스펙트라",
-    tags: ["#기미", "#모공", "#색소침착", "#피부톤"],
+    subtitle: "ハリウッドスペクトラ",
+    tags: ["#シミ", "#毛穴", "#色素沈着", "#肌トーン"],
     desc: [
-      "532nm과 1064nm 듀얼 파장의 Nd:YAG 레이저로",
-      "표피부터 진피까지 깊이별 색소를 정밀하게 타겟팅하여",
-      "기미·주근깨·잡티와 피부톤을 복합적으로 개선합니다."
+      "532nmと1064nmデュアル波長のNd:YAGレーザーで、",
+      "表皮から真皮まで深さ別の色素を精密にターゲティングし、",
+      "シミ・そばかす・くすみと肌トーンを複合的に改善します。"
     ],
     img: eqClarityNew,
     imgScale: 1
@@ -206,12 +206,12 @@ const EQUIPMENT_DATA = [
   {
     id: 6,
     nameLines: ["Shurink"],
-    subtitle: "슈링크",
-    tags: ["#리프팅", "#V라인", "#근막층", "#HIFU"],
+    subtitle: "シュリンク",
+    tags: ["#リフティング", "#Vライン", "#筋膜層", "#HIFU"],
     desc: [
-      "고강도 집속 초음파(HIFU) 에너지를 피부 속 가장",
-      "깊은 근막층(SMAS)까지 전달하여 수술 없이도",
-      "강력한 리프팅 효과를 선사하는 프리미엄 장비입니다."
+      "高密度集束超音波(HIFU)エネルギーを肌の最も",
+      "深い筋膜層(SMAS)まで届け、手術なしでも",
+      "強力なリフティング効果をもたらすプレミアム機器です。"
     ],
     img: eqShurink,
     imgScale: 1
@@ -475,8 +475,8 @@ function Frame19({ isScrolled }: { isScrolled?: boolean }) {
       className="content-stretch flex gap-[12px] items-center relative shrink-0 overflow-hidden"
     >
       <LangUs />
-      <div onClick={() => navigate('/jp')} className="cursor-pointer hover:opacity-80 transition-opacity"><LangJp /></div>
-      <div className="cursor-pointer opacity-40 transition-opacity"><LangKr /></div>
+      <div className="cursor-pointer opacity-40 transition-opacity"><LangJp /></div>
+      <div onClick={() => navigate('/')} className="cursor-pointer hover:opacity-80 transition-opacity"><LangKr /></div>
     </motion.div>
   );
 }
@@ -489,21 +489,21 @@ function Nav({ isScrolled }: { isScrolled?: boolean }) {
         <p className="cursor-pointer hover:opacity-80 transition-opacity py-[10px]">About</p>
         <div className="absolute top-[100%] left-1/2 -translate-x-1/2 pt-[25px] hidden group-hover:flex flex-col z-[1001]">
           <div className="bg-white content-stretch flex flex-col gap-[4px] items-start leading-[normal] px-[32px] py-[24px] relative size-full whitespace-nowrap shadow-[0_10px_40px_rgba(0,0,0,0.08)] min-w-[220px]">
-            <div onMouseDown={() => navigate('/about/brand-value')} onClick={() => navigate('/about/brand-value')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/about/brand-value')} onClick={() => navigate('/jp/about/brand-value')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Brand Value</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">브랜드 가치</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">ブランド価値</p>
             </div>
-            <div onMouseDown={() => navigate('/about/doctor')} onClick={() => navigate('/about/doctor')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/about/doctor')} onClick={() => navigate('/jp/about/doctor')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Doctor</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">의료진</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">医療スタッフ</p>
             </div>
-            <div onMouseDown={() => navigate('/about/gallery')} onClick={() => navigate('/about/gallery')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/about/gallery')} onClick={() => navigate('/jp/about/gallery')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Gallery</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">갤러리</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">ギャラリー</p>
             </div>
-            <div onMouseDown={() => navigate('/about/location')} onClick={() => navigate('/about/location')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/about/location')} onClick={() => navigate('/jp/about/location')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Location</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">위치</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">アクセス</p>
             </div>
           </div>
         </div>
@@ -512,13 +512,13 @@ function Nav({ isScrolled }: { isScrolled?: boolean }) {
         <p className="cursor-pointer hover:opacity-80 transition-opacity py-[10px]">All-depth Lifting</p>
         <div className="absolute top-[100%] left-1/2 -translate-x-1/2 pt-[25px] hidden group-hover:flex flex-col z-[1001]">
           <div className="bg-white content-stretch flex flex-col gap-[4px] items-start leading-[normal] px-[32px] py-[24px] relative size-full whitespace-nowrap shadow-[0_10px_40px_rgba(0,0,0,0.08)] min-w-[220px]">
-            <div onMouseDown={() => navigate('/alldepth/redefine')} onClick={() => navigate('/alldepth/redefine')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/alldepth/redefine')} onClick={() => navigate('/jp/alldepth/redefine')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">RE:DEFINE</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">맞춤진단</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">カスタム診断</p>
             </div>
-            <div onMouseDown={() => navigate('/alldepth/lifting')} onClick={() => navigate('/alldepth/lifting')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/alldepth/lifting')} onClick={() => navigate('/jp/alldepth/lifting')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">All-depth Lifting</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">올뎁스 리프팅</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">オールデプスリフティング</p>
             </div>
           </div>
         </div>
@@ -527,41 +527,41 @@ function Nav({ isScrolled }: { isScrolled?: boolean }) {
         <p className="cursor-pointer hover:opacity-80 transition-opacity py-[10px]">Treatment</p>
         <div className="absolute top-[100%] left-1/2 -translate-x-1/2 pt-[25px] hidden group-hover:flex flex-col z-[1001]">
           <div className="bg-white content-stretch flex flex-col gap-[4px] items-start leading-[normal] px-[32px] py-[24px] relative size-full whitespace-nowrap shadow-[0_10px_40px_rgba(0,0,0,0.08)] min-w-[220px]">
-            <div onMouseDown={() => navigate('/treatment/lifting')} onClick={() => navigate('/treatment/lifting')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/treatment/lifting')} onClick={() => navigate('/jp/treatment/lifting')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Lifting</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">리프팅</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">リフティング</p>
             </div>
-            <div onMouseDown={() => navigate('/treatment/pigmentation')} onClick={() => navigate('/treatment/pigmentation')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/treatment/pigmentation')} onClick={() => navigate('/jp/treatment/pigmentation')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Brightening & Redness</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">색소 & 홍조</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">色素 & 赤み</p>
             </div>
-            <div onMouseDown={() => navigate('/treatment/acne-pore')} onClick={() => navigate('/treatment/acne-pore')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/treatment/acne-pore')} onClick={() => navigate('/jp/treatment/acne-pore')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Pore & Scar</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">모공 & 흉터</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">毛穴 & 傷跡</p>
             </div>
-            <div onMouseDown={() => navigate('/treatment/petit')} onClick={() => navigate('/treatment/petit')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/treatment/petit')} onClick={() => navigate('/jp/treatment/petit')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Petit Plastic Surgery</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">쁘띠성형</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">プチ整形</p>
             </div>
-            <div onMouseDown={() => navigate('/treatment/skin-booster')} onClick={() => navigate('/treatment/skin-booster')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/treatment/skin-booster')} onClick={() => navigate('/jp/treatment/skin-booster')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Skin Booster</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">스킨부스터</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">スキンブースター</p>
             </div>
-            <div onMouseDown={() => navigate('/treatment/collagen-booster')} onClick={() => navigate('/treatment/collagen-booster')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/treatment/collagen-booster')} onClick={() => navigate('/jp/treatment/collagen-booster')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Collagen Booster</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">콜라겐부스터</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">コラーゲンブースター</p>
             </div>
-            <div onMouseDown={() => navigate('/treatment/body')} onClick={() => navigate('/treatment/body')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/treatment/body')} onClick={() => navigate('/jp/treatment/body')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Body Shape & Fat</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">바디 & 윤곽</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">ボディ & 輪郭</p>
             </div>
-            <div onMouseDown={() => navigate('/treatment/skincare')} onClick={() => navigate('/treatment/skincare')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/treatment/skincare')} onClick={() => navigate('/jp/treatment/skincare')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Premium Skin Care</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">프리미엄 스킨케어</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">プレミアムスキンケア</p>
             </div>
-            <div onMouseDown={() => navigate('/treatment/iv-therapy')} onClick={() => navigate('/treatment/iv-therapy')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/treatment/iv-therapy')} onClick={() => navigate('/jp/treatment/iv-therapy')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">IV Therapy</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">수액</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">点滴</p>
             </div>
           </div>
         </div>
@@ -570,9 +570,9 @@ function Nav({ isScrolled }: { isScrolled?: boolean }) {
         <p className="cursor-pointer hover:opacity-80 transition-opacity py-[10px]">Reservation</p>
         <div className="absolute top-[100%] left-1/2 -translate-x-1/2 pt-[25px] hidden group-hover:flex flex-col z-[1001]">
           <div className="bg-white content-stretch flex flex-col gap-[4px] items-start leading-[normal] px-[32px] py-[24px] relative size-full whitespace-nowrap shadow-[0_10px_40px_rgba(0,0,0,0.08)] min-w-[220px]">
-            <div onMouseDown={() => navigate('/reservation')} onClick={() => navigate('/reservation')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/reservation')} onClick={() => navigate('/jp/reservation')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Reservation</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">예약</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">ご予約</p>
             </div>
           </div>
         </div>
@@ -581,9 +581,9 @@ function Nav({ isScrolled }: { isScrolled?: boolean }) {
         <p className="cursor-pointer hover:opacity-80 transition-opacity py-[10px]">Promotion</p>
         <div className="absolute top-[100%] left-1/2 -translate-x-1/2 pt-[25px] hidden group-hover:flex flex-col z-[1001]">
           <div className="bg-white content-stretch flex flex-col gap-[4px] items-start leading-[normal] px-[32px] py-[24px] relative size-full whitespace-nowrap shadow-[0_10px_40px_rgba(0,0,0,0.08)] min-w-[220px]">
-            <div onMouseDown={() => navigate('/promotion')} onClick={() => navigate('/promotion')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/promotion')} onClick={() => navigate('/jp/promotion')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Promotion</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">프로모션</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">プロモーション</p>
             </div>
           </div>
         </div>
@@ -592,21 +592,21 @@ function Nav({ isScrolled }: { isScrolled?: boolean }) {
         <p className="cursor-pointer hover:opacity-80 transition-opacity py-[10px]">Community</p>
         <div className="absolute top-[100%] left-1/2 -translate-x-1/2 pt-[25px] hidden group-hover:flex flex-col z-[1001]">
           <div className="bg-white content-stretch flex flex-col gap-[4px] items-start leading-[normal] px-[32px] py-[24px] relative size-full whitespace-nowrap shadow-[0_10px_40px_rgba(0,0,0,0.08)] min-w-[220px]">
-            <div onMouseDown={() => navigate('/community')} onClick={() => navigate('/community')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/community')} onClick={() => navigate('/jp/community')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Notice</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">공지사항</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">お知らせ</p>
             </div>
-            <div onMouseDown={() => navigate('/community/column')} onClick={() => navigate('/community/column')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/community/column')} onClick={() => navigate('/jp/community/column')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Column</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">칼럼</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">コラム</p>
             </div>
-            <div onMouseDown={() => navigate('/community/before-after')} onClick={() => navigate('/community/before-after')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/community/before-after')} onClick={() => navigate('/jp/community/before-after')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Before & After</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">비포앤애프터</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">ビフォーアフター</p>
             </div>
-            <div onMouseDown={() => navigate('/community/inquiry')} onClick={() => navigate('/community/inquiry')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
+            <div onMouseDown={() => navigate('/jp/community/inquiry')} onClick={() => navigate('/jp/community/inquiry')} className="content-stretch flex flex-col gap-[4px] items-start py-[8px] relative shrink-0 w-full group/item cursor-pointer">
               <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#1c1614] text-[16px] group-hover/item:text-[#1c1614] transition-colors uppercase">Customer Inquiry</p>
-              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">온라인 상담</p>
+              <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#b8a99a] text-[16px] group-hover/item:text-[#1c1614] transition-colors">オンライン相談</p>
             </div>
           </div>
         </div>
@@ -748,7 +748,7 @@ export function Frame36() {
           style={{ left: isMobile ? 20 : 140, right: isMobile ? 20 : 140 }}
           className="absolute bottom-0 border-[rgba(255,255,255,0.6)] border-b border-solid pointer-events-none" 
         />
-        <Group12 isScrolled={isScrolled} isMenuOpen={isMenuOpen} onLogoClick={() => handleMenuNav('/')} />
+        <Group12 isScrolled={isScrolled} isMenuOpen={isMenuOpen} onLogoClick={() => handleMenuNav('/jp')} />
         <Frame35 isScrolled={isScrolled} isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       </motion.div>
       
@@ -779,15 +779,15 @@ export function Frame36() {
             <div className="flex flex-col justify-center gap-[10px] max-md:gap-[8px] w-full my-auto">
               {/* About - with submenu */}
               <div className="group/about">
-                <div onClick={() => handleMenuNav('/about/brand-value')} className="cursor-pointer pt-[8px] max-md:pt-[6px]">
+                <div onClick={() => handleMenuNav('/jp/about/brand-value')} className="cursor-pointer pt-[8px] max-md:pt-[6px]">
                   <p className="inline-block transform font-['Montserrat',sans-serif] font-medium text-[38px] max-md:text-[28px] text-[rgba(250,246,241,0.5)] group-hover/about:text-[#faf6f1] group-hover/about:translate-x-4 uppercase transition-all duration-500 ease-out">About</p>
                 </div>
                 <div className="max-h-0 group-hover/about:max-h-[200px] max-md:group-hover/about:max-h-[160px] overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="flex gap-[40px] max-md:gap-[16px] max-md:flex-col pt-[8px] pb-[12px] max-md:pt-[6px] max-md:pb-[8px] pl-[8px]">
-                    <span onClick={() => handleMenuNav('/about/brand-value')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Brand Value</span>
-                    <span onClick={() => handleMenuNav('/about/doctor')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Doctor</span>
-                    <span onClick={() => handleMenuNav('/about/gallery')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Gallery</span>
-                    <span onClick={() => handleMenuNav('/about/location')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Location</span>
+                    <span onClick={() => handleMenuNav('/jp/about/brand-value')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Brand Value</span>
+                    <span onClick={() => handleMenuNav('/jp/about/doctor')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Doctor</span>
+                    <span onClick={() => handleMenuNav('/jp/about/gallery')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Gallery</span>
+                    <span onClick={() => handleMenuNav('/jp/about/location')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Location</span>
                   </div>
                 </div>
               </div>
@@ -799,8 +799,8 @@ export function Frame36() {
                 </div>
                 <div className="max-h-0 group-hover/alldepth:max-h-[120px] overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="flex gap-[40px] max-md:gap-[16px] max-md:flex-col pt-[8px] pb-[12px] max-md:pt-[6px] max-md:pb-[8px] pl-[8px]">
-                    <span onClick={() => handleMenuNav('/alldepth/redefine')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">RE:DEFINE</span>
-                    <span onClick={() => handleMenuNav('/alldepth/lifting')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">All-depth Lifting</span>
+                    <span onClick={() => handleMenuNav('/jp/alldepth/redefine')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">RE:DEFINE</span>
+                    <span onClick={() => handleMenuNav('/jp/alldepth/lifting')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">All-depth Lifting</span>
                   </div>
                 </div>
               </div>
@@ -812,39 +812,39 @@ export function Frame36() {
                 </div>
                 <div className="max-h-0 group-hover/treat:max-h-[200px] max-md:group-hover/treat:max-h-[500px] overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="flex gap-[40px] max-md:gap-[16px] max-md:flex-col pt-[8px] pb-[12px] max-md:pt-[6px] max-md:pb-[8px] pl-[8px] flex-wrap">
-                    <span onClick={() => handleMenuNav('/treatment/lifting')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Lifting</span>
-                    <span onClick={() => handleMenuNav('/treatment/pigmentation')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Brightening & Redness</span>
-                    <span onClick={() => handleMenuNav('/treatment/acne-pore')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Pore & Scar</span>
-                    <span onClick={() => handleMenuNav('/treatment/petit')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Petit Plastic Surgery</span>
-                    <span onClick={() => handleMenuNav('/treatment/skin-booster')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Skin Booster</span>
-                    <span onClick={() => handleMenuNav('/treatment/collagen-booster')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Collagen Booster</span>
-                    <span onClick={() => handleMenuNav('/treatment/body')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Body Shape & Fat</span>
-                    <span onClick={() => handleMenuNav('/treatment/skincare')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Premium Skin Care</span>
-                    <span onClick={() => handleMenuNav('/treatment/iv-therapy')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">IV Therapy</span>
+                    <span onClick={() => handleMenuNav('/jp/treatment/lifting')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Lifting</span>
+                    <span onClick={() => handleMenuNav('/jp/treatment/pigmentation')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Brightening & Redness</span>
+                    <span onClick={() => handleMenuNav('/jp/treatment/acne-pore')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Pore & Scar</span>
+                    <span onClick={() => handleMenuNav('/jp/treatment/petit')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Petit Plastic Surgery</span>
+                    <span onClick={() => handleMenuNav('/jp/treatment/skin-booster')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Skin Booster</span>
+                    <span onClick={() => handleMenuNav('/jp/treatment/collagen-booster')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Collagen Booster</span>
+                    <span onClick={() => handleMenuNav('/jp/treatment/body')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Body Shape & Fat</span>
+                    <span onClick={() => handleMenuNav('/jp/treatment/skincare')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Premium Skin Care</span>
+                    <span onClick={() => handleMenuNav('/jp/treatment/iv-therapy')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">IV Therapy</span>
                   </div>
                 </div>
               </div>
 
               {/* Reservation - single menu */}
               <div className="group/reservation">
-                <div onClick={() => handleMenuNav('/reservation')} className="cursor-pointer pt-[8px] max-md:pt-[6px]">
+                <div onClick={() => handleMenuNav('/jp/reservation')} className="cursor-pointer pt-[8px] max-md:pt-[6px]">
                   <p className="inline-block transform font-['Montserrat',sans-serif] font-medium text-[38px] max-md:text-[28px] text-[rgba(250,246,241,0.5)] group-hover/reservation:text-[#faf6f1] group-hover/reservation:translate-x-4 uppercase transition-all duration-500 ease-out">Reservation</p>
                 </div>
                 <div className="max-h-0 group-hover/reservation:max-h-[100px] overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="flex gap-[40px] max-md:gap-[16px] max-md:flex-col pt-[8px] pb-[12px] max-md:pt-[6px] max-md:pb-[8px] pl-[8px]">
-                    <span onClick={() => handleMenuNav('/reservation')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Reservation</span>
+                    <span onClick={() => handleMenuNav('/jp/reservation')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Reservation</span>
                   </div>
                 </div>
               </div>
 
               {/* Promotion - single menu */}
               <div className="group/promotion">
-                <div onClick={() => handleMenuNav('/promotion')} className="cursor-pointer pt-[8px] max-md:pt-[6px]">
+                <div onClick={() => handleMenuNav('/jp/promotion')} className="cursor-pointer pt-[8px] max-md:pt-[6px]">
                   <p className="inline-block transform font-['Montserrat',sans-serif] font-medium text-[38px] max-md:text-[28px] text-[rgba(250,246,241,0.5)] group-hover/promotion:text-[#faf6f1] group-hover/promotion:translate-x-4 uppercase transition-all duration-500 ease-out">Promotion</p>
                 </div>
                 <div className="max-h-0 group-hover/promotion:max-h-[100px] overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="flex gap-[40px] max-md:gap-[16px] max-md:flex-col pt-[8px] pb-[12px] max-md:pt-[6px] max-md:pb-[8px] pl-[8px]">
-                    <span onClick={() => handleMenuNav('/promotion')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Promotion</span>
+                    <span onClick={() => handleMenuNav('/jp/promotion')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Promotion</span>
                   </div>
                 </div>
               </div>
@@ -856,10 +856,10 @@ export function Frame36() {
                 </div>
                 <div className="max-h-0 group-hover/comm:max-h-[200px] max-md:group-hover/comm:max-h-[160px] overflow-hidden transition-all duration-500 ease-in-out">
                   <div className="flex gap-[40px] max-md:gap-[16px] max-md:flex-col pt-[8px] pb-[12px] max-md:pt-[6px] max-md:pb-[8px] pl-[8px]">
-                    <span onClick={() => handleMenuNav('/community')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Notice</span>
-                    <span onClick={() => handleMenuNav('/community/column')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Column</span>
-                    <span onClick={() => handleMenuNav('/community/before-after')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Before & After</span>
-                    <span onClick={() => handleMenuNav('/community/inquiry')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Online Inquiry</span>
+                    <span onClick={() => handleMenuNav('/jp/community')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Notice</span>
+                    <span onClick={() => handleMenuNav('/jp/community/column')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Column</span>
+                    <span onClick={() => handleMenuNav('/jp/community/before-after')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Before & After</span>
+                    <span onClick={() => handleMenuNav('/jp/community/inquiry')} className="inline-block transform font-['Montserrat',sans-serif] text-[17px] max-md:text-[16px] text-[rgba(250,246,241,0.5)] hover:text-[#faf6f1] hover:translate-x-2 transition-all duration-300 cursor-pointer uppercase">Online Inquiry</span>
                   </div>
                 </div>
               </div>
@@ -877,11 +877,11 @@ export function Frame36() {
                 <p className="font-['Montserrat',sans-serif] text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.7)] hidden md:block">Tel. 02-544-1005</p>
               </div>
               <p className="font-['Pretendard',sans-serif] font-normal text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.6)]">
-                서울특별시 강남구 논현로 175길 38 5층 리파인의원 (압구정역 5번 출구 도보 4분)
+                ソウル特別市 江南区 ノニョンロ175番街38、5階 リパインクリニック（狎鴎亭駅5番出口 徒歩4分）
               </p>
               <div className="flex items-center gap-[24px] max-md:gap-[16px] mt-[8px]">
-                <span className="font-['Pretendard',sans-serif] font-medium text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.6)] cursor-pointer hover:text-[#faf6f1] transition-colors tracking-wide">카카오톡 상담</span>
-                <span className="font-['Pretendard',sans-serif] font-medium text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.6)] cursor-pointer hover:text-[#faf6f1] transition-colors tracking-wide">네이버 예약</span>
+                <span className="font-['Pretendard',sans-serif] font-medium text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.6)] cursor-pointer hover:text-[#faf6f1] transition-colors tracking-wide">LINE相談</span>
+                <span className="font-['Pretendard',sans-serif] font-medium text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.6)] cursor-pointer hover:text-[#faf6f1] transition-colors tracking-wide">ご予約はこちら</span>
                 <span className="font-['Montserrat',sans-serif] font-medium text-[16px] max-md:text-[16px] text-[rgba(250,246,241,0.6)] cursor-pointer hover:text-[#faf6f1] transition-colors tracking-wide uppercase">Instagram</span>
               </div>
             </div>
@@ -890,9 +890,9 @@ export function Frame36() {
             <div className="flex flex-col md:items-end">
               <h2 className="font-['Montserrat',sans-serif] font-medium text-[16px] max-md:text-[16px] tracking-[4px] text-[rgba(250,246,241,0.5)] mb-[24px] max-md:mb-[16px] uppercase">Language</h2>
               <div className="flex items-center gap-5 max-md:gap-4">
-                <div className="cursor-pointer opacity-40 transition-opacity"><LangKr /></div>
+                <div className="cursor-pointer transition-opacity hover:opacity-80" onClick={() => handleMenuNav('/')}><LangKr /></div>
                 <div className="cursor-pointer opacity-40 hover:opacity-100 transition-opacity"><LangUs /></div>
-                <div className="cursor-pointer transition-opacity hover:opacity-80" onClick={() => handleMenuNav('/jp')}><LangJp /></div>
+                <div className="cursor-pointer opacity-40 transition-opacity"><LangJp /></div>
               </div>
             </div>
 
@@ -980,9 +980,9 @@ function Component() {
 function Frame2() {
   return (
     <div className="content-stretch flex flex-col gap-[24px] max-md:gap-[12px] items-center not-italic relative shrink-0 text-white whitespace-nowrap">
-      <p className="font-['Pretendard',sans-serif] font-light leading-[1.3] relative shrink-0 text-[56px] max-md:text-[24px] max-md:whitespace-normal max-md:text-center max-md:leading-[1.5]">정교하게 다듬어 본연의 아름다움을 만들다</p>
+      <p className="font-['Pretendard',sans-serif] font-light leading-[1.3] relative shrink-0 text-[56px] max-md:text-[24px] max-md:whitespace-normal max-md:text-center max-md:leading-[1.5]">精緻に仕上げ、本来の美しさを引き出す</p>
       <div className="font-['Pretendard',sans-serif] font-normal leading-[1.6] relative shrink-0 text-[17px] max-md:text-[16px]">
-        <p className="mb-0 max-md:whitespace-normal max-md:text-center">세심한 안목으로 본연의 아름다움을 찾고, 정교한 손길로 세련된 가치를 완성합니다.</p>
+        <p className="mb-0 max-md:whitespace-normal max-md:text-center">繊細な眼差しで本来の美しさを見つけ、精緻な手で洗練された価値を完成させます。</p>
       </div>
     </div>
   );
@@ -1079,7 +1079,7 @@ function Frame4() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap">
       <p className="font-['Montserrat',sans-serif] font-normal relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase">ALL-DEPTH LIFTING</p>
-      <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#222] text-[42px] max-md:text-[24px]">올 뎁스 리프팅</p>
+      <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#222] text-[42px] max-md:text-[24px]">オールデプスリフティング</p>
     </div>
   );
 }
@@ -1088,7 +1088,7 @@ function Frame12() {
   return (
     <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[16px] items-center leading-none relative shrink-0 w-[420px] max-md:w-full max-md:text-center">
       <Frame4 />
-      <p className="font-['Pretendard',sans-serif] font-normal min-w-full not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] w-[min-content] max-md:whitespace-normal max-md:leading-[1.5]">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
+      <p className="font-['Pretendard',sans-serif] font-normal min-w-full not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] w-[min-content] max-md:whitespace-normal max-md:leading-[1.5]">肌の表面から筋肉層まで、最適な組み合わせで設計されるオールデプスリフティング</p>
     </div>
   );
 }
@@ -1097,7 +1097,7 @@ function Frame20() {
   return (
     <div className="content-stretch flex items-center justify-center px-[10px] py-[6px] relative rounded-[4px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#b8a99a] border-solid inset-0 pointer-events-none rounded-[4px]" />
-      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#b8a99a] text-[16px] whitespace-nowrap">프리미엄 리프팅</p>
+      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#b8a99a] text-[16px] whitespace-nowrap">プレミアムリフティング</p>
     </div>
   );
 }
@@ -1115,7 +1115,7 @@ function Frame6() {
   return (
     <div className="col-1 content-stretch flex flex-col gap-[30px] items-start ml-[40px] mt-[442px] relative row-1 w-[295px]">
       <Frame5 />
-      <p className="font-['Pretendard',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#666] text-[17px] w-full">피부결과 탄력 개선</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#666] text-[17px] w-full">肌質とハリの改善</p>
     </div>
   );
 }
@@ -1124,7 +1124,7 @@ function Frame21() {
   return (
     <div className="content-stretch flex items-center justify-center px-[10px] py-[6px] relative rounded-[4px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#b8a99a] border-solid inset-0 pointer-events-none rounded-[4px]" />
-      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#b8a99a] text-[16px] whitespace-nowrap">지방층</p>
+      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#b8a99a] text-[16px] whitespace-nowrap">脂肪層</p>
     </div>
   );
 }
@@ -1142,7 +1142,7 @@ function Frame9() {
   return (
     <div className="col-1 content-stretch flex flex-col gap-[30px] items-start ml-[455px] mt-[442px] relative row-1">
       <Frame7 />
-      <p className="font-['Pretendard',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#666] text-[17px] whitespace-nowrap">얼굴의 무게감을 덜어내고 라인을 탄탄하게</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#666] text-[17px] whitespace-nowrap">顔の重みを取り除き、ラインを引き締める</p>
     </div>
   );
 }
@@ -1151,7 +1151,7 @@ function Frame22() {
   return (
     <div className="content-stretch flex items-center justify-center px-[10px] py-[6px] relative rounded-[4px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#b8a99a] border-solid inset-0 pointer-events-none rounded-[4px]" />
-      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#b8a99a] text-[16px] whitespace-nowrap">근막층</p>
+      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#b8a99a] text-[16px] whitespace-nowrap">筋膜層</p>
     </div>
   );
 }
@@ -1169,7 +1169,7 @@ function Frame10() {
   return (
     <div className="col-1 content-stretch flex flex-col gap-[30px] items-start ml-[870px] mt-[442px] relative row-1 w-[171px]">
       <Frame8 />
-      <p className="font-['Pretendard',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#666] text-[17px] w-full">피부의 탄력을 끌어올리는</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#666] text-[17px] w-full">肌のハリを引き上げる</p>
     </div>
   );
 }
@@ -1178,7 +1178,7 @@ function Frame23() {
   return (
     <div className="content-stretch flex items-center justify-center px-[10px] py-[6px] relative rounded-[4px] shrink-0">
       <div aria-hidden="true" className="absolute border border-[#b8a99a] border-solid inset-0 pointer-events-none rounded-[4px]" />
-      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#b8a99a] text-[16px] whitespace-nowrap">근육층</p>
+      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#b8a99a] text-[16px] whitespace-nowrap">筋肉層</p>
     </div>
   );
 }
@@ -1196,34 +1196,34 @@ function Frame11() {
   return (
     <div className="col-1 content-stretch flex flex-col gap-[30px] items-start ml-[1285px] mt-[442px] relative row-1 w-[248px]">
       <Frame13 />
-      <p className="font-['Pretendard',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#666] text-[17px] w-full">자연스러운 리프팅 효과가 지속되도록</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-none not-italic relative shrink-0 text-[#666] text-[17px] w-full">自然なリフティング効果が持続するように</p>
     </div>
   );
 }
 
 const accordionData = [
   {
-    tag: "프리미엄 리프팅",
+    tag: "プレミアムリフティング",
     title: "Epidermis & Dermis",
-    desc: "피부결과 탄력 개선",
+    desc: "肌質とハリの改善",
     img: exampleImage
   },
   {
-    tag: "지방층",
+    tag: "脂肪層",
     title: "Fat Layer",
-    desc: "얼굴의 무게감을 덜어내고 라인을 탄탄하게",
+    desc: "顔の重みを取り除き、ラインを引き締める",
     img: accordionImage2
   },
   {
-    tag: "근막층",
+    tag: "筋膜層",
     title: "SMAS Fascia",
-    desc: "피부의 탄력을 끌어올리는",
+    desc: "肌のハリを引き上げる",
     img: accordionImage3
   },
   {
-    tag: "근육층",
+    tag: "筋肉層",
     title: "Deep Muscle",
-    desc: "자연스러운 리프팅 효과가 지속되도록",
+    desc: "自然なリフティング効果が持続するように",
     img: exampleImage2
   }
 ];
@@ -1328,10 +1328,10 @@ function Group14() {
 function Frame43() {
   const isMobile = useIsMobile();
   const liftingCards = [
-    { img: imgLifting1, tag: "프리미엄 리프팅", title: "Epidermis & Dermis", subtitle: "피부결과 탄력 개선", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["겉으로 보이는 잔주름을 매끄럽게 정돈합니다.", "피부 속 콜라겐 생성을 유도하여 얇아진 피부 본연의 힘과 윤기를 되찾아줍니다."] },
-    { img: imgLifting2, tag: "지방층", title: "Fat", subtitle: "얼굴의 무게감을 덜어내고 라인을 탄탄하게", desc: "지방을 비워내, 슬림하고 매끄러운 윤곽선", bullets: ["탄력을 저하시키는 불필요하고 무거운 처진 지방을 정돈합니다.", "둔탁해진 턱선과 심부볼의 부피를 줄여 슬림하고 매끄러운 윤곽 라인을 만듭니다."] },
-    { img: imgLifting3, tag: "근막층", title: "Fascia", subtitle: "피부의 탄력을 끌어올리는", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["피부를 지지하는 뼈대 역할을 하는 근막층을 강력하게 타겟팅합니다.", "피부 깊은 곳에서부터 처진 조직을 단단하게 위로 견인하여 근본적인 리프팅을 실현합니다."] },
-    { img: imgLifting4, tag: "근육층", title: "Muscle", subtitle: "자연스러운 리프팅 효과가 지속되도록", desc: "프리미엄 리프팅으로 완성하는 촘촘한 피부결과 탄력", bullets: ["개개인의 표정 근육 움직임과 방향까지 고려하여 디자인합니다.", "시술 후에도 표정이 어색하지 않으며, 끌어올린 탄력이 더 오랜 기간 단단하게 유지되도록 고정력을 강화합니다."] },
+    { img: imgLifting1, tag: "プレミアムリフティング", title: "Epidermis & Dermis", subtitle: "肌質とハリの改善", desc: "プレミアムリフティングで仕上げる緻密な肌質とハリ", bullets: ["表面に見えるキメの乱れをなめらかに整えます。", "肌内部のコラーゲン生成を促し、薄くなった肌本来の力とツヤを取り戻します。"] },
+    { img: imgLifting2, tag: "脂肪層", title: "Fat", subtitle: "顔の重みを取り除き、ラインを引き締める", desc: "脂肪を取り除き、スリムでなめらかな輪郭線", bullets: ["ハリを低下させる不要で重いたるんだ脂肪を整えます。", "もたついたフェイスラインとチークの厚みを減らし、スリムでなめらかな輪郭ラインを作ります。"] },
+    { img: imgLifting3, tag: "筋膜層", title: "Fascia", subtitle: "肌のハリを引き上げる", desc: "プレミアムリフティングで仕上げる緻密な肌質とハリ", bullets: ["肌を支える骨格の役割を果たす筋膜層を強力にターゲティングします。", "肌の深部からたるんだ組織をしっかりと上へ引き上げ、根本的なリフティングを実現します。"] },
+    { img: imgLifting4, tag: "筋肉層", title: "Muscle", subtitle: "自然なリフティング効果が持続するように", desc: "プレミアムリフティングで仕上げる緻密な肌質とハリ", bullets: ["個人の表情筋の動きと方向まで考慮してデザインします。", "施術後も表情が不自然にならず、引き上げたハリがより長期間しっかり維持されるよう固定力を強化します。"] },
   ];
   const [mobileIndex, setMobileIndex] = useState(0);
   const handleLiftingPrev = () => setMobileIndex((prev) => (prev - 1 + liftingCards.length) % liftingCards.length);
@@ -1343,9 +1343,9 @@ function Frame43() {
       <div className="relative w-full bg-[#FBF6F1] flex flex-col items-center gap-[16px] px-5 py-10">
         <div className="flex flex-col items-center gap-[10px] leading-none">
           <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-normal tracking-[3px] text-center leading-none">ALL-DEPTH LIFTING</span>
-          <h2 className="font-['Pretendard'] text-[#222] text-[24px] font-light text-center leading-none">올 뎁스 리프팅</h2>
+          <h2 className="font-['Pretendard'] text-[#222] text-[24px] font-light text-center leading-none">オールデプスリフティング</h2>
         </div>
-        <p className="font-['Pretendard'] text-[#666] text-sm text-center">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
+        <p className="font-['Pretendard'] text-[#666] text-sm text-center">肌の表面から筋肉層まで、最適な組み合わせで設計されるオールデプスリフティング</p>
 
         <div className="w-full overflow-hidden relative flex flex-col">
           {/* Image area */}
@@ -1437,16 +1437,16 @@ function Frame43() {
         <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[16px] items-center leading-none relative shrink-0">
           <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap max-md:whitespace-normal leading-none">
             <p className="font-['Montserrat'] font-normal relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase leading-none">ALL-DEPTH LIFTING</p>
-            <p className="font-['Pretendard'] font-light not-italic relative shrink-0 text-[#222] text-[42px] max-md:text-[24px] leading-none">올 뎁스 리프팅</p>
+            <p className="font-['Pretendard'] font-light not-italic relative shrink-0 text-[#222] text-[42px] max-md:text-[24px] leading-none">オールデプスリフティング</p>
           </div>
-          <p className="font-['Pretendard'] font-normal not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] text-center max-md:leading-[1.5]">피부의 겉부터 근육층까지, 최적의 조합으로 설계되는 올뎁스 리프팅</p>
+          <p className="font-['Pretendard'] font-normal not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] text-center max-md:leading-[1.5]">肌の表面から筋肉層まで、最適な組み合わせで設計されるオールデプスリフティング</p>
         </div>
         <div className="flex gap-5 w-full max-w-[1820px]">
           {liftingCards.map((c) => (
             <div key={c.title} className="flex-1 flex flex-col gap-3">
               <div className="w-full h-[460px] overflow-hidden group"><img src={c.img} alt={c.title} className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" /></div>
               <div className="flex items-center justify-center w-[145px] h-[39px] rounded bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)]">
-                <span className="font-['Pretendard'] text-white text-base font-medium">프리미엄 리프팅</span>
+                <span className="font-['Pretendard'] text-white text-base font-medium">プレミアムリフティング</span>
               </div>
               <h3 className="font-['Montserrat'] text-black text-[40px] font-normal leading-[1] whitespace-nowrap min-h-[56px] flex items-center">{c.title}</h3>
               <span className="font-['Pretendard'] text-[#b8a99a] text-[22px] font-light leading-[1.5] min-h-[33px]">{c.subtitle}</span>
@@ -1478,8 +1478,8 @@ function Frame17() {
     <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center relative shrink-0">
       <p className="font-['Montserrat',sans-serif] font-normal leading-none relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] tracking-[4px] max-md:tracking-[3px] uppercase">PROMOTION</p>
       <div className="font-['Pretendard',sans-serif] font-light leading-[1.5] max-md:leading-[1.4] relative shrink-0 text-[#222] text-[42px] max-md:text-[22px]">
-        <p className="mb-0">신규 고객</p>
-        <p>첫 방문 프로모션</p>
+        <p className="mb-0">新規のお客様</p>
+        <p>初回来院プロモーション</p>
       </div>
     </div>
   );
@@ -1489,7 +1489,7 @@ function Frame14() {
   return (
     <div className="content-stretch flex flex-col gap-[30px] max-md:gap-[16px] items-center justify-center relative shrink-0 text-center whitespace-nowrap max-md:whitespace-normal">
       <Frame17 />
-      <p className="font-['Pretendard',sans-serif] font-normal leading-none max-md:leading-[1.4] relative shrink-0 text-[#666] text-[17px] max-md:text-[16px]">환절기 피부 장벽에 회복을 위한 집중 케어 프로그램입니다.</p>
+      <p className="font-['Pretendard',sans-serif] font-normal leading-none max-md:leading-[1.4] relative shrink-0 text-[#666] text-[17px] max-md:text-[16px]">季節の変わり目の肌バリア回復のための集中ケアプログラムです。</p>
     </div>
   );
 }
@@ -1528,7 +1528,7 @@ function Frame18() {
   return (
     <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-start justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
       <p className="font-['Montserrat',sans-serif] font-normal relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[2px] max-md:tracking-[1.5px] uppercase">{`DIRECTIONS & A MEDICAL GUIDE`}</p>
-      <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#222] text-[42px] max-md:text-[22px]">{`오시는 길 & 진료안내`}</p>
+      <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#222] text-[42px] max-md:text-[22px]">{`アクセス & 診療案内`}</p>
     </div>
   );
 }
@@ -1547,7 +1547,7 @@ function Frame24() {
     <div className="content-stretch flex flex-col gap-[20px] max-md:gap-[12px] items-start py-[36px] max-md:py-[20px] relative shrink-0 w-full">
       <div aria-hidden="true" className="absolute border-[#ddd] border-b border-solid inset-0 pointer-events-none" />
       <Frame25 />
-      <p className="font-['Pretendard',sans-serif] font-medium leading-none max-md:leading-[1.5] min-w-full not-italic relative shrink-0 text-[#1c1614] text-[20px] max-md:text-[16px] w-[min-content]">서울특별시 강남구 논현로 175길 38 5층 리파인의원 (압구정역 5번 출구 도보 4분)</p>
+      <p className="font-['Pretendard',sans-serif] font-medium leading-none max-md:leading-[1.5] min-w-full not-italic relative shrink-0 text-[#1c1614] text-[20px] max-md:text-[16px] w-[min-content]">ソウル特別市 江南区 ノニョンロ175番街38、5階 リパインクリニック（狎鴎亭駅5番出口 徒歩4分）</p>
     </div>
   );
 }
@@ -1564,21 +1564,21 @@ function Frame27() {
 function Frame31() {
   return (
     <div className="font-['Pretendard',sans-serif] font-medium gap-x-[77px] max-md:gap-x-[24px] gap-y-[20px] max-md:gap-y-[10px] grid-cols-[repeat(2,fit-content(100%))] grid-rows-[repeat(5,fit-content(100%))] inline-grid relative shrink-0 text-[#222] text-[18px] max-md:text-[16px]">
-      <p className="col-1 justify-self-start relative row-1 self-start shrink-0 whitespace-nowrap">월, 화, 목</p>
+      <p className="col-1 justify-self-start relative row-1 self-start shrink-0 whitespace-nowrap">月・火・木</p>
       <p className="col-2 justify-self-start relative row-1 self-start shrink-0 whitespace-nowrap">10:00 ~ 19:00</p>
-      <p className="col-1 justify-self-start relative row-2 self-start shrink-0 whitespace-nowrap">금</p>
-      <p className="col-2 justify-self-start relative row-2 self-start shrink-0 whitespace-nowrap">10:00 ~ 20:30 (야간진료)</p>
-      <p className="col-1 justify-self-start relative row-3 self-start shrink-0 whitespace-nowrap">토</p>
+      <p className="col-1 justify-self-start relative row-2 self-start shrink-0 whitespace-nowrap">金</p>
+      <p className="col-2 justify-self-start relative row-2 self-start shrink-0 whitespace-nowrap">10:00 ~ 20:30 (夜間診療)</p>
+      <p className="col-1 justify-self-start relative row-3 self-start shrink-0 whitespace-nowrap">土</p>
       <p className="col-2 justify-self-start relative row-3 self-start shrink-0 whitespace-nowrap">10:00 ~ 16:30</p>
-      <p className="col-1 justify-self-start relative row-4 self-start shrink-0 whitespace-nowrap">점심시간</p>
+      <p className="col-1 justify-self-start relative row-4 self-start shrink-0 whitespace-nowrap">昼休憩</p>
       <p className="col-2 justify-self-start relative row-4 self-start shrink-0 whitespace-nowrap">13:00 ~ 14:00</p>
-      <p className="col-span-2 justify-self-start relative row-5 self-start shrink-0 whitespace-nowrap text-[#999]">토요일 점심시간 없음</p>
+      <p className="col-span-2 justify-self-start relative row-5 self-start shrink-0 whitespace-nowrap text-[#999]">土曜日は昼休憩なし</p>
     </div>
   );
 }
 
 function Frame28() {
-  const closedText = `휴진 (Closed)  수요일 / 일요일 / 공휴일`;
+  const closedText = `休診 (Closed)  水曜日 / 日曜日 / 祝日`;
   return (
     <div className="content-stretch flex flex-col gap-[18px] items-start leading-none not-italic relative shrink-0 w-full max-md:leading-[1.5]">
       <Frame31 />
@@ -1590,7 +1590,7 @@ function Frame28() {
 function Frame28_DEAD() {
   return (
     <div>
-      <p className="font-['Pretendard',sans-serif] font-normal min-w-full relative shrink-0 text-[#d80027] text-[17px] w-[min-content] whitespace-pre-wrap">{`휴진 (Closed)  일요일 / 공휴일  (sun/public holiday)`}</p>
+      <p className="font-['Pretendard',sans-serif] font-normal min-w-full relative shrink-0 text-[#d80027] text-[17px] w-[min-content] whitespace-pre-wrap">{`休診 (Closed)  日曜日 / 祝日  (sun/public holiday)`}</p>
     </div>
   );
 }
@@ -1626,7 +1626,7 @@ function ResBtn() {
           </div>
         </div>
       </div>
-      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#222] text-[17px] max-md:text-[16px] whitespace-nowrap">전화상담</p>
+      <p className="font-['Pretendard',sans-serif] font-medium leading-none not-italic relative shrink-0 text-[#222] text-[17px] max-md:text-[16px] whitespace-nowrap">お電話</p>
     </div>
   );
 }
@@ -1639,7 +1639,7 @@ function ResBtn1() {
           <path d={svgPaths.p3cae5000} fill="var(--fill-0, #FFD000)" id="Vector" />
         </svg>
       </div>
-      <p className="font-['Pretendard'] font-medium leading-none not-italic relative shrink-0 text-[#222] text-[17px] max-md:text-[16px] whitespace-nowrap">카카오톡</p>
+      <p className="font-['Pretendard'] font-medium leading-none not-italic relative shrink-0 text-[#222] text-[17px] max-md:text-[16px] whitespace-nowrap">LINE</p>
     </div>
   );
 }
@@ -1652,7 +1652,7 @@ function ResBtn2() {
           <path d={svgPaths.p25dc5ff0} fill="var(--fill-0, #71C241)" id="Vector" />
         </svg>
       </div>
-      <p className="font-['Pretendard'] font-medium leading-none not-italic relative shrink-0 text-[#222] text-[17px] max-md:text-[16px] whitespace-nowrap">네이버</p>
+      <p className="font-['Pretendard'] font-medium leading-none not-italic relative shrink-0 text-[#222] text-[17px] max-md:text-[16px] whitespace-nowrap">ネイバー</p>
     </div>
   );
 }
@@ -1673,8 +1673,8 @@ function Frame32() {
     <div className="content-stretch flex flex-col gap-[20px] max-md:gap-[12px] items-start py-[36px] max-md:py-[20px] relative shrink-0 w-full">
       <Frame33 />
       <div className="flex flex-col gap-[6px]">
-        <p className="font-['Pretendard',sans-serif] font-medium text-[#1c1614] text-[20px] max-md:text-[16px]">예약방법</p>
-        <p className="font-['Pretendard',sans-serif] font-normal text-[#666] text-[16px] max-md:text-[14px] leading-[1.6]">충분한 상담과 정밀한 진료를 위해 예약제로 운영됩니다.<br />편하신 채널을 통해 예약해 주세요.</p>
+        <p className="font-['Pretendard',sans-serif] font-medium text-[#1c1614] text-[20px] max-md:text-[16px]">ご予約方法</p>
+        <p className="font-['Pretendard',sans-serif] font-normal text-[#666] text-[16px] max-md:text-[14px] leading-[1.6]">十分なカウンセリングと精密な診療のため、完全予約制にて運営しております。<br />ご都合のよい方法でご予約ください。</p>
       </div>
       <Frame34 />
     </div>
@@ -1749,8 +1749,8 @@ function FooterBrand() {
     <div className="content-stretch flex flex-col gap-[24px] items-start overflow-clip relative shrink-0 w-[300px] max-md:w-full" data-name="footerBrand">
       <IsolationMode />
       <p className="font-['Pretendard'] font-light leading-relaxed not-italic relative shrink-0 text-[14px] text-[#faf6f1]/60 whitespace-nowrap max-md:whitespace-normal">
-        정교하게 다듬어<br/>
-        본연의 아름다움을 만들다
+        精緻に仕上げ、<br/>
+        本来の美しさを引き出す
       </p>
     </div>
   );
@@ -1761,10 +1761,10 @@ function FooterColInfo() {
     <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[12px] items-start overflow-clip relative shrink-0 w-[240px] max-md:w-full">
       <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[14px] text-[#faf6f1] tracking-[2px] uppercase">Information</p>
       <div className="flex flex-col gap-[8px] font-['Pretendard'] font-light text-[14px] text-[#faf6f1]/70 leading-relaxed">
-        <p>리파인의원</p>
-        <p>대표자명 : 박상선</p>
-        <p>사업자등록번호 : 778-12-02986</p>
-        <p>서울특별시 강남구 논현로 175길 38 5층 리파인의원 (압구정역 5번 출구 도보 4분)</p>
+        <p>リパインクリニック</p>
+        <p>代表者名：朴相善</p>
+        <p>事業者登録番号：778-12-02986</p>
+        <p>ソウル特別市 江南区 ノニョンロ175番街38、5階 リパインクリニック（狎鴎亭駅5番出口 徒歩4分）</p>
         <p className="font-['Montserrat'] mt-2">T. 02-544-1005</p>
         <p className="font-['Montserrat']">E. refineclinickr@gmail.com</p>
       </div>
@@ -1778,23 +1778,23 @@ function FooterColHours() {
       <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[14px] text-[#faf6f1] tracking-[2px] uppercase">Clinic Hours</p>
       <div className="flex flex-col gap-[8px] font-['Pretendard'] font-light text-[14px] text-[#faf6f1]/70 leading-relaxed">
         <div className="flex justify-between w-full max-w-[200px]">
-          <span>월, 화, 목</span>
+          <span>月・火・木</span>
           <span className="font-['Montserrat']">10:00 ~ 19:00</span>
         </div>
         <div className="flex justify-between w-full max-w-[200px]">
-          <span>금</span>
+          <span>金</span>
           <span className="font-['Montserrat']">10:00 ~ 20:30</span>
         </div>
         <div className="flex justify-between w-full max-w-[200px]">
-          <span>토</span>
+          <span>土</span>
           <span className="font-['Montserrat']">10:00 ~ 16:30</span>
         </div>
         <div className="flex justify-between w-full max-w-[200px]">
-          <span>점심시간</span>
+          <span>昼休憩</span>
           <span className="font-['Montserrat']">13:00 ~ 14:00</span>
         </div>
-        <p className="mt-2 text-[#faf6f1]/50 text-[13px]">* 토요일 점심시간 없음</p>
-        <p className="text-[#faf6f1]/50 text-[13px]">* 수요일 / 일요일 / 공휴일 휴진</p>
+        <p className="mt-2 text-[#faf6f1]/50 text-[13px]">* 土曜日は昼休憩なし</p>
+        <p className="text-[#faf6f1]/50 text-[13px]">* 水曜日 / 日曜日 / 祝日 休診</p>
       </div>
     </div>
   );
@@ -1840,8 +1840,8 @@ function FooterBottom() {
     <div className="content-stretch flex max-md:flex-col-reverse max-md:gap-[16px] h-auto items-end max-md:items-start justify-between leading-[normal] overflow-clip relative shrink-0 text-[13px] text-[#faf6f1]/40 w-full pt-[24px] mt-[60px] max-md:mt-[40px] border-t border-[#faf6f1]/10" data-name="footerBottom">
       <p className="font-['Montserrat'] font-light tracking-[0.5px]">© 2026 REFINE Dermatology Clinic. All rights reserved.</p>
       <div className="flex gap-[24px] font-['Pretendard'] font-normal text-[#faf6f1]/60">
-        <p className="cursor-pointer hover:text-[#faf6f1] transition-colors">이용 약관</p>
-        <p className="cursor-pointer hover:text-[#faf6f1] transition-colors">개인정보처리방침</p>
+        <p className="cursor-pointer hover:text-[#faf6f1] transition-colors">利用規約</p>
+        <p className="cursor-pointer hover:text-[#faf6f1] transition-colors">プライバシーポリシー</p>
       </div>
     </div>
   );
@@ -1871,7 +1871,7 @@ function SubpageFrame18() {
   return (
     <div className="content-stretch flex flex-col gap-[26px] max-md:gap-[10px] items-start justify-center leading-none relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
       <p className="font-['Montserrat',sans-serif] font-medium relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[0px] max-md:tracking-[0px] uppercase">{`DIRECTIONS & A MEDICAL GUIDE`}</p>
-      <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#222] text-[42px] max-md:text-[22px]">{`오시는 길 & 진료안내`}</p>
+      <p className="font-['Pretendard',sans-serif] font-light relative shrink-0 text-[#222] text-[42px] max-md:text-[22px]">{`アクセス & 診療案内`}</p>
     </div>
   );
 }
@@ -2042,7 +2042,7 @@ function Paragraph() {
 function Heading() {
   return (
     <div className="h-[39px] relative shrink-0 w-full" data-name="Heading 3">
-      <p className="absolute font-['Pretendard',sans-serif] font-bold leading-[39px] left-0 text-[#121212] text-[28px] top-[-3.5px] tracking-[-0.65px] whitespace-nowrap">상담 예약하기</p>
+      <p className="absolute font-['Pretendard',sans-serif] font-bold leading-[39px] left-0 text-[#121212] text-[28px] top-[-3.5px] tracking-[-0.65px] whitespace-nowrap">カウンセリング予約</p>
     </div>
   );
 }
@@ -2060,7 +2060,7 @@ function TextInput() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative w-[275px]" data-name="Text Input">
       <div className="flex flex-row items-center overflow-clip rounded-[inherit] size-full">
         <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center py-[8px] relative size-full">
-          <p className="font-['Pretendard',sans-serif] font-medium leading-[normal] relative shrink-0 text-[16px] text-[rgba(28,29,28,0.4)] whitespace-nowrap">성함</p>
+          <p className="font-['Pretendard',sans-serif] font-medium leading-[normal] relative shrink-0 text-[16px] text-[rgba(28,29,28,0.4)] whitespace-nowrap">お名前</p>
         </div>
       </div>
       <div aria-hidden="true" className="absolute border-[rgba(28,29,28,0.2)] border-b border-solid inset-0 pointer-events-none" />
@@ -2081,7 +2081,7 @@ function PhoneInput() {
     <div className="flex-[1_0_0] min-h-px min-w-px relative w-[275px]" data-name="Phone Input">
       <div className="flex flex-row items-center overflow-clip rounded-[inherit] size-full">
         <div className="bg-clip-padding border-0 border-[transparent] border-solid content-stretch flex items-center py-[8px] relative size-full">
-          <p className="font-['Pretendard',sans-serif] font-medium leading-[normal] relative shrink-0 text-[16px] text-[rgba(28,29,28,0.4)] whitespace-nowrap">{`연락처 ('-' 제외)`}</p>
+          <p className="font-['Pretendard',sans-serif] font-medium leading-[normal] relative shrink-0 text-[16px] text-[rgba(28,29,28,0.4)] whitespace-nowrap">{`電話番号 ('-'なし)`}</p>
         </div>
       </div>
       <div aria-hidden="true" className="absolute border-[rgba(28,29,28,0.2)] border-b border-solid inset-0 pointer-events-none" />
@@ -2109,7 +2109,7 @@ function Text() {
   return (
     <div className="flex-[1_0_0] h-[19.5px] min-h-px min-w-px relative" data-name="Text">
       <div className="bg-clip-padding border-0 border-[transparent] border-solid relative size-full">
-        <p className="absolute font-['Pretendard',sans-serif] font-medium leading-[19.5px] left-0 text-[16px] text-[rgba(28,29,28,0.6)] top-px whitespace-nowrap">개인정보수집 및 이용 동의</p>
+        <p className="absolute font-['Pretendard',sans-serif] font-medium leading-[19.5px] left-0 text-[16px] text-[rgba(28,29,28,0.6)] top-px whitespace-nowrap">個人情報収集・利用 同意</p>
       </div>
     </div>
   );
@@ -2127,7 +2127,7 @@ function Label() {
 function Button() {
   return (
     <div className="absolute bg-[#1c1614] h-[54.5px] left-[32px] top-[188px] w-[275px] cursor-pointer hover:bg-[#2d2320] transition-colors" data-name="Button">
-      <p className="-translate-x-1/2 absolute font-['Pretendard',sans-serif] font-bold leading-[22.5px] left-[137.48px] text-[16px] text-center text-white top-[15px] tracking-[0.375px] whitespace-nowrap">상담 신청하기</p>
+      <p className="-translate-x-1/2 absolute font-['Pretendard',sans-serif] font-bold leading-[22.5px] left-[137.48px] text-[16px] text-center text-white top-[15px] tracking-[0.375px] whitespace-nowrap">カウンセリング申し込み</p>
     </div>
   );
 }
@@ -2230,9 +2230,9 @@ function Frame15() {
     <div className="content-stretch flex flex-col gap-[32px] max-md:gap-[16px] items-center leading-none relative shrink-0">
       <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[10px] items-center justify-center relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
         <p className="font-['Montserrat'] font-normal relative shrink-0 text-[#b8a99a] text-[16px] max-md:text-[16px] text-center tracking-[4px] max-md:tracking-[3px] uppercase">EQUIPMENT</p>
-        <p className="font-['Pretendard'] font-light not-italic relative shrink-0 text-[#222] text-[42px] max-md:text-[24px]">장비소개</p>
+        <p className="font-['Pretendard'] font-light not-italic relative shrink-0 text-[#222] text-[42px] max-md:text-[24px]">医療機器紹介</p>
       </div>
-      <p className="font-['Pretendard'] font-normal not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] text-center max-md:leading-[1.5]">정교하고 안전한 시술을 위해 검증된 프리미엄 장비만을 사용합니다.</p>
+      <p className="font-['Pretendard'] font-normal not-italic relative shrink-0 text-[#666] text-[16px] max-md:text-[16px] text-center max-md:leading-[1.5]">精緻で安全な施術のために、検証済みのプレミアム機器のみを使用します。</p>
     </div>
   );
 }
@@ -2284,7 +2284,7 @@ function Container10() {
 function Text1() {
   return (
     <div className="flex items-center justify-center bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.3)] border-solid h-[35px] rounded-[16777200px] px-4" data-name="Text">
-      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[16px] text-white tracking-[0.3px] whitespace-nowrap">#기미</p>
+      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[16px] text-white tracking-[0.3px] whitespace-nowrap">#シミ</p>
     </div>
   );
 }
@@ -2292,7 +2292,7 @@ function Text1() {
 function Text2() {
   return (
     <div className="flex items-center justify-center bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.3)] border-solid h-[35px] rounded-[16777200px] px-4" data-name="Text">
-      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[16px] text-white tracking-[0.3px] whitespace-nowrap">#모공</p>
+      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[16px] text-white tracking-[0.3px] whitespace-nowrap">#毛穴</p>
     </div>
   );
 }
@@ -2300,7 +2300,7 @@ function Text2() {
 function Text3() {
   return (
     <div className="flex items-center justify-center bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.3)] border-solid h-[35px] rounded-[16777200px] px-4" data-name="Text">
-      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[16px] text-white tracking-[0.3px] whitespace-nowrap">#색소침착</p>
+      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[16px] text-white tracking-[0.3px] whitespace-nowrap">#色素沈着</p>
     </div>
   );
 }
@@ -2308,7 +2308,7 @@ function Text3() {
 function Text4() {
   return (
     <div className="flex items-center justify-center bg-[rgba(255,255,255,0.05)] border border-[rgba(255,255,255,0.3)] border-solid h-[35px] rounded-[16777200px] px-4" data-name="Text">
-      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[16px] text-white tracking-[0.3px] whitespace-nowrap">#피부톤</p>
+      <p className="font-['Pretendard'] font-medium leading-[21px] not-italic text-[16px] text-white tracking-[0.3px] whitespace-nowrap">#肌トーン</p>
     </div>
   );
 }
@@ -2338,7 +2338,7 @@ function Heading1() {
 function Paragraph1() {
   return (
     <div className="content-stretch flex items-center justify-center relative shrink-0" data-name="Paragraph">
-      <p className="font-['Pretendard'] font-medium leading-[33px] not-italic relative shrink-0 text-[#b8a99a] text-[22px] whitespace-nowrap">헐리우드 스펙트라</p>
+      <p className="font-['Pretendard'] font-medium leading-[33px] not-italic relative shrink-0 text-[#b8a99a] text-[22px] whitespace-nowrap">ハリウッドスペクトラ</p>
     </div>
   );
 }
@@ -2356,9 +2356,9 @@ function Paragraph2() {
   return (
     <div className="h-auto md:h-[97.195px] relative shrink-0 w-full" data-name="Paragraph">
       <div className="relative md:absolute font-['Pretendard'] font-light leading-[32.4px] left-0 not-italic text-[18px] text-[rgba(255,255,255,0.8)] top-[-1px] w-[369px] max-w-full break-keep">
-        <p className="mb-0">기미나 잡티 같은 다양한 색소질환에 균일하게</p>
-        <p className="mb-0">레이저 빔을 전달해 얕은 색소부터 깊은 색소까지</p>
-        <p>폭넓게 개선하는데 탁월한 효과를 보여줍니다.</p>
+        <p className="mb-0">シミやくすみなどさまざまな色素疾患に均一に</p>
+        <p className="mb-0">レーザービームを照射し、浅い色素から深い色素まで</p>
+        <p>幅広く改善する優れた効果を発揮します。</p>
       </div>
     </div>
   );
@@ -2700,8 +2700,8 @@ function Text5() {
   return (
     <div className="content-stretch flex items-start relative shrink-0" data-name="Text">
       <div className="font-['Pretendard',sans-serif] font-bold leading-[1.5] max-md:leading-[1.4] not-italic relative shrink-0 text-[#222] text-[60px] max-md:text-[24px] text-center whitespace-nowrap max-md:whitespace-normal">
-        <p className="mb-0">시간이 흘러도 변치 않는 가치,</p>
-        <p className="text-[#121212]">본연의 아름다움을 <span className="font-bold text-[#1c1614]">Refine</span> 하다.</p>
+        <p className="mb-0">時を超えても変わらない価値、</p>
+        <p className="text-[#121212]">本来の美しさを <span className="font-bold text-[#1c1614]">Refine</span> する。</p>
       </div>
     </div>
   );
@@ -2717,11 +2717,11 @@ function Frame40() {
     return (
       <div className="relative w-full flex flex-col items-center justify-center px-5 py-10" style={{background:"rgba(32,24,20,0.78)"}}>
         <span className="font-['Montserrat'] text-[#b8a99a] text-sm font-normal tracking-[4px] text-center mb-[10px]">REFINE PHILOSOPHY</span>
-        <h2 className="text-white text-[22px] font-light leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
+        <h2 className="text-white text-[22px] font-light leading-[1.5] text-center font-['Pretendard']">時を超えても変わらない価値、</h2>
         <div className="flex items-center justify-center flex-wrap gap-[5px]">
-          <span className="text-white text-[22px] font-light leading-[1.5] font-['Pretendard']">본연의 아름다움을</span>
+          <span className="text-white text-[22px] font-light leading-[1.5] font-['Pretendard']">本来の美しさを</span>
           <span className="text-[#F2E7DA] text-[22px] font-light leading-[1.5] font-['Montserrat']">Refine</span>
-          <span className="text-white text-[22px] font-light leading-[1.5] font-['Pretendard']">하다.</span>
+          <span className="text-white text-[22px] font-light leading-[1.5] font-['Pretendard']">する。</span>
         </div>
       </div>
     );
@@ -2731,11 +2731,11 @@ function Frame40() {
       <div className="w-full flex flex-col items-center justify-center px-[120px] pt-[40px] pb-[80px]" style={{minHeight:490,background:"rgba(32,24,20,0.78)"}}>
         <span className="font-['Montserrat'] text-[#b8a99a] text-base font-normal tracking-[4px] text-center mb-[16px]">REFINE PHILOSOPHY</span>
         <div className="flex flex-col items-center w-full max-w-[864px]">
-          <h2 className="text-white text-[42px] font-light leading-[1.5] text-center font-['Pretendard']">시간이 흘러도 변치 않는 가치,</h2>
+          <h2 className="text-white text-[42px] font-light leading-[1.5] text-center font-['Pretendard']">時を超えても変わらない価値、</h2>
           <div className="flex items-center justify-center w-full flex-wrap gap-[14px]">
-            <span className="text-white text-[42px] font-light leading-[1.5] font-['Pretendard']">본연의 아름다움을</span>
+            <span className="text-white text-[42px] font-light leading-[1.5] font-['Pretendard']">本来の美しさを</span>
             <span className="text-[#F2E7DA] text-[42px] font-light leading-[1.5] font-['Montserrat']">Refine</span>
-            <span className="text-white text-[42px] font-light leading-[1.5] font-['Pretendard']">하다.</span>
+            <span className="text-white text-[42px] font-light leading-[1.5] font-['Pretendard']">する。</span>
           </div>
         </div>
       </div>
@@ -2780,17 +2780,17 @@ function Frame45() {
   return (
     <div className="content-stretch flex flex-col gap-[20px] max-md:gap-[14px] items-start justify-center not-italic relative shrink-0 whitespace-nowrap max-md:whitespace-normal">
       <div className="font-['Pretendard'] font-semibold leading-[1.6] max-md:leading-[1.4] relative shrink-0 text-[#1c1d1c] text-[30px] max-md:text-[18px] tracking-[-0.85px] max-md:tracking-[-0.5px]">
-        <p className="mb-0">세심한 진단과 정교한 솔루션,</p>
-        <p>인위적이지 않은 자연스러움.</p>
+        <p className="mb-0">繊細な診断と精緻なソリューション、</p>
+        <p>人工的でない自然な美しさ。</p>
       </div>
       <div className="font-['Pretendard'] font-normal leading-[1.7] max-md:leading-[1.6] relative shrink-0 text-[#555] text-[16px] max-md:text-[16px] tracking-[0.32px] whitespace-pre max-md:whitespace-normal">
-        <p className="mb-0">개인의 피부가 가진 본래의 구조와 결을 깊이 이해하고,</p>
-        <p className="mb-0">이를 온전히 보존하면서 최적의 아름다움을 이끌어내는 것을</p>
-        <p className="mb-0">가장 중요한 목표로 삼습니다.</p>
+        <p className="mb-0">個人の肌が持つ本来の構造と質感を深く理解し、</p>
+        <p className="mb-0">それを完全に保ちながら最適な美しさを引き出すことを</p>
+        <p className="mb-0">最も重要な目標としています。</p>
         <p className="mb-0">&nbsp;</p>
-        <p className="mb-0">피부 속 코어부터 탄탄하게 차오르는 근본적인 변화.</p>
-        <p className="mb-0">검증된 최신 장비와 의료진의 숙련된 노하우가 만나,</p>
-        <p>당신의 얼굴에 가장 어울리는 우아한 선과 결을 완성합니다.</p>
+        <p className="mb-0">肌の内側のコアから満ちてくる根本的な変化。</p>
+        <p className="mb-0">検証された最新機器と医療スタッフの熟練したノウハウが融合し、</p>
+        <p>あなたのお顔に最も似合う優雅なラインと質感を完成させます。</p>
       </div>
     </div>
   );
@@ -2902,39 +2902,39 @@ function Frame44() {
     return (
       <div className="relative w-full bg-[#FBF6F1] flex flex-col px-5 pt-0 pb-8">
         <div className="w-full overflow-hidden -mt-[22px] relative z-10 group" style={{ aspectRatio: '460 / 613' }}>
-          <img src={imgDoctor} alt="박상선 원장" className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" />
+          <img src={imgDoctor} alt="朴相善 院長" className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" />
         </div>
         <div className="flex flex-col">
           <div className="flex items-center justify-between w-full pb-3">
             <div className="flex flex-col gap-2">
               <span className="font-['Montserrat'] text-[#666] text-sm tracking-[0.4px]">Chief Director</span>
-              <span className="font-['Pretendard'] text-[#222] text-[28px] font-light">박상선</span>
+              <span className="font-['Pretendard'] text-[#222] text-[28px] font-light">朴相善</span>
             </div>
             <div className="w-[76px] h-[78px] opacity-50 overflow-hidden shrink-0">
               <img src={imgRefineLogo} alt="Refine Logo" className="w-full h-full object-contain" />
             </div>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A]">
-            <p className="text-[#555] text-sm leading-[1.6] tracking-[0.32px] opacity-50 font-['Pretendard']">개인의 피부가 가진 본래의 구조와 결을 깊이 이해하고, 이를 온전히 보존하면서 최적의 아름다움을 이끌어내는 것을 가장 중요한 목표로 삼습니다.</p>
+            <p className="text-[#555] text-sm leading-[1.6] tracking-[0.32px] opacity-50 font-['Pretendard']">個人の肌が持つ本来の構造と質感を深く理解し、それを完全に保ちながら最適な美しさを引き出すことを最も重要な目標としています。</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p className="font-semibold">(현) Refine 원장</p>
-            <p>(전) 올림피움채움의원 강남점 원장</p><p>(전) 다시봄날의원 성신여대점 원장</p><p>(전) 밴스의원 대전둔산점 원장</p><p>(전) 톡스앤필 광주점 원장</p>
+            <p className="font-semibold">（現） Refine 院長</p>
+            <p>（前） オリンピウムチェウム医院 江南院長</p><p>（前） ダシボムナル医院 成信女大院長</p><p>（前） バンス医院 大田屯山院長</p><p>（前） トックスアンフィル 光州院長</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>연세대학교</p><p>충남의학전문대학원</p>
+            <p>延世大学校</p><p>忠南医学専門大学院</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>국제미용항노화학회 학술이사</p><p>미용성형레이저학회 학술이사</p><p>쁘띠성형에스테틱포럼 부회장</p>
+            <p>国際美容抗老化学会 学術理事</p><p>美容整形レーザー学会 学術理事</p><p>プチ整形エステティックフォーラム 副会長</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>비만연구의사회 정회원</p>
+            <p>肥満研究医師会 正会員</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>대한비만미용학회 정회원</p><p>대한미용성형레이저 정회원</p><p>대한필러학회 정회원</p>
+            <p>大韓肥満美容学会 正会員</p><p>大韓美容整形レーザー 正会員</p><p>大韓フィラー学会 正会員</p>
           </div>
           <div className="py-3 text-[#555] text-sm leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>로얄필러 자문의</p><p>매직실 자문의</p><p>울트라브이실 자문의</p>
+            <p>ロイヤルフィラー 顧問医</p><p>マジックスレッド 顧問医</p><p>ウルトラVスレッド 顧問医</p>
           </div>
         </div>
       </div>
@@ -2945,40 +2945,40 @@ function Frame44() {
       <div className="w-full bg-[#FBF6F1] flex gap-[50px] px-[120px] py-[60px] overflow-visible" style={{minHeight:1000}}>
         <div className="relative w-[774px] shrink-0 overflow-visible">
           <div className="overflow-hidden group" style={{position:"relative", top:"-120px", zIndex:10}}>
-            <img src={imgDoctor} alt="박상선 원장" className="w-full h-auto object-cover transition-transform duration-1000 ease-out group-hover:scale-105" />
+            <img src={imgDoctor} alt="朴相善 院長" className="w-full h-auto object-cover transition-transform duration-1000 ease-out group-hover:scale-105" />
           </div>
         </div>
         <div className="flex flex-col w-[543px]">
           <div className="flex items-center justify-between w-full">
             <div className="flex flex-col gap-[16px]">
               <span className="font-['Montserrat'] text-[#666] text-base tracking-[0.4px] leading-[0.94]">Chief Director</span>
-              <span className="font-['Pretendard'] text-[#222] text-[42px] font-light leading-[0.86] tracking-[-0.85px]">박상선</span>
+              <span className="font-['Pretendard'] text-[#222] text-[42px] font-light leading-[0.86] tracking-[-0.85px]">朴相善</span>
             </div>
             <div className="w-[106px] h-[108px] opacity-50 overflow-hidden">
               <img src={imgRefineLogo} alt="Refine Logo" className="w-full h-full object-contain" />
             </div>
           </div>
           <div className="mt-3 py-4 border-b border-[#1C1D1C1A]">
-            <p className="text-[#555] text-sm leading-[1.6] tracking-[0.32px] opacity-50 font-['Pretendard']">개인의 피부가 가진 본래의 구조와 결을 깊이 이해하고,<br/>이를 온전히 보존하면서 최적의 아름다움을 이끌어내는 것을<br/>가장 중요한 목표로 삼습니다.</p>
+            <p className="text-[#555] text-sm leading-[1.6] tracking-[0.32px] opacity-50 font-['Pretendard']">個人の肌が持つ本来の構造と質感を深く理解し、<br/>それを完全に保ちながら最適な美しさを引き出すことを<br/>最も重要な目標としています。</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p className="font-semibold">(현) Refine 원장</p>
-            <p>(전) 올림피움채움의원 강남점 원장</p><p>(전) 다시봄날의원 성신여대점 원장</p><p>(전) 밴스의원 대전둔산점 원장</p><p>(전) 톡스앤필 광주점 원장</p>
+            <p className="font-semibold">（現） Refine 院長</p>
+            <p>（前） オリンピウムチェウム医院 江南院長</p><p>（前） ダシボムナル医院 成信女大院長</p><p>（前） バンス医院 大田屯山院長</p><p>（前） トックスアンフィル 光州院長</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>연세대학교</p><p>충남의학전문대학원</p>
+            <p>延世大学校</p><p>忠南医学専門大学院</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>국제미용항노화학회 학술이사</p><p>미용성형레이저학회 학술이사</p><p>쁘띠성형에스테틱포럼 부회장</p>
+            <p>国際美容抗老化学会 学術理事</p><p>美容整形レーザー学会 学術理事</p><p>プチ整形エステティックフォーラム 副会長</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>비만연구의사회 정회원</p>
+            <p>肥満研究医師会 正会員</p>
           </div>
           <div className="py-3 border-b border-[#1C1D1C1A] text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>대한비만미용학회 정회원</p><p>대한미용성형레이저 정회원</p><p>대한필러학회 정회원</p>
+            <p>大韓肥満美容学会 正会員</p><p>大韓美容整形レーザー 正会員</p><p>大韓フィラー学会 正会員</p>
           </div>
           <div className="py-3 text-[#555] text-base leading-[1.7] tracking-[0.32px] font-['Pretendard']">
-            <p>로얄필러 자문의</p><p>매직실 자문의</p><p>울트라브이실 자문의</p>
+            <p>ロイヤルフィラー 顧問医</p><p>マジックスレッド 顧問医</p><p>ウルトラVスレッド 顧問医</p>
           </div>
         </div>
       </div>
