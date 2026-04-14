@@ -29,12 +29,12 @@ export default function JpPromotionDetailPage() {
       monthText: "February",
       period: "2026.02.01 - 2026.02.28",
       statusText: "開催中のイベント",
-      title: "2月シグネチャーアンチエイジングパッケージ",
+      title: "2月シグネチャーアンチエイジングプラン",
       isEnded: false,
       content: `
 REFINE 皮膚科 狎鴎亭院 限定開催！
 
-来たる春に向けた2月シグネチャーアンチエイジングパッケージで、
+来たる春に向けた2月シグネチャーアンチエイジングプランで、
 失われた弾力を取り戻し、生き生きとした輝きのある肌へと生まれ変わりましょう。
 
 [ パッケージ詳細 ]

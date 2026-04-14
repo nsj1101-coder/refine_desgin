@@ -33,7 +33,7 @@ export default function JpPromotionPage() {
       monthText: "February",
       period: "2026.02.01 - 2026.02.28",
       statusText: "開催中のイベント",
-      title: "2月シグネチャーアンチエイジングパッケージ",
+      title: "2月シグネチャーアンチエイジングプラン",
       isEnded: false,
       image: "https://images.unsplash.com/photo-1748543668699-a8a9398e9161?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtaW5pbWFsJTIwc2tpbmNhcmUlMjB0ZXh0dXJlfGVufDF8fHx8MTc3MzcxMjg1NXww&ixlib=rb-4.1.0&q=80&w=1080"
     },

@@ -115,7 +115,7 @@ export default function JpReservationPage() {
                   <p className="font-['Montserrat',sans-serif] text-[16px] tracking-[0px] text-[#b8a99a] uppercase mb-8 group-hover:text-white/60 transition-colors">
                     Phone Call
                   </p>
-                  <h3 className="text-[28px] md:text-[36px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-6 group-hover:text-white transition-colors">
+                  <h3 className="text-[22px] md:text-[28px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-6 group-hover:text-white transition-colors">
                     お電話でのご相談・予約
                   </h3>
                   <p className="text-[16px] md:text-[18px] text-[#6b5f58] mb-12 group-hover:text-white/80 transition-colors">
@@ -133,11 +133,11 @@ export default function JpReservationPage() {
                   <p className="font-['Montserrat',sans-serif] text-[16px] tracking-[0px] text-[#b8a99a] uppercase mb-8 group-hover:text-[#1c1614]/60 transition-colors">
                     Kakao Talk
                   </p>
-                  <h3 className="text-[28px] md:text-[36px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-6">
+                  <h3 className="text-[22px] md:text-[28px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-6">
                     カカオトークでのご予約
                   </h3>
                   <p className="text-[16px] md:text-[18px] text-[#6b5f58] mb-12 group-hover:text-[#1c1614]/80 transition-colors">
-                    カカオトークチャンネルを追加いただければ<br />いつでもお気軽にお問い合わせいただけます。
+                    カカオトークを追加いただければ<br />いつでもお気軽にご連絡いただけます。
                   </p>
                   <p className="font-['Montserrat',sans-serif] text-[32px] font-light text-[#1c1614] tracking-[2px] whitespace-nowrap">
                     @refine_clinic
@@ -151,7 +151,7 @@ export default function JpReservationPage() {
                   <p className="font-['Montserrat',sans-serif] text-[16px] tracking-[0px] text-[#b8a99a] uppercase mb-8 group-hover:text-white/60 transition-colors">
                     Naver
                   </p>
-                  <h3 className="text-[28px] md:text-[36px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-6 group-hover:text-white transition-colors">
+                  <h3 className="text-[22px] md:text-[28px] text-[#1c1614] font-['Pretendard',sans-serif] font-light mb-6 group-hover:text-white transition-colors">
                     ネイバーでのご予約
                   </h3>
                   <p className="text-[16px] md:text-[18px] text-[#6b5f58] mb-12 group-hover:text-white/80 transition-colors">

@@ -144,9 +144,9 @@ const EQUIPMENT_DATA = [
     subtitle: "デンサティ",
     tags: ["#ハリ", "#コラーゲン", "#肌質", "#タイトニング"],
     desc: [
-      "6.78MHzの高周波(RF)エネルギーを真皮層に届け、",
+      "高周波(RF)エネルギーを真皮層に届け、",
       "コラーゲン生成を促し、崩れたフェイスラインを",
-      "なめらかで引き締まった状態に再建するプレミアムリフティングです。"
+      "なめらかに引き締めるプレミアムリフティングです。"
     ],
     img: eqDensity,
     imgScale: 1
@@ -157,9 +157,9 @@ const EQUIPMENT_DATA = [
     subtitle: "オンダ",
     tags: ["#輪郭", "#脂肪減少", "#タイトニング", "#ボディ"],
     desc: [
-      "特許取得のマイクロ波（超高周波）エネルギーで、",
-      "表皮を傷つけずに脂肪層を減少させ、真皮層の",
-      "コラーゲンをリモデリングするプレミアム輪郭タイトニングです。"
+      "特許取得のマイクロ波エネルギーで、",
+      "表皮を傷つけずに脂肪を減少させ、真皮層の",
+      "コラーゲンをリモデリングする輪郭タイトニングです。"
     ],
     img: eqOndaNew,
     imgScale: 1
@@ -170,9 +170,9 @@ const EQUIPMENT_DATA = [
     subtitle: "ポテンザ",
     tags: ["#毛穴", "#傷跡", "#再生", "#コラーゲン"],
     desc: [
-      "マイクロニードルを通じて真皮層に高周波(RF)エネルギーを",
-      "直接届け、毛穴と傷跡を改善し、コラーゲン生成を",
-      "促して肌本来の健康とハリを取り戻します。"
+      "微細針で真皮層に高周波(RF)を直接届け、",
+      "毛穴・傷跡を改善しコラーゲン生成を促進し、",
+      "肌本来の健康とハリを取り戻します。"
     ],
     img: eqPotenza,
     imgScale: 1
@@ -183,7 +183,7 @@ const EQUIPMENT_DATA = [
     subtitle: "クラリティ",
     tags: ["#赤み", "#血管", "#色素", "#デュアル波長"],
     desc: [
-      "755nmアレキサンドライトと1064nm Nd:YAGデュアル波長で、",
+      "755nm・1064nmデュアル波長レーザーで、",
       "メラニン色素と拡張した血管を同時に治療し、",
       "赤みから色素疾患まで幅広く対応します。"
     ],
@@ -197,8 +197,8 @@ const EQUIPMENT_DATA = [
     tags: ["#シミ", "#毛穴", "#色素沈着", "#肌トーン"],
     desc: [
       "532nmと1064nmデュアル波長のNd:YAGレーザーで、",
-      "表皮から真皮まで深さ別の色素を精密にターゲティングし、",
-      "シミ・そばかす・くすみと肌トーンを複合的に改善します。"
+      "表皮から真皮まで色素を精密にターゲティングし、",
+      "シミ・くすみ・肌トーンを複合的に改善します。"
     ],
     img: eqClarityNew,
     imgScale: 1
@@ -1445,8 +1445,8 @@ function Frame43() {
           {liftingCards.map((c) => (
             <div key={c.title} className="flex-1 flex flex-col gap-3">
               <div className="w-full h-[460px] overflow-hidden group"><img src={c.img} alt={c.title} className="w-full h-full object-cover transition-transform duration-1000 ease-out group-hover:scale-105" /></div>
-              <div className="flex items-center justify-center w-[145px] h-[39px] rounded bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)]">
-                <span className="font-['Pretendard'] text-white text-base font-medium">プレミアムリフティング</span>
+              <div className="flex items-center justify-center w-auto px-[12px] h-[39px] rounded bg-[rgba(0,0,0,0.2)] border border-[rgba(255,255,255,0.5)]">
+                <span className="font-['Pretendard'] text-white text-base font-medium whitespace-nowrap">プレミアムリフティング</span>
               </div>
               <h3 className="font-['Montserrat'] text-black text-[40px] font-normal leading-[1] whitespace-nowrap min-h-[56px] flex items-center">{c.title}</h3>
               <span className="font-['Pretendard'] text-[#b8a99a] text-[22px] font-light leading-[1.5] min-h-[33px]">{c.subtitle}</span>
@@ -1758,7 +1758,7 @@ function FooterBrand() {
 
 function FooterColInfo() {
   return (
-    <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[12px] items-start overflow-clip relative shrink-0 w-[240px] max-md:w-full">
+    <div className="content-stretch flex flex-col gap-[16px] max-md:gap-[12px] items-start overflow-clip relative shrink-0 w-[320px] max-md:w-full">
       <p className="font-['Montserrat'] font-semibold relative shrink-0 text-[14px] text-[#faf6f1] tracking-[2px] uppercase">Information</p>
       <div className="flex flex-col gap-[8px] font-['Pretendard'] font-light text-[14px] text-[#faf6f1]/70 leading-relaxed">
         <p>リパインクリニック</p>
